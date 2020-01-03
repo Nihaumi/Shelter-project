@@ -220,7 +220,8 @@ li{
     color: white;
 }
 /*forms*/
-form {
+#differenceform
+{
     width: 100%;
     color: white;
     position: absolute;
@@ -304,7 +305,7 @@ input:focus {
     .hero-text {
         transform: translate(-50%, -140%);
     }
-    form {
+    #differenceform {
         transform:translate(-45%, 80%);
     }
     .form-control-lg {
@@ -322,7 +323,7 @@ input:focus {
     .hero-text {
         transform: translate(-50%, -120%);
     }
-    form {
+    #differenecform{
         transform:translate(-45%, 70%);
     }
     .form-control-lg {
@@ -344,7 +345,7 @@ input:focus {
     .hero-text {
         transform: translate(-50%, -150%);
     }
-    form {
+    #differenceform {
         transform:translate(-45%, 70%);
     }
     .form-control-lg {
@@ -364,7 +365,7 @@ input:focus {
         transform: translate(-50%, -180%);
     }
 
-    form {
+    differenceform {
         transform:translate(-45%, 140%);
     }
 
@@ -383,7 +384,7 @@ input:focus {
 }
 
 @media screen and (max-width: 992px) and (min-width: 860px) {
-    form {
+    #differenceform {
         transform:translate(-40%, 140%);
     }
 
@@ -395,7 +396,7 @@ input:focus {
 
 
 @media screen and (max-width: 1000px) and (min-width: 992px) {
-    form {
+    #differenceform {
         transform:translate(-45%, 230%);
     }
 
@@ -405,7 +406,7 @@ input:focus {
 }
 
 @media screen and (max-width: 1159px) and (min-width: 1000px) {
-    form {
+    #differenceform{
         transform:translate(-43%, 230%);
     }
 
@@ -416,7 +417,7 @@ input:focus {
 
 
 @media screen and (max-width: 1216px) and (min-width: 1160px) {
-    form {
+    #differenceform {
         transform:translate(-38%, 230%);
     }
 
@@ -426,7 +427,7 @@ input:focus {
 }
 
 @media screen and (max-width: 1260px)and (min-width: 1217px){
-    form {
+    #differenceform {
         transform:translate(-48%, 230%);
     }
 
@@ -434,13 +435,13 @@ input:focus {
 }
 
 @media only screen and (min-width: 1260px){
-    form {
+    #differenceform {
         transform:translate(-45%, 230%);
     }
 }
 
 @media only screen and (max-width: 1600px) and (min-width: 1380px) {
-    form {
+    #differenceform {
         transform:translate(-40%, 230%);
     }
 }
