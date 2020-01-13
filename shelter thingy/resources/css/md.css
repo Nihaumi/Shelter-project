@@ -1,449 +1,461 @@
 
-*{
-    font-family: 'Kulim Park', sans-serif;
+p, h {
+	font-family: 'Kulim Park', sans-serif;
 }
 
 a {
-    cursor: pointer;
+	cursor: pointer;
 }
 
 /*navbar*/
-.navbar{
-    background-color: rgba(0, 0, 0, .5);
+.navbar {
+	background-color: rgba(0, 0, 0, .5);
 
 }
 
 .navbar li a {
-    color: white;
-    text-decoration: none;
-    font-size: 1.3rem;
+	color: white;
+	text-decoration: none;
+	font-size: 1.3rem;
 }
 
-.navbar-brand{
-    margin-left: 10%;
-    color:white;
+.navbar-brand {
+	margin-left: 10%;
+	color: white;
 }
 
-li{
-    margin:0 20px;
-    padding: 0 20px;
+li {
+	margin: 0 20px;
+	padding: 0 20px;
 
 }
 
-#donate1{
-    margin: 20px;
-    font-size: 1.3rem;
+#donate1 {
+	margin: 20px;
+	font-size: 1.3rem;
 }
+
 /*header*/
 .long {
-    margin: 0;
-    padding:0;
+	margin: 0;
+	padding: 0;
 }
 
 .hero {
-    background-color: black;
-    background-image: linear-gradient(rgba(0,0,0, 0), rgba(0,0,0, 0.5)),
-                    linear-gradient(rgba(0,0,0, 0.1), rgba(0,0,0, 0)),
-                    url('../images/fox.jpg');
-    background-size: cover;
-    height: 500px;
-    width: 100%;
-    background-position: center;
-    position: relative;
-    margin-bottom: 0;
+	background-color: black;
+	background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)),
+	linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0)),
+	url('../images/fox.jpg');
+	background-size: cover;
+	height: 500px;
+	width: 100%;
+	background-position: center;
+	position: relative;
+	margin-bottom: 0;
 }
 
 .hero-content {
-    position: absolute;
-    left: 5%;
-    margin-top: 0;
-    margin-bottom: 2.5rem;
-    color: white;
-    
+	position: absolute;
+	left: 5%;
+	margin-top: 0;
+	margin-bottom: 2.5rem;
+	color: white;
+
 }
 
 .parent {
-    position: relative;
-    height: 500px;
+	position: relative;
+	height: 500px;
 }
 
 .bottom {
-    position: absolute;
-    bottom: 63px;
+	position: absolute;
+	bottom: 63px;
 }
 
 .right {
-    position: absolute;
-    right:0;
+	position: absolute;
+	right: 0;
 }
 
 
 .blackBox {
-    background-color: rgba(0, 0, 0, 0.7);
-    color:white;
-    padding: 10px 30px 5px 10px;
+	background-color: rgba(0, 0, 0, 0.7);
+	color: white;
+	padding: 10px 30px 5px 10px;
 }
 
-.blackbox p{
-    font-size: 15px;
-    height: 20px;
+.blackbox p {
+	font-size: 15px;
+	height: 20px;
 }
 
-.blackBox span{
-    color: #84BD00;
-    font-size: 1.2rem;
-    padding: 0 5px 0 10px;
-    
+.blackBox span {
+	color: #84bd00;
+	font-size: 1.2rem;
+	padding: 0 5px 0 10px;
+
 }
 
-#heading{
-    color: #84BD00;
-    font-size: 1rem;
-    margin-bottom: 3px;
+#heading {
+	color: #84bd00;
+	font-size: 1rem;
+	margin-bottom: 3px;
 }
 
 .link {
-    text-decoration: none;
-    color:white;
-    font-size: 1.3rem;
+	text-decoration: none;
+	color: white;
+	font-size: 1.3rem;
 }
 
 .link:hover {
-    color: white;
+	color: white;
 
 }
+
 /*green paragraphs*/
 #green {
-    background-color: #024731;
-    padding: 60px;
-    color:white;
-    margin-top: 0;
-    font-size: 2em;
-    line-height: 1.2em;  
+	background-color: #024731;
+	padding: 60px;
+	color: white;
+	margin-top: 0;
+	font-size: 2em;
+	line-height: 1.2em;
 }
 
 /*cards*/
 
-.card-deck{
-    margin: 30px auto;
+.card-deck {
+	margin: 30px auto;
 }
 
 .cardsize {
-    font-size: 1.3em;
+	font-size: 1.3em;
 }
 
 .card {
-    height: 100%;
+	height: 100%;
 }
 
 
 .card p {
-    margin-bottom: 20px;
+	margin-bottom: 20px;
 }
 
-.card span  {
-    font-size: 16px;
-    color: #ffcd00;
+.card span {
+	font-size: 16px;
+	color: #ffcd00;
 }
 
 .card span:hover {
-    color: #84BD00;
+	color: #84bd00;
 }
 
 .card a {
-    position: absolute;
-    right:0;
-    left: 0;
-    bottom: 20px;
+	position: absolute;
+	right: 0;
+	left: 0;
+	bottom: 20px;
 }
 
 .card a:hover {
-    color:#024731;
+	color: #024731;
 }
 
-.card p{
-    margin:0;
+.card p {
+	margin: 0;
 }
 
 .greentext {
-    color:#024731;
+	color: #024731;
 }
 
 /*defender*/
 #defender {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/doggo.jpg');
-    background-size: cover;
-    height: 500px;
-    background-position: center;
-    position: relative;
-    margin-top: 80px;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/doggo.jpg');
+	background-size: cover;
+	height: 500px;
+	background-position: center;
+	position: relative;
+	margin-top: 80px;
 }
 
 
-
-.defender-text{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform:translate(-50%, -50%);
-    color: white;
+.defender-text {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: white;
 }
 
 .defender-text p {
-    font-size: 20px;
-    margin-bottom: 60px;
+	font-size: 20px;
+	margin-bottom: 60px;
 }
-.defender-text button{
-    padding: 10px 25px;
-    background-color: #D5291C;
-    color: white;
-    font-size: 1.2rem;
+
+.defender-text button {
+	padding: 10px 25px;
+	background-color: #d5291c;
+	color: white;
+	font-size: 1.2rem;
 }
 
 .defender-text button:hover {
-    background-color: #A92016;
-    border:1px solid #555559;
+	background-color: #a92016;
+	border: 1px solid #555559;
 }
 
 /*hero image make a difference*/
 .hero-image {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/happypuppy.jpg');
-    background-size: cover;
-    height: 600px;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/happypuppy.jpg');
+	background-size: cover;
+	height: 600px;
 }
 
-.hero-text{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform:translate(-50%, -50%);
-    color: white;
+.hero-text {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: white;
 }
+
 /*forms*/
-#differenceform
-{
-    width: 100%;
-    color: white;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform:translate(-30%, 230%);
+#differenceform {
+	width: 100%;
+	color: white;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-30%, 230%);
 }
 
-.form-check{
-    margin-top: 30px;
-    padding-right: 5px;
-    font-size: 20px;
+.form-check {
+	margin-top: 30px;
+	padding-right: 5px;
+	font-size: 20px;
 }
 
 .form-check label {
-    font-size: 22px;
+	font-size: 22px;
 }
 
 .form-inline .form-check-input {
-    margin-right: 1rem;
+	margin-right: 1rem;
 }
+
 #gridCheck1 {
-    height:40px;
-    width: 40px;
+	height: 40px;
+	width: 40px;
 }
 
-input{
-    background-color: white;
+input {
+	background-color: white;
 }
+
 input:focus {
-    border: 5px solid #84BD00;
+	border: 5px solid #84bd00;
 }
 
-@media screen and (min-width: 0px) and (max-width:992px){
-    .card{
-        height: auto;
-    }
+@media screen and (min-width: 0px) and (max-width: 992px) {
+	.card {
+		height: auto;
+	}
 }
 
-@media screen and (min-width:1000px) {
-    .hero-content{
-        font-size: 4rem;
-    }
+@media screen and (min-width: 1000px) {
+	.hero-content {
+		font-size: 4rem;
+	}
 }
 
-@media screen and (max-width:639px){
-    .top {
-        position: absolute;
-        top: 0;
-    }
+@media screen and (max-width: 639px) {
+	.top {
+		position: absolute;
+		top: 0;
+	}
 
 
-    .bottom {
-        bottom:0;
-    }
+	.bottom {
+		bottom: 0;
+	}
 
-    .parent {
-        height: 468px;
-    }
+	.parent {
+		height: 468px;
+	}
 
-    .hero-content{
-        position: absolute;
-        left: 67px;
-    }
+	.hero-content {
+		position: absolute;
+		left: 67px;
+	}
 
-    .blackBox {
-        position: absolute;
-        left: 0;
-        right:0;
-    }
-    
-    .right {
-        position: absolute;
-        right: 0;
-        left:0;
-        
-    }
-    
-}
-@media screen and (max-width: 398px) and (min-width: 200px){
-    .hero-text {
-        transform: translate(-50%, -140%);
-    }
-    #differenceform {
-        transform:translate(-45%, 80%);
-    }
-    .form-control-lg {
-        width: 90%;
-        margin-top: 10px;
-    }
+	.blackBox {
+		position: absolute;
+		left: 0;
+		right: 0;
+	}
 
-    .hero-image{
-        height: 1000px;
-    }
+	.right {
+		position: absolute;
+		right: 0;
+		left: 0;
+
+	}
 
 }
 
-@media screen and (max-width: 590px) and (min-width: 398px){
-    .hero-text {
-        transform: translate(-50%, -120%);
-    }
-    #differenecform{
-        transform:translate(-45%, 70%);
-    }
-    .form-control-lg {
-        width: 90%;
-        margin-top: 10px;
-    }
+@media screen and (max-width: 398px) and (min-width: 200px) {
+	.hero-text {
+		transform: translate(-50%, -140%);
+	}
 
-    .hero-image{
-        height: 800px;
-    }
+	#differenceform {
+		transform: translate(-45%, 80%);
+	}
 
-    .card {
-        height: auto;
-    }
+	.form-control-lg {
+		width: 90%;
+		margin-top: 10px;
+	}
+
+	.hero-image {
+		height: 1000px;
+	}
 
 }
 
-@media screen and (max-width: 768px) and (min-width: 590px){
-    .hero-text {
-        transform: translate(-50%, -150%);
-    }
-    #differenceform {
-        transform:translate(-45%, 70%);
-    }
-    .form-control-lg {
-        width: 90%;
-        margin-top: 10px;
-    }
+@media screen and (max-width: 590px) and (min-width: 398px) {
+	.hero-text {
+		transform: translate(-50%, -120%);
+	}
 
-    .hero-image{
-        height: 800px;
-    }
+	#differenecform {
+		transform: translate(-45%, 70%);
+	}
+
+	.form-control-lg {
+		width: 90%;
+		margin-top: 10px;
+	}
+
+	.hero-image {
+		height: 800px;
+	}
+
+	.card {
+		height: auto;
+	}
 
 }
 
-@media screen and (max-width:860px) and (min-width: 768px) {
-    
-    .hero-text {
-        transform: translate(-50%, -180%);
-    }
+@media screen and (max-width: 768px) and (min-width: 590px) {
+	.hero-text {
+		transform: translate(-50%, -150%);
+	}
 
-    differenceform {
-        transform:translate(-45%, 140%);
-    }
+	#differenceform {
+		transform: translate(-45%, 70%);
+	}
 
-    .form-control-lg {
-        width: 300px;
-        margin-top: 10px;
-    }
+	.form-control-lg {
+		width: 90%;
+		margin-top: 10px;
+	}
 
-    #gridCheck1{
-        width: 80px;
-        height: 80px;
-    }
-    .form-inline .form-check-input{
-        margin-right: 2rem;
-    }
+	.hero-image {
+		height: 800px;
+	}
+
+}
+
+@media screen and (max-width: 860px) and (min-width: 768px) {
+
+	.hero-text {
+		transform: translate(-50%, -180%);
+	}
+
+	#differenceform {
+		transform: translate(-45%, 140%);
+	}
+
+	.form-control-lg {
+		width: 300px;
+		margin-top: 10px;
+	}
+
+	#gridCheck1 {
+		width: 80px;
+		height: 80px;
+	}
+
+	.form-inline .form-check-input {
+		margin-right: 2rem;
+	}
 }
 
 @media screen and (max-width: 992px) and (min-width: 860px) {
-    #differenceform {
-        transform:translate(-40%, 140%);
-    }
+	#differenceform {
+		transform: translate(-40%, 140%);
+	}
 
-    .form-control-lg {
-        width: 300px;
-        margin-top: 10px;
-    }
+	.form-control-lg {
+		width: 300px;
+		margin-top: 10px;
+	}
 }
 
 
 @media screen and (max-width: 1000px) and (min-width: 992px) {
-    #differenceform {
-        transform:translate(-45%, 230%);
-    }
+	#differenceform {
+		transform: translate(-45%, 230%);
+	}
 
-    .form-control-lg {
-        width: 200px;
-    }
+	.form-control-lg {
+		width: 200px;
+	}
 }
 
 @media screen and (max-width: 1159px) and (min-width: 1000px) {
-    #differenceform{
-        transform:translate(-43%, 230%);
-    }
+	#differenceform {
+		transform: translate(-43%, 230%);
+	}
 
-    .form-control-lg {
-        width: 200px;
-    }
+	.form-control-lg {
+		width: 200px;
+	}
 }
 
 
 @media screen and (max-width: 1216px) and (min-width: 1160px) {
-    #differenceform {
-        transform:translate(-38%, 230%);
-    }
+	#differenceform {
+		transform: translate(-38%, 230%);
+	}
 
-    .form-control-lg {
-        width: 200px;
-    }
+	.form-control-lg {
+		width: 200px;
+	}
 }
 
-@media screen and (max-width: 1260px)and (min-width: 1217px){
-    #differenceform {
-        transform:translate(-48%, 230%);
-    }
+@media screen and (max-width: 1260px)and (min-width: 1217px) {
+	#differenceform {
+		transform: translate(-48%, 230%);
+	}
 
 
 }
 
-@media only screen and (min-width: 1260px){
-    #differenceform {
-        transform:translate(-45%, 230%);
-    }
+@media only screen and (min-width: 1260px) {
+	#differenceform {
+		transform: translate(-45%, 230%);
+	}
 }
 
 @media only screen and (max-width: 1600px) and (min-width: 1380px) {
-    #differenceform {
-        transform:translate(-40%, 230%);
-    }
+	#differenceform {
+		transform: translate(-40%, 230%);
+	}
 }
 
 
