@@ -1,12 +1,17 @@
-/*.fullWidth {
+.col{
 	margin: 0;
 	padding: 0;
-}*/
-/*
+}
+
+.container-fluid{
+	margin: 0;
+	padding: 0;
+}
+
 .row {
 	margin-left: -15px;
 	margin-right: -15px;
-}*/
+}
 
 p, h {
 	font-family: 'Kulim Park', sans-serif;
