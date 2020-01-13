@@ -27,10 +27,7 @@ li {
 }
 
 /*header*/
-.long {
-	margin: 0;
-	padding: 0;
-}
+
 
 .hero {
 	background-color: black;
@@ -149,10 +146,6 @@ li {
 }
 
 .hero-text {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
 	color: white;
 }
 
@@ -160,10 +153,33 @@ li {
 #differenceform {
 	width: 100%;
 	color: white;
+}
+
+/*vertical alignment form*/
+
+.outer {
+	display: table;
 	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-30%, 230%);
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+}
+
+.middle {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.inner {
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+}
+
+
+#signUp{
+	margin-top: 10px;
 }
 
 .form-check {
@@ -173,7 +189,7 @@ li {
 }
 
 .form-check label {
-	font-size: 22px;
+	font-size: 1rem;
 }
 
 .form-inline .form-check-input {
@@ -183,6 +199,7 @@ li {
 #gridCheck1 {
 	height: 40px;
 	width: 40px;
+	margin:10px;
 }
 
 input {
@@ -227,3 +244,5 @@ input:focus {
 	}
 
 }
+
+

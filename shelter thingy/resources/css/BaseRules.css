@@ -5,3 +5,11 @@ p, h {
 a {
 	cursor: pointer;
 }
+
+input {
+	margin-top: 10px;
+}
+
+label{
+	font-size: 1rem;
+}

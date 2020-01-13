@@ -1,3 +1,9 @@
+/*header*/
+.long {
+	margin: 0;
+	padding: 0;
+}
+
 /*green paragraphs*/
 #green {
 	background-color: #024731;
