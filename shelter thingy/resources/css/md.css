@@ -34,7 +34,7 @@
 
 }
 
-@media screen and (max-width: 590px) and (min-width: 398px) {
+@media screen and (min-width: 398px) {
 	.hero-text {
 		transform: translate(-50%, -120%);
 	}
@@ -58,7 +58,7 @@
 
 }
 
-@media screen and (max-width: 768px) and (min-width: 590px) {
+@media screen and (min-width: 590px) {
 	.hero-text {
 		transform: translate(-50%, -150%);
 	}
@@ -78,7 +78,7 @@
 
 }
 
-@media screen and (max-width: 860px) and (min-width: 768px) {
+@media screen and (min-width: 768px) {
 
 	.hero-text {
 		transform: translate(-50%, -180%);
@@ -104,6 +104,7 @@
 
 }
 
+<<<<<<< HEAD
 @media screen and (max-width: 992px) and (min-width: 860px) {
     #differenceform {
         transform:translate(-40%, 140%);
@@ -120,16 +121,41 @@
     #differenceform {
         transform:translate(-45%, 230%);
     }
+=======
+@media screen and (min-width: 860px) {
+	#differenceform {
+		transform: translate(-40%, 140%);
+	}
+
+	.form-control-lg {
+		width: 300px;
+		margin-top: 10px;
+	}
+}
+
+
+@media screen and (min-width: 992px) {
+	#differenceform {
+		transform: translate(-45%, 230%);
+	}
+>>>>>>> 560a403... form looks better now
 
     .form-control-lg {
         width: 200px;
     }
 }
 
+<<<<<<< HEAD
 @media screen and (max-width: 1159px) and (min-width: 1000px) {
     #differenceform{
         transform:translate(-43%, 230%);
     }
+=======
+@media screen and (min-width: 1000px) {
+	#differenceform {
+		transform: translate(-43%, 230%);
+	}
+>>>>>>> 560a403... form looks better now
 
     .form-control-lg {
         width: 200px;
@@ -137,20 +163,34 @@
 }
 
 
+<<<<<<< HEAD
 @media screen and (max-width: 1216px) and (min-width: 1160px) {
     #differenceform {
         transform:translate(-38%, 230%);
     }
+=======
+@media screen and (min-width: 1160px) {
+	#differenceform {
+		transform: translate(-38%, 230%);
+	}
+>>>>>>> 560a403... form looks better now
 
     .form-control-lg {
         width: 200px;
     }
 }
 
+<<<<<<< HEAD
 @media screen and (max-width: 1260px)and (min-width: 1217px){
     #differenceform {
         transform:translate(-48%, 230%);
     }
+=======
+@media screen and (min-width: 1217px) {
+	#differenceform {
+		transform: translate(-48%, 230%);
+	}
+>>>>>>> 560a403... form looks better now
 
 
 }
@@ -161,10 +201,17 @@
     }
 }
 
+<<<<<<< HEAD
 @media only screen and (max-width: 1600px) and (min-width: 1380px) {
     #differenceform {
         transform:translate(-40%, 230%);
     }
+=======
+@media only screen and (min-width: 1380px) {
+	#differenceform {
+		transform: translate(-40%, 230%);
+	}
+>>>>>>> 560a403... form looks better now
 }
 
 
