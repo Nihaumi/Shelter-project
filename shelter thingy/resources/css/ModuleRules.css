@@ -1,0 +1,57 @@
+/*green paragraphs*/
+#green {
+	background-color: #024731;
+	padding: 60px;
+	color: white;
+	margin-top: 0;
+	font-size: 2em;
+	line-height: 1.2em;
+}
+
+
+/*cards*/
+
+.card-deck {
+	margin: 30px auto;
+}
+
+.cardsize {
+	font-size: 1.3em;
+}
+
+.card {
+	height: 100%;
+}
+
+
+.card p {
+	margin-bottom: 20px;
+}
+
+.card span {
+	font-size: 16px;
+	color: #ffcd00;
+}
+
+.card span:hover {
+	color: #84bd00;
+}
+
+.card a {
+	position: absolute;
+	right: 0;
+	left: 0;
+	bottom: 20px;
+}
+
+.card a:hover {
+	color: #024731;
+}
+
+.card p {
+	margin: 0;
+}
+
+.greentext {
+	color: #024731;
+}
