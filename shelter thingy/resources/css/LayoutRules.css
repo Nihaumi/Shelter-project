@@ -10,6 +10,12 @@
 	font-size: 1.3rem;
 }
 
+
+.dropdown-menu {
+	background-color: rgba(0, 0, 0, .5);
+	color: white;
+}
+
 .navbar-brand {
 	margin-left: 10%;
 	color: white;
@@ -21,9 +27,25 @@ li {
 
 }
 
+#searchbar, #donate1 {
+	display: inline-block;
+	font-size: 20px;
+	border-radius: 0;
+	-webkit-appearance: none;
+}
+
+#searchbar {
+	border: 1px solid lightgray;
+	margin: 10px;
+}
+
+
 #donate1 {
-	margin: 20px;
-	font-size: 1.3rem;
+	border: 1px solid transparent;
+}
+
+#donate1::-moz-focus-inner {
+	border: 0;
 }
 
 /*header*/
@@ -71,9 +93,10 @@ li {
 	background-color: rgba(0, 0, 0, 0.7);
 	color: white;
 	padding: 10px 30px 5px 10px;
+	right: 0;
 }
 
-.blackbox p {
+.blackBox p {
 	font-size: 15px;
 	height: 20px;
 }
@@ -178,7 +201,7 @@ li {
 }
 
 
-#signUp{
+#signUp {
 	margin-top: 10px;
 }
 
@@ -199,7 +222,7 @@ li {
 #gridCheck1 {
 	height: 40px;
 	width: 40px;
-	margin:10px;
+	margin: 10px;
 }
 
 input {
@@ -208,6 +231,16 @@ input {
 
 input:focus {
 	border: 5px solid #84bd00;
+}
+
+/*green paragraphs*/
+#green {
+	background-color: #024731;
+	padding: 60px;
+	color: white;
+	margin-top: 0;
+	font-size: 2em;
+	line-height: 1.2em;
 }
 
 @media screen and (max-width: 576px) {
@@ -241,6 +274,10 @@ input:focus {
 		right: 0;
 		left: 0;
 
+	}
+
+	#green {
+		font-size: 1.5rem;
 	}
 
 }
