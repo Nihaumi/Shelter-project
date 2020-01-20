@@ -4,16 +4,6 @@
 	padding: 0;
 }
 
-/*green paragraphs*/
-#green {
-	background-color: #024731;
-	padding: 60px;
-	color: white;
-	margin-top: 0;
-	font-size: 2em;
-	line-height: 1.2em;
-}
-
 
 /*cards*/
 
@@ -24,11 +14,6 @@
 .cardsize {
 	font-size: 1.3em;
 }
-
-.card {
-	height: 100%;
-}
-
 
 .card p {
 	margin-bottom: 20px;
@@ -44,7 +29,7 @@
 }
 
 .card a {
-	position: absolute;
+
 	right: 0;
 	left: 0;
 	bottom: 20px;
@@ -60,4 +45,17 @@
 
 .greentext {
 	color: #024731;
+}
+
+.container-fluid {
+	width: 100%;
+}
+
+.form-control-lg {
+	width: 100%;
+	padding: 10px;
+}
+
+.form-row {
+	padding: 0 10px;
 }

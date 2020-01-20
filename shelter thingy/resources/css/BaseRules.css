@@ -1,9 +1,9 @@
-.col{
+.col {
 	margin: 0;
 	padding: 0;
 }
 
-.container-fluid{
+.container-fluid {
 	margin: 0;
 	padding: 0;
 }
@@ -25,6 +25,6 @@ input {
 	margin-top: 10px;
 }
 
-label{
+label {
 	font-size: 1rem;
 }
