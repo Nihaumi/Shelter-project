@@ -11,7 +11,7 @@
 	margin: 30px auto;
 }
 
-.cardsize {
+.cardSize {
 	font-size: 1.3em;
 }
 
@@ -50,7 +50,7 @@
 .container-fluid {
 	width: 100%;
 }
-
+/*
 .form-control-lg {
 	width: 100%;
 	padding: 10px;
@@ -58,4 +58,4 @@
 
 .form-row {
 	padding: 0 10px;
-}
+}*/

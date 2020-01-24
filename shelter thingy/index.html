@@ -11,15 +11,15 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
 		  integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 	<link rel="stylesheet" href="resources/css/BaseRules.css">
-	<link rel="stylesheet" href="resources/css/LayoutRules.css">
 	<link rel="stylesheet" href="resources/css/ModuleRules.css">
+	<link rel="stylesheet" href="resources/css/LayoutRules.css">
 
 	<link href="https://fonts.googleapis.com/css?family=Kulim+Park:300,400,700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
-<div class="container-fluid">
+<div class="container-fluid fullWidth">
 	<!--navbar-->
 	<div class="row">
 		<div class="col-12 long">
@@ -30,7 +30,7 @@
 				<button class="navbar-toggler" type="button" data-toggle="collapse"
 						data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
 						aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
+					<i class="fa fa-ellipsis-h"></i>
 				</button>
 
 				<div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -57,8 +57,11 @@
 					</ul>
 					<form class="form-inline float-right">
 						<button id="donate1" class="btn btn-lg btn-danger my-2 my-sm-0" type="submit">Donate</button>
-						<input id="searchbar" class="form-control mr-sm-2" type="search" placeholder="Search"
+						<button class="btn searchBtn d-none d-lg-inline"><i class="fa fa-search"></i></button>
+						<input id="searchbar" class="form-control mr-sm-2 d-lg-none d-xl-inline" type="search"
+							   placeholder="Search"
 							   aria-label="Search">
+
 
 					</form>
 				</div>
@@ -68,7 +71,7 @@
 </div>
 
 
-<div class="container-fluid">
+<div class="container-fluid fullWidth">
 	<!--Header-->
 	<div class="row">
 		<div class="col-12">
@@ -133,13 +136,13 @@
 					<img src="resources/images/food.jpg" class="card-img-top" alt="plant-based-food">
 
 					<div class="card-body">
-						<p class="card-text cardsize">Seven plant-based ways to celebrate the holidays with an
+						<p class="card-text cardSize">Seven plant-based ways to celebrate the holidays with an
 							international
 							flavor</p>
 						<p class="card-text">
 							<small class="text-muted">December 20, 2019</small>
 						</p>
-						<a href="#" class="greentext cardsize card-text font-weight-bold"> Read More
+						<a href="#" class="greentext cardSize card-text font-weight-bold"> Read More
 							<span class="fa fa-arrow-right"></span></a>
 					</div>
 				</div>
@@ -148,13 +151,13 @@
 				<div class="card rounded-0 text-center">
 					<img src="resources/images/giraffe.jpg" class="card-img-top" alt="plant-based-food">
 					<div class="card-body">
-						<p class="card-text cardsize">Seven plant-based ways to celebrate the holidays with an
+						<p class="card-text cardSize">Seven plant-based ways to celebrate the holidays with an
 							international
 							flavor</p>
 						<p class="card-text">
 							<small class="text-muted">December 20, 2019</small>
 						</p>
-						<a href="#" class="greentext cardsize card-text font-weight-bold"> Read More <span
+						<a href="#" class="greentext cardSize card-text font-weight-bold"> Read More <span
 								class="fa fa-arrow-right"></span></a>
 					</div>
 				</div>
@@ -163,13 +166,13 @@
 				<div class="card rounded-0 text-center">
 					<img src="resources/images/armadillo.jpg" class="card-img-top" alt="plant-based-food">
 					<div class="card-body">
-						<p class="card-text cardsize">Seven plant-based ways to celebrate the holidays with an
+						<p class="card-text cardSize">Seven plant-based ways to celebrate the holidays with an
 							international
 							flavor</p>
 						<p class="card-text">
 							<small class="text-muted">December 20, 2019</small>
 						</p>
-						<a href="#" class="greentext cardsize card-text font-weight-bold"> Read More <span
+						<a href="#" class="greentext cardSize card-text font-weight-bold"> Read More <span
 								class="fa fa-arrow-right"></span></a>
 					</div>
 				</div>
@@ -212,7 +215,7 @@
 					<img src="resources/images/food2.jpg" class="card-img-top" alt="plant-based food">
 					<div class="card-body">
 						<h3 class="card-title">Plant-based Eating</h3>
-						<p class="card-text">Current egg, meat and dairy production and consumption
+						<p class="card-text cardSize">Current egg, meat and dairy production and consumption
 							practices are unsustainable and cause tremendous suffering.
 							Choosing more plant-based options helps animals and the environment,
 							and supports your health.</p>
@@ -225,7 +228,7 @@
 					<img src="resources/images/armadillo.jpg" class="card-img-top" alt="plant-based food">
 					<div class="card-body">
 						<h3 class="card-title">Wildlife Trade</h3>
-						<p class="card-text">The international wildlife trade jeopardizes the survival
+						<p class="card-text cardSize">The international wildlife trade jeopardizes the survival
 							and welfare of billions of animals every year,
 							including threatened and endangered species. </p>
 						<span class="fa fa-arrow-right float-right"></span>
@@ -233,10 +236,10 @@
 				</div>
 
 				<div class="card">
-					<img src="resources/images/cagedog.jpg" class="card-img-top" alt="plant-based food">
+					<img src="resources/images/cagedos.jpg" class="card-img-top" alt="plant-based food">
 					<div class="card-body">
 						<h3 class="card-title">Dog Meat Trade</h3>
-						<p class="card-text">Across Asia, millions of dogs and cats are brutally killed for
+						<p class="card-text cardSize">Across Asia, millions of dogs and cats are brutally killed for
 							meat.
 							In South Korea, dogs are farmed in appalling conditions.
 							HSI works in China, South Korea, Indonesia and Viet Nam to end the cruelty.</p>
@@ -253,10 +256,10 @@
 
 
 <!--Make a diffenrence-->
-<div class="container-fluid">
+<div class="container-fluid fullWidth">
 
 	<div class="col">
-		<div class="hero-image">
+		<div class="hero-image jumbotron jumbotron-fluid">
 
 
 			<!--form-->
@@ -273,8 +276,48 @@
 							</div>
 							<div class="row mx-auto">
 								<div class="col col-lg-8 mx-auto">
-									<form id="differenceform" class=""
+
+									<form class="form-inline justify-content-center">
+										<label class="sr-only" for="inlineFormInputName2">First Name</label>
+										<input type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2"
+											   placeholder="First Name">
+										<label class="sr-only" for="inlineFormInputName3">Last Name</label>
+										<input type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputName3"
+											   placeholder="Last Name">
+										<label class="sr-only" for="inlineFormInputName4">Email</label>
+										<input type="email" class="form-control mb-2 mr-sm-2" id="inlineFormInputName4"
+											   placeholder="Email">
+
+										<label class="sr-only"
+											   for="inlineFormCustomSelectPref">Country</label>
+										<select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+											<option selected>Country</option>
+											<option value="1">US</option>
+											<option value="2">Germany</option>
+											<option value="3">Greece</option>
+										</select>
+									</form>
+									<form class="form-inline ">
+										<div class="form-check mb-2 mr-sm-2">
+											<input class="form-check-input" type="checkbox" id="inlineFormCheck">
+											<label class="form-check-label formColor" for="inlineFormCheck">
+												Check this box if
+												you
+												would
+												like to receive
+												periodic updates and action alerts from HSI.
+												You may unsubscribe at any time.
+											</label>
+										</div>
+										<div class="">
+											<button type="submit" class="btn btn-danger mb-2">Sign Up</button>
+										</div>
+									</form>
+
+
+									<!--<form id="differenceform" class=""
 										  aria-label="Contact Information for sign-up">
+
 										<div class="form-row">
 											<div class="col-12 col-md-6 col-lg-3">
 												<input type="text" class="form-control-lg "
@@ -317,7 +360,8 @@
 											</div>
 										</div>
 
-									</form>
+
+									</form>-->
 								</div>
 							</div>
 
@@ -330,7 +374,7 @@
 	</div>
 
 </div>
-<div class="container-fluid">
+<div class="container-fluid fullWidth">
 	<!--end of difference making-->
 	<!--jumbo footer-->
 	<div class="row">
