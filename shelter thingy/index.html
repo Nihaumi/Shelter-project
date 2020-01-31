@@ -8,6 +8,17 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 	<!-- Bootstrap CSS for styling and layout-->
+	<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+	<link rel="manifest" href="site.webmanifest">
+	<link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="apple-mobile-web-app-title" content="Shelter">
+	<meta name="application-name" content="Shelter">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="msapplication-TileImage" content="/mstile-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
 		  integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 	<link rel="stylesheet" href="resources/css/BaseRules.css">
@@ -26,7 +37,7 @@
 
 			<nav onscroll="chFunction()" id="navbarcolor" class="navbar fixed-top navbar-expand-lg">
 
-				<a class="navbar-brand" href="#">Navbar</a>
+				<a class="navbar-brand underline" href="#">Navbar</a>
 				<button class="navbar-toggler" type="button" data-toggle="collapse"
 						data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
 						aria-expanded="false" aria-label="Toggle navigation">
@@ -36,31 +47,40 @@
 				<div class="collapse navbar-collapse" id="navbarSupportedContent">
 					<ul class="navbar-nav mr-auto">
 						<li class="nav-item active">
-							<a class="nav-link" href="#">Our Work <span class="sr-only">(current)</span></a>
+							<a class="nav-link underline" href="#">Our Work <span class="sr-only">(current)</span></a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#">How You Can Help</a>
+							<a class="nav-link underline" href="#">How You Can Help</a>
 						</li>
 						<li class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+							<a class="nav-link dropdown-toggle underline" href="#" id="navbarDropdown" role="button"
 							   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 								About Us
 							</a>
 							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-								<a class="dropdown-item" href="#">Action</a>
-								<a class="dropdown-item" href="#">Another action</a>
+								<a class="dropdown-item underline underline1" href="#">Action</a>
+								<a class="dropdown-item underline underline1" href="#">Another action</a>
 								<div class="dropdown-divider"></div>
-								<a class="dropdown-item" href="#">Something else here</a>
+								<a class="dropdown-item underline underline1" href="#">Something else here</a>
 							</div>
 						</li>
 
 					</ul>
 					<form class="form-inline float-right">
 						<button id="donate1" class="btn btn-lg btn-danger my-2 my-sm-0" type="submit">Donate</button>
-						<button class="btn searchBtn d-none d-lg-inline"><i class="fa fa-search"></i></button>
-						<input id="searchbar" class="form-control mr-sm-2 d-lg-none d-xl-inline" type="search"
-							   placeholder="Search"
-							   aria-label="Search">
+						<button class="btn searchBtn d-none d-lg-inline" onclick="openSearch()" ><i
+								class="fa fa-search"></i></button>
+
+						<div id="SearchOverlay" class="SearchOverlay">
+							<span class="CloseBtn" onclick="closeSearch()" title="Close Overlay">X</span>
+							<div class="overlay-content">
+								<input id="searchbar" class="form-control mr-sm-2 d-lg-none d-xl-inline" type="search"
+									   placeholder="Search"
+									   aria-label="Search">
+
+							</div>
+
+						</div>
 
 
 					</form>
@@ -71,7 +91,7 @@
 </div>
 
 
-<div class="container-fluid fullWidth">
+<div class="container fillViewPortPlease">
 	<!--Header-->
 	<div class="row">
 		<div class="col-12">
@@ -84,7 +104,7 @@
 					<div class="col-12 col-sm-7 col-md-6 col-lg-3 parent right">
 						<div class=" mx-auto bottom container blackBox">
 							<p id="heading">HAPPY NEW YEAR</p>
-							<a href="#" class="font-weight-bold link display-5">See what you helped us
+							<a href="#" class="font-weight-bold LinkUnderline display-5">See what you helped us
 								accomplish
 								for animals in 2019</a>
 							<p class="font-weight-light">And stay with us for more victories in 2020.<span
@@ -97,9 +117,11 @@
 			</div>
 		</div>
 	</div>
-	<!--fisrt green paragraph-->
+</div>
+<!--fisrt green paragraph-->
+<div class="container-fluid">
 	<div class="row">
-		<div id="green" class="col-12 text-center">
+		<div class="col-12 text-center green">
 			<div class="row">
 				<div class="col-9 mx-auto font-weight-light">
 					<p>
@@ -126,6 +148,16 @@
 	<!--cards-->
 	<div class="row">
 		<div class="greentext col-12 text-center my-3">
+			<h1>Animals in care</h1>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-6">
+			<a href="#">dog</a>
+		</div>
+	</div>
+	<div class="row">
+		<div class="greentext col-12 text-center my-3">
 			<h1>Latest Updates from Europe nd around the world</h1>
 		</div>
 	</div>
@@ -136,14 +168,19 @@
 					<img src="resources/images/food.jpg" class="card-img-top" alt="plant-based-food">
 
 					<div class="card-body">
-						<p class="card-text cardSize">Seven plant-based ways to celebrate the holidays with an
+						<p class="card-text cardSize  LinkMargin">Seven plant-based ways to celebrate the holidays with
+							an
 							international
 							flavor</p>
-						<p class="card-text">
-							<small class="text-muted">December 20, 2019</small>
-						</p>
-						<a href="#" class="greentext cardSize card-text font-weight-bold"> Read More
-							<span class="fa fa-arrow-right"></span></a>
+						<div class="BottomLink">
+							<p class="card-text NoMargin">
+								<small class="text-muted ">December 20, 2019</small>
+							</p>
+							<a href="#"
+							   class="greentext cardSize card-text font-weight-bold LinkUnderline UnderlineGreen"> Read
+								More
+								<span class="fa fa-arrow-right"></span></a>
+						</div>
 					</div>
 				</div>
 
@@ -151,14 +188,19 @@
 				<div class="card rounded-0 text-center">
 					<img src="resources/images/giraffe.jpg" class="card-img-top" alt="plant-based-food">
 					<div class="card-body">
-						<p class="card-text cardSize">Seven plant-based ways to celebrate the holidays with an
+						<p class="card-text cardSize  LinkMargin">Seven plant-based ways to celebrate the holidays with
+							an
 							international
 							flavor</p>
-						<p class="card-text">
-							<small class="text-muted">December 20, 2019</small>
-						</p>
-						<a href="#" class="greentext cardSize card-text font-weight-bold"> Read More <span
-								class="fa fa-arrow-right"></span></a>
+						<div class="BottomLink">
+							<p class="card-text NoMargin">
+								<small class="text-muted">December 20, 2019</small>
+							</p>
+							<a href="#"
+							   class="greentext cardSize card-text font-weight-bold LinkUnderline UnderlineGreen"> Read
+								More <span
+										class="fa fa-arrow-right"></span></a>
+						</div>
 					</div>
 				</div>
 
@@ -166,14 +208,19 @@
 				<div class="card rounded-0 text-center">
 					<img src="resources/images/armadillo.jpg" class="card-img-top" alt="plant-based-food">
 					<div class="card-body">
-						<p class="card-text cardSize">Seven plant-based ways to celebrate the holidays with an
+						<p class="card-text cardSize LinkMargin">Seven plant-based ways to celebrate the holidays with
+							an
 							international
 							flavor</p>
-						<p class="card-text">
-							<small class="text-muted">December 20, 2019</small>
-						</p>
-						<a href="#" class="greentext cardSize card-text font-weight-bold"> Read More <span
-								class="fa fa-arrow-right"></span></a>
+						<div class="BottomLink">
+							<p class="card-text NoMargin">
+								<small class="text-muted">December 20, 2019</small>
+							</p>
+							<a href="#"
+							   class="greentext cardSize card-text font-weight-bold LinkUnderline UnderlineGreen"> Read
+								More <span
+										class="fa fa-arrow-right"></span></a>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -185,15 +232,17 @@
 </div>
 
 <!--defender jumbotron-->
-<div class="row">
-	<div class="col-12">
-		<div id="defender" class="jumbotron jumbotron-fluid">
-			<div class="defender-text text-center">
-				<h1 class="display-4 font-weight-bold">Become an Animal Defender</h1>
-				<p>Help to keep animals everywere save.</p>
-				<button type="button" class="btn font-weight-bold">Donate</button>
-			</div>
+<div class="container fillViewPortPlease">
+	<div class="row">
+		<div class="col-12">
+			<div class="jumbotron jumbotron-fluid defender">
+				<div class="defender-text text-center">
+					<h1 class="display-4 font-weight-bold">Become an Animal Defender</h1>
+					<p>Help to keep animals everywere save.</p>
+					<button type="button" class="btn font-weight-bold">Donate</button>
+				</div>
 
+			</div>
 		</div>
 	</div>
 </div>
@@ -214,12 +263,16 @@
 				<div class="card">
 					<img src="resources/images/food2.jpg" class="card-img-top" alt="plant-based food">
 					<div class="card-body">
+
 						<h3 class="card-title">Plant-based Eating</h3>
 						<p class="card-text cardSize">Current egg, meat and dairy production and consumption
 							practices are unsustainable and cause tremendous suffering.
 							Choosing more plant-based options helps animals and the environment,
 							and supports your health.</p>
-						<span class="fa fa-arrow-right float-right"></span>
+						<div class="BottomLink2">
+							<span class="fa fa-arrow-right float-right"></span>
+						</div>
+
 					</div>
 				</div>
 
@@ -231,7 +284,9 @@
 						<p class="card-text cardSize">The international wildlife trade jeopardizes the survival
 							and welfare of billions of animals every year,
 							including threatened and endangered species. </p>
-						<span class="fa fa-arrow-right float-right"></span>
+						<div class="BottomLink2">
+							<span class="fa fa-arrow-right float-right"></span>
+						</div>
 					</div>
 				</div>
 
@@ -243,7 +298,9 @@
 							meat.
 							In South Korea, dogs are farmed in appalling conditions.
 							HSI works in China, South Korea, Indonesia and Viet Nam to end the cruelty.</p>
-						<span class="fa fa-arrow-right float-right"></span>
+						<div class="BottomLink2">
+							<span class="fa fa-arrow-right float-right"></span>
+						</div>
 					</div>
 				</div>
 
@@ -256,7 +313,7 @@
 
 
 <!--Make a diffenrence-->
-<div class="container-fluid fullWidth">
+<div class="container fillViewPortPlease">
 
 	<div class="col">
 		<div class="hero-image jumbotron jumbotron-fluid">
@@ -266,7 +323,7 @@
 			<div class="outer">
 				<div class="middle">
 					<div class="inner">
-						<div class="container-fluid">
+						<div class="container">
 							<div class="row ">
 								<div class=" col-10 text-center hero-text mx-auto">
 									<h2 class="display-4 font-weight-bold">Make a Difference</h2>
@@ -374,20 +431,6 @@
 	</div>
 
 </div>
-<div class="container-fluid fullWidth">
-	<!--end of difference making-->
-	<!--jumbo footer-->
-	<div class="row">
-		<div class="col-12">
-			<div class="jumbotron jumbotron-fluid">
-				<footer>
-
-				</footer>
-			</div>
-		</div>
-	</div>
-
-</div>
 
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -400,10 +443,12 @@
 		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
 		crossorigin="anonymous"></script>
 <script>
-    let itsnow = document.getElementById("navbarcolor");
+    function openSearch() {
+        document.getElementById("SearchOverlay").style.display = "block";
+    }
 
-    function chFunction() {
-        itsnow.style.backgroundColor = "rgba(0,0,0, .8)";
+    function closeSearch() {
+        document.getElementById("SearchOverlay").style.display = "none";
     }
 </script>
 </body>

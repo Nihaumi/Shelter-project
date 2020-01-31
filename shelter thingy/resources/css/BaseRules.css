@@ -1,8 +1,8 @@
 
-.fullWidth {
+/*.fullWidth {
 	margin: 0;
 	padding: 0;
-}
+}*/
 /*
 .row {
 	margin-left: -15px;
@@ -23,4 +23,10 @@ input {
 
 label {
 	font-size: 1rem;
+}
+
+.fillViewPortPlease{
+	max-width: 100%;
+	padding-left: 0;
+
 }
