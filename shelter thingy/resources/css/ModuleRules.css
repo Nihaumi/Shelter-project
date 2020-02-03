@@ -116,6 +116,10 @@
 	background-size: 100% 2px;
 }
 
+.breadcrumb-item:hover{
+	color: #000000;
+}
+
 .UnderlineGreen {
 	color: #024731
 }
