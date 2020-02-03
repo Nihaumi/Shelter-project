@@ -116,7 +116,7 @@
 	background-size: 100% 2px;
 }
 
-.breadcrumb-item:hover{
+.breadcrumb-item:hover, .breadcrumb-item:focus{
 	color: #000000;
 }
 
