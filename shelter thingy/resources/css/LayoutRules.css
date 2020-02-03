@@ -8,6 +8,10 @@
 	color: white;
 }
 
+.NavSpacing{
+	margin: 0 40px;
+
+}
 
 .dropdown-menu {
 	background-color: rgba(0, 0, 0, .5);
@@ -16,6 +20,10 @@
 
 .navbar-brand {
 	margin-left: 10%;
+	color: white;
+}
+
+.navbar-brand:hover{
 	color: white;
 }
 

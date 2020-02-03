@@ -30,60 +30,59 @@
 </head>
 
 <body>
-<div class="container-fluid fullWidth">
+<div class="container-fluid">
 	<!--navbar-->
 	<div class="row">
 		<div class="col-12 long">
 
-			<nav onscroll="chFunction()" id="navbarcolor" class="navbar fixed-top navbar-expand-lg">
+			<nav class="navbar fixed-top">
+				<!--navbar-barnd and tofggle button-->
+				<a class="navbar-brand " href="#">
+					<img src="resources/images/Brand-min.jpg" width="30" height="30"
+						 class="d-inline-block align-top rounded-circle" alt="">
+					<span class="underline">Shelter</span>
+				</a>
 
-				<a class="navbar-brand underline" href="#">Navbar</a>
-				<button class="navbar-toggler" type="button" data-toggle="collapse"
-						data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-						aria-expanded="false" aria-label="Toggle navigation">
-					<i class="fa fa-ellipsis-h"></i>
-				</button>
+				<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;openmenu</span>
 
-				<div class="collapse navbar-collapse" id="navbarSupportedContent">
-					<ul class="navbar-nav mr-auto">
+
+				<!--FIRST LAYER NAVBAR content-->
+
+				<div class="collapse navbar-collapse" id="navbarSupportedContent1">
+
+					<ul id="menu" class="navbar-nav mr-auto SideNav">
+						<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+						<h3 class="text-white NavSpacing">Menu</h3>
+						<span class="border-bottom"></span>
 						<li class="nav-item active">
-							<a class="nav-link underline" href="#">Our Work <span class="sr-only">(current)</span></a>
+							<a class="nav-link underline" href="#">Home</a>
+							<span class="sr-only">(Current)</span>
 						</li>
-						<li class="nav-item">
+						<span class="border-bottom NavSpacing"></span>
+						<li class="nav-item active">
+							<a class="nav-link underline" href="#">Our Work</a>
+							<a class="text-white">
+								<span class="white-text"><i class="fa fa-chevron-right fa-1x"></i></span>
+							</a>
+
+							<!--second layer-->
+							<ul>
+								<li><a href="/Our Work/Animals inLaboratories">Animals in Laboratories</a></li>
+								<li><a href="/Our Work/Animals inLaboratories">Animals in Wildlife</a></li>
+								<li><a href="/Our Work/Animals inLaboratories">Farm Animals</a></li>
+							</ul>
+						</li>
+						<span class="border-bottom NavSpacing"></span>
+						<li class="nav-item active">
 							<a class="nav-link underline" href="#">How You Can Help</a>
 						</li>
-						<li class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle underline" href="#" id="navbarDropdown" role="button"
-							   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-								About Us
-							</a>
-							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-								<a class="dropdown-item underline underline1" href="#">Action</a>
-								<a class="dropdown-item underline underline1" href="#">Another action</a>
-								<div class="dropdown-divider"></div>
-								<a class="dropdown-item underline underline1" href="#">Something else here</a>
-							</div>
+						<span class="border-bottom NavSpacing"></span>
+						<li class="nav-item active">
+							<a class="nav-link underline" href="#">About Us</a>
 						</li>
+						<span class="border-bottom NavSpacing"></span>
 
 					</ul>
-					<form class="form-inline float-right">
-						<button id="donate1" class="btn btn-lg btn-danger my-2 my-sm-0" type="submit">Donate</button>
-						<button class="btn searchBtn d-none d-lg-inline" onclick="openSearch()" ><i
-								class="fa fa-search"></i></button>
-
-						<div id="SearchOverlay" class="SearchOverlay">
-							<span class="CloseBtn" onclick="closeSearch()" title="Close Overlay">X</span>
-							<div class="overlay-content">
-								<input id="searchbar" class="form-control mr-sm-2 d-lg-none d-xl-inline" type="search"
-									   placeholder="Search"
-									   aria-label="Search">
-
-							</div>
-
-						</div>
-
-
-					</form>
 				</div>
 			</nav>
 		</div>
@@ -432,7 +431,7 @@
 
 </div>
 
-
+<script src="resources/JS/SideMenu.js"></script>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
 		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
 		crossorigin="anonymous"></script>
