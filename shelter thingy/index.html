@@ -2,16 +2,32 @@
 <html>
 
 <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Required meta tags -->
+	<title>Shelter</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS for styling and layout-->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" href="resources/css/md.css">
-    <link href="https://fonts.googleapis.com/css?family=Kulim+Park:300,400,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- Bootstrap CSS for styling and layout-->
+	<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+	<link rel="manifest" href="site.webmanifest">
+	<link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="apple-mobile-web-app-title" content="Shelter">
+	<meta name="application-name" content="Shelter">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="msapplication-TileImage" content="/mstile-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+		  integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link rel="stylesheet" href="resources/css/BaseRules.css">
+	<link rel="stylesheet" href="resources/css/ModuleRules.css">
+	<link rel="stylesheet" href="resources/css/LayoutRules.css">
+	<link rel="stylesheet" href="resources/css/Navbar.css">
+
+	<link href="https://fonts.googleapis.com/css?family=Kulim+Park:300,400,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -28,47 +44,102 @@
 					<span class="underline">Shelter</span>
 				</a>
 
-				<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;openmenu</span>
+				<span class="text-white MenuBtn" style="font-size:30px;cursor:pointer"
+					  onclick="openNav()">&#9776;</span>
+				<!--Third Layer-->
+				<!--Third Layer Farm Animals-->
+				<!--SECOND LAYER-->
+				<div class="FarmAnimalsThirdLayer MobileNav Layers">
+					<ul class="navbar-nav mr-auto">
+						<a href="javascript:void(0)" class="closebtn"
+						   onclick="hideAll()">&times;</a>
+						<li class="nav-item">
+							<a>
+							<span class="text-white NextNavSlide" onclick="closeFarmAnimalsThirdLayer()">
+								<i class="fa fa-chevron-left"></i>
+							</span>
+							</a>
+							<a class="underline text-white mt-5 mb-1 back" onclick="closeFarmAnimalsThirdLayer()">go
+								back</a>
+						</li>
+						<span class="border-bottom"></span>
+						<li class="nav-item"><a class="underline nav-link" href="#">Factory Farming</a></li>
+						<span class="border-bottom NavSpacing"></span>
+						<li class="nav-item"><a class="underline nav-link" href="#">Plant-based Eating</a>
+						</li>
+						<span class="border-bottom NavSpacing"></span>
 
+					</ul>
+				</div>
+				<!--Our Work second layer-->
+				<div class="OurWorkSecondLayer MobileNav Layers">
+					<ul class="navbar-nav mr-auto">
+						<a href="javascript:void(0)" class="closebtn" onclick="hideAll()">&times;</a>
+						<li class="nav-item">
+							<a>
+							<span class="text-white NextNavSlide" onclick="closeOurWorkSecondLayer()">
+								<i class="fa fa-chevron-left"></i>
+							</span>
+							</a>
+							<a class="underline text-white mt-5 mb-1 back" href="#" onclick="closeOurWorkSecondLayer()">go
+								back</a>
+						</li>
+						<span class="border-bottom"></span>
+						<li class="nav-item"><a class="underline nav-link" href="#">Animals
+							in
+							Laboratories</a></li>
+						<span class="border-bottom NavSpacing"></span>
+						<li class="nav-item"><a class="underline nav-link" href="#">Animals
+							in
+							Wildlife</a>
 
+						</li>
+						<span class="border-bottom NavSpacing"></span>
+						<li class="nav-item"><a class="underline nav-link" href="#"
+												onclick="openFarmAnimalsThirdLayer()">Farm
+							Animals</a>
+							<a class="text-white">
+								<span class="NextNavSlide" onclick="openFarmAnimalsThirdLayer()"><i
+										class="fa fa-chevron-right fa-1x"></i></span>
+							</a>
+						</li>
+						<span class="border-bottom NavSpacing"></span>
+					</ul>
+				</div>
 				<!--FIRST LAYER NAVBAR content-->
 
-				<div class="collapse navbar-collapse" id="navbarSupportedContent1">
+				<div class="MobileNav" id="navbarSupportedContent1">
 
-					<ul id="menu" class="navbar-nav mr-auto SideNav">
+					<ul class="navbar-nav mr-auto">
 						<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-						<h3 class="text-white NavSpacing">Menu</h3>
+						<h3 class="text-white NavSpacing mt-5">Menu</h3>
 						<span class="border-bottom"></span>
 						<li class="nav-item active">
 							<a class="nav-link underline" href="#">Home</a>
 							<span class="sr-only">(Current)</span>
 						</li>
 						<span class="border-bottom NavSpacing"></span>
-						<li class="nav-item active">
-							<a class="nav-link underline" href="#">Our Work</a>
+						<li class="nav-item">
+							<a class="nav-link underline" onclick="openOurWorkSecondLayer()" href="#">Our Work</a>
 							<a class="text-white">
-								<span class="white-text"><i class="fa fa-chevron-right fa-1x"></i></span>
+								<span class="NextNavSlide" onclick="openOurWorkSecondLayer()"><i
+										class="fa fa-chevron-right fa-1x"></i></span>
 							</a>
-
-							<!--second layer-->
-							<ul>
-								<li><a href="/Our Work/Animals inLaboratories">Animals in Laboratories</a></li>
-								<li><a href="/Our Work/Animals inLaboratories">Animals in Wildlife</a></li>
-								<li><a href="/Our Work/Animals inLaboratories">Farm Animals</a></li>
-							</ul>
 						</li>
 						<span class="border-bottom NavSpacing"></span>
-						<li class="nav-item active">
+						<li class="nav-item">
 							<a class="nav-link underline" href="#">How You Can Help</a>
 						</li>
 						<span class="border-bottom NavSpacing"></span>
-						<li class="nav-item active">
+						<li class="nav-item">
 							<a class="nav-link underline" href="#">About Us</a>
 						</li>
 						<span class="border-bottom NavSpacing"></span>
 
 					</ul>
 				</div>
+
+
 			</nav>
 		</div>
 	</div>
@@ -416,7 +487,54 @@
 
 </div>
 
-<script src="resources/JS/SideMenu.js"></script>
+<!--Accordeon-->
+<div class="container">
+	<div class="row">
+		<div class="col-12">
+			<h2 class="display-4">Animals in Our Care</h2>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col">
+			<div class="accordion" id="example">
+
+				<div id="headingOne">
+					<h5>
+						<button class="btn btn-link" type="button" data-toggle="collapse"
+								data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">Dogs
+						</button>
+
+					</h5>
+				</div>
+
+				<div class="collapse" id="collapseOne" aria-labelledby="headingOne" data-parent="#accordion">
+					<div class="card-deck">
+						<div class="card border-0">
+							<img class="DogsInCare" src="resources/images/doggo.jpg" alt="Picture of a Dog">
+							<div class="card-body text-center">
+								<h3 class="card-title border-bottom">
+									Verona <span><i class="fa fa-chevron-down"></i></span>
+								</h3>
+							</div>
+						</div>
+						<div class="card border-0">
+							<img class="DogsInCare" src="resources/images/doggo.jpg" alt="Picture of a Dog">
+							<div class="card-body text-center">
+								<h3 class="card-title border-bottom">
+									Yuki <span><i class="fa fa-chevron-down"></i></span>
+								</h3>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
 		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
 		crossorigin="anonymous"></script>
@@ -426,6 +544,14 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
 		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
 		crossorigin="anonymous"></script>
+<script type="text/javascript"
+		src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js">
+</script>
+
+<script type="text/javascript"
+		src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js">
+</script>
+<script src="resources/JS/SideMenu.js"></script>
 <script>
     function openSearch() {
         document.getElementById("SearchOverlay").style.display = "block";
@@ -435,6 +561,7 @@
         document.getElementById("SearchOverlay").style.display = "none";
     }
 </script>
+
 </body>
 
 </html>
