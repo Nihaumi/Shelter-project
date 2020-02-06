@@ -1,0 +1,73 @@
+/*navbar*/
+.navbar {
+	background-color: rgba(0, 0, 0, .5);
+
+}
+
+.navbar-toggler {
+	color: white;
+}
+
+.NavSpacing {
+	margin: 0 40px;
+
+}
+
+.navbar-brand {
+	margin-left: 10%;
+	color: white;
+}
+
+.navbar-brand:hover {
+	color: white;
+}
+
+.navbar-brand:active {
+	color: white;
+}
+
+.navbar li {
+	margin: 0 20px;
+	padding: 0 20px;
+
+}
+
+/*mobile navbar*/
+.MobileNav li a{
+	font-size: 1rem;
+}
+
+.MobileNav li .back{
+	font-size: 1.3rem;
+}
+/*close menu button*/
+.closebtn {
+	color: #fff;
+	position: absolute;
+	top: 0;
+	right: 25px;
+	font-size: 36px;
+	margin-left: 50px;
+}
+
+.closebtn:hover {
+	text-decoration: none;
+	color: #84bd00;
+}
+
+.NextNavSlide:hover {
+	color: #84bd00;
+}
+
+#navbarSupportedContent1 {
+	display: none;
+}
+
+.MobileNav {
+
+	width: 100%;
+}
+
+.Layers {
+	display: none;
+}
