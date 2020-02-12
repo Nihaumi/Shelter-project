@@ -1,4 +1,3 @@
-
 /*.fullWidth {
 	margin: 0;
 	padding: 0;
@@ -25,12 +24,25 @@ label {
 	font-size: 1rem;
 }
 
-.fillViewPortPlease{
+.fillViewPortPlease {
 	max-width: 100%;
 	padding-left: 0;
+}
+
+.fa-chevron-down {
+	padding: 0 10px;
+}
+
+.AccordionHeader {
+	background-color: transparent;
+}
+
+.AccordionHeader:hover {
+	color: #000000;
 
 }
 
-.breadcrumb{
+.breadcrumb {
 	background-color: transparent;
+
 }
