@@ -1,5 +1,4 @@
 
-
 #searchbar, #donate1 {
 	display: inline-block;
 	font-size: 1.5em;
@@ -87,15 +86,30 @@
 
 .hero {
 	background-color: black;
-	background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)),
-	linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0)),
-	url('../images/fox.jpg');
 	background-size: cover;
 	height: 500px;
 	width: 100%;
 	background-position: center;
 	position: relative;
 	margin-bottom: 0;
+}
+
+.hero1 {
+	background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)),
+	linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0)),
+	url('../images/fox.jpg');
+}
+
+.hero2 {
+	background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)),
+	linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0)),
+	url('../images/dogHelp.jpg');
+}
+
+.hero3 {
+	background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)),
+	linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0)),
+	url('../images/armadillo.jpg');
 }
 
 .hero-content {
@@ -114,7 +128,7 @@
 
 .bottom {
 	position: absolute;
-	bottom: 63px;
+	bottom: 64px;
 }
 
 .right {
@@ -324,4 +338,13 @@ input:focus {
 
 }
 
+.list-group:after {
+	clear: both;
+	display: block;
+	content: "";
+}
+
+.list-group-item {
+	float: left;
+}
 

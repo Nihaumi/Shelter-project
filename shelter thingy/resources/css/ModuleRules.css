@@ -61,69 +61,6 @@
 	bottom: 2%;
 }
 
-.underline {
-	color: white;
-	text-decoration: none;
-	font-size: 1.3rem;
-	position: relative;
-	display: inline-block;
-}
-
-.underline:hover {
-	color: white;
-	text-decoration: none;
-}
-
-.underline:after {
-	content: '';
-	width: 0px;
-	height: 1px;
-	display: block;
-	background: #84bd00;
-	transition: 500ms;
-}
-
-.underline:hover:after {
-	width: 100%;
-
-}
-
-.underline1 {
-	color: white;
-
-}
-
-.underline1:after {
-	height: 2px;
-}
-
-.underline1:hover {
-	background-color: transparent;
-}
-
-.LinkUnderline {
-	color: white;
-	text-decoration: none;
-	background-image: linear-gradient(currentColor, currentColor);
-	background-position: 0% 100%;
-	background-repeat: no-repeat;
-	background-size: 0% 2px;
-	transition: background-size 500ms;
-}
-
-.LinkUnderline:hover, .LinkUnderline:focus {
-	text-decoration: none;
-	color: white;
-	background-size: 100% 2px;
-}
-
-.breadcrumb-item:hover, .breadcrumb-item:focus{
-	color: #000000;
-}
-
-.UnderlineGreen {
-	color: #024731
-}
 
 
 .DogsInCare{
