@@ -10,19 +10,8 @@
 	border: 1px solid lightgray;
 	margin: 10px;
 	padding: 26px;
-
 }
 
-.searchBtn {
-	background: transparent;
-	color: white;
-	font-size: 1.7em;
-	cursor: pointer;
-}
-
-.searchBtn:hover {
-	color: red;
-}
 
 .SearchOverlay {
 	height: 20%;
@@ -199,17 +188,6 @@
 	margin-bottom: 60px;
 }
 
-.defender-text button {
-	padding: 10px 25px;
-	background-color: #d5291c;
-	color: white;
-	font-size: 1.2rem;
-}
-
-.defender-text button:hover {
-	background-color: #a92016;
-	border: 1px solid #555559;
-}
 
 /*hero image make a difference*/
 .hero-image {
