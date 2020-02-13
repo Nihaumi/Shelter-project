@@ -20,7 +20,8 @@ function slideNavAway() {
 function openNav() {
 
     slideNavIn();
-    jQuery(".navbar").animate({backgroundColor: 'rgba(0, 0, 0, .8)'}, slideTime);
+    jQuery(".navbar").animate({backgroundColor: 'rgba(0, 0, 0, .8)'}, 1);
+    jQuery("#navbarSupportedContent1").animate({backgroundColor: 'rgba(0, 0, 0, .8)'}, slideTime);
     jQuery(".navbar__menu-btn").hide();
     console.log('Hello');
 }
@@ -40,6 +41,7 @@ function closeNav() {
 /*second Layer Our Work*/
 function openOurWorkSecondLayer() {
     jQuery("#navbarSupportedContent1").hide();
+    jQuery(".OurWorkSecondLayer").animate({backgroundColor: 'rgba(0, 0, 0, .8)'}, slideTime);
     jQuery(".OurWorkSecondLayer").show("slide", {direction: "right"}, slideTime);
 
 }
@@ -52,6 +54,7 @@ function closeOurWorkSecondLayer() {
 /*THIRD LAYER Farm Animals*/
 function openFarmAnimalsThirdLayer() {
     jQuery(".OurWorkSecondLayer").hide();
+    jQuery(".FarmAnimalsThirdLayer").animate({backgroundColor: 'rgba(0, 0, 0, .8)'}, slideTime);
     jQuery(".FarmAnimalsThirdLayer").show("slide", {direction: "right"}, slideTime);
 
 }

@@ -1,0 +1,78 @@
+@media (min-width: 992px) {
+	.navbar__menu-btn {
+		display: none;
+	}
+
+
+	.navbar__desktop-navbar {
+		display: inline-block;
+		color: #ffffff;
+		font-size: 1.4rem;
+		padding: 20px;
+		position: absolute;
+		right: 0;
+
+	}
+
+	.navbar__desktop-navbar li {
+		padding: 0;
+
+	}
+
+	.navbar__first-layer {
+		background-color: transparent;
+	}
+
+	.navbar__mega-menu {
+		top: 78px;
+		height: 300px;
+
+	}
+
+
+}
+
+
+@media (min-width: 1200px) {
+
+	.navbar__desktop-navbar {
+		font-size: 1.4rem;
+	}
+
+	.navbar-brand {
+		font-size: 1.4rem;
+		line-height: 2.8;
+	}
+
+	.navbar__brand-image {
+		width: 50px;
+		height: 50px;
+	}
+
+	.navbar__brand-name {
+		position: absolute;
+		top: -4%;
+		padding-left: 5%;
+	}
+
+
+}
+
+.list-unstyled a {
+	list-style: none;
+	color: #ffffff;
+	font-size: 1.4rem;
+}
+
+.mega-menu {
+	display: none;
+	background-color: rgba(0, 0, 0, .5);
+	left: -350%;
+
+
+}
+
+.mega-menu .sub-title {
+	font-size: 1.5rem;
+	color: #ffffff;
+}

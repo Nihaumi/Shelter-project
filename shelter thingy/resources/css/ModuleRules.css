@@ -11,7 +11,7 @@
 	margin: 30px auto;
 }
 
-.card-text__size {
+.cardSize {
 	font-size: 1.3em;
 }
 
@@ -39,22 +39,22 @@
 }
 
 
-.card__link--position {
+.BottomLink {
 	position: absolute;
 	bottom: 5%;
 	left: 0;
 	width: 100%;
 }
 
-.card__paragraph--margin {
+.LinkMargin {
 	padding-bottom: 50px;
 }
 
-.card__text--margin {
+.NoMargin {
 	margin-bottom: 0;
 }
 
-.card__link--position2 {
+.BottomLink2 {
 	position: absolute;
 	left: 0;
 	width: 90%;
