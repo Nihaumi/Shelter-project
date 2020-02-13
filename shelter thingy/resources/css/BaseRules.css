@@ -24,6 +24,10 @@ label {
 	font-size: 1rem;
 }
 
+.DesktopNav{
+	display: none;
+}
+
 .fillViewPortPlease {
 	max-width: 100%;
 	padding-left: 0;
