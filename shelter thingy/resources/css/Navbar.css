@@ -33,13 +33,14 @@
 }
 
 /*mobile navbar*/
-.MobileNav li a{
+.MobileNav li a {
 	font-size: 1rem;
 }
 
-.MobileNav li .back{
+.MobileNav li .back {
 	font-size: 1.3rem;
 }
+
 /*close menu button*/
 .closebtn {
 	color: #fff;
