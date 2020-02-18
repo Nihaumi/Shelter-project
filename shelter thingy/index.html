@@ -38,13 +38,13 @@
 	<div class="row">
 		<div class="col-12 long">
 
-			<nav class="navbar fixed-top">
+			<nav class="navbar fixed-top NavHeight">
 				<!--navbar-brand and toggle button-->
 				<div class="col-2">
-					<a class="navbar-brand " href="#">
+					<a class="navbar-brand" href="#">
 						<img src="resources/images/Brand-min.jpg" width="30" height="30"
 							 class="BrandLogo d-inline-block align-top rounded-circle" alt="">
-						<span class="underline">Shelter</span>
+						<span class="underline NavBrandName">Shelter</span>
 					</a>
 				</div>
 
@@ -67,74 +67,13 @@
 								</li>
 								<!--Mega Menu-->
 								<li class="nav-item dropdown mega-dropdown">
-									<a class="nav-link dropdown-toggle underline" id="navbarDropdownMenuLinkHelp"
-									   data-toggle="dropdown"
+									<a class="nav-link  underline" id="navbarDropdownMenuLinkHelp"
+									   onclick="colorChange()"
+
+
 									   aria-haspopup="true" aria-expanded="false" href="#">Our Work <i
 											class="fa fa-chevron-down"></i></a>
-									<div class="dropdown-menu mega-menu v-2 z-depth-1 special-color py-5 px-3"
-										 aria-labelledby="navbarDropdownMenuLink3">
-										<div class="row">
-											<div class="col-md-6 col-xl-4 sub-menu mb-xl-0 mb-4">
-												<h6 class="sub-title text-uppercase font-weight-bold white-text">
-													Featured</h6>
-												<ul class="list-unstyled">
-													<li>
-														<a class="menu-item pl-0" href="#!">
-															<i class="fa fa-caret-right pl-1 pr-3"></i>Quis nostrud
-															exercitation
-														</a>
-													</li>
 
-													<li>
-														<a class="menu-item pl-0" href="#!">
-															<i class="fa fa-caret-right pl-1 pr-3"></i>Esse cillum
-															dolore eu fugiat nulla pariatur
-														</a>
-													</li>
-												</ul>
-
-
-											</div>
-											<div class="col-md-6 col-xl-4 sub-menu mb-md-0 mb-4">
-												<h6 class="sub-title text-uppercase font-weight-bold white-text">
-													Related</h6>
-												<ul class="list-unstyled">
-													<li>
-														<a class="menu-item pl-0" href="#!">
-															<i class="fa fa-caret-right pl-1 pr-3"></i>Quis nostrud
-															exercitation
-														</a>
-													</li>
-
-													<li>
-														<a class="menu-item pl-0" href="#!">
-															<i class="fa fa-caret-right pl-1 pr-3"></i>Esse cillum
-															dolore eu fugiat nulla pariatur
-														</a>
-													</li>
-												</ul>
-											</div>
-											<div class="col-md-6 col-xl-4 sub-menu mb-0">
-												<h6 class="sub-title text-uppercase font-weight-bold white-text">
-													Design</h6>
-												<ul class="list-unstyled">
-
-													<a class="menu-item pl-0" href="#!">
-														<i class="fa fa-caret-right pl-1 pr-3"></i>Mollit anim id
-														est laborum
-													</a>
-													</li>
-													<li>
-														<a class="menu-item pl-0" href="#!">
-															<i class="fa fa-caret-right pl-1 pr-3"></i>Accusantium
-															doloremque laudantium
-														</a>
-													</li>
-												</ul>
-												</a>
-											</div>
-										</div>
-									</div>
 								</li>
 
 								<li class="nav-item">
@@ -252,6 +191,77 @@
 	</div>
 </div>
 
+<!--MEGAMENU-->
+<div class="fixed-top MegaMenuCont container">
+	<div class="row">
+		<div class="col-12">
+			<div class="mega-menu v-2 z-depth-1  py-5 px-3"
+				 aria-labelledby="navbarDropdownMenuLink3">
+				<div class="row">
+					<div class="col-md-6 col-xl-4 sub-menu mb-xl-0 mb-4">
+						<h6 class="sub-title text-uppercase font-weight-bold white-text">
+							Featured</h6>
+						<ul class="list-unstyled">
+							<li>
+								<a class="menu-item pl-0" href="#!">
+									<i class="fa fa-caret-right pl-1 pr-3"></i><span class="underline">Quis nostrud
+									exercitation</span>
+								</a>
+							</li>
+
+							<li>
+								<a class="menu-item pl-0" href="#!">
+									<i class="fa fa-caret-right pl-1 pr-3"></i><span class="underline">Esse cillum
+									dolore eu fugiat nulla pariatur</span>
+								</a>
+							</li>
+						</ul>
+
+
+					</div>
+					<div class="col-md-6 col-xl-4 sub-menu mb-md-0 mb-4">
+						<h6 class="sub-title text-uppercase font-weight-bold white-text">
+							Related</h6>
+						<ul class="list-unstyled">
+							<li>
+								<a class="menu-item pl-0" href="#!">
+									<i class="fa fa-caret-right pl-1 pr-3"></i><span class="underline">Quis nostrud
+									exercitation</span>
+								</a>
+							</li>
+
+							<li>
+								<a class="menu-item pl-0" href="#!">
+									<i class="fa fa-caret-right pl-1 pr-3"></i><span class="underline">Esse cillum
+									dolore eu fugiat nulla pariatur</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-md-6 col-xl-4 sub-menu mb-0">
+						<h6 class="sub-title text-uppercase font-weight-bold white-text">
+							Design</h6>
+						<ul class="list-unstyled">
+
+							<a class="menu-item pl-0" href="#!">
+								<i class="fa fa-caret-right pl-1 pr-3"></i><span class="underline">Mollit anim id
+								est laborum</span>
+							</a>
+							</li>
+							<li>
+								<a class="menu-item pl-0" href="#!">
+									<i class="fa fa-caret-right pl-1 pr-3"></i><span class="underline">Accusantium
+									doloremque laudantium</span>
+								</a>
+							</li>
+						</ul>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
 
 <div class="container fillViewPortPlease">
 	<!--Header-->

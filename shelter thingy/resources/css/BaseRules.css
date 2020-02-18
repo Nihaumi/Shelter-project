@@ -24,8 +24,12 @@ label {
 	font-size: 1rem;
 }
 
-.DesktopNav{
+.DesktopNav {
 	display: none;
+}
+
+.NavHeight {
+	height: 8%;
 }
 
 .fillViewPortPlease {
