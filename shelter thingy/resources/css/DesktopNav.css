@@ -8,15 +8,24 @@
 		color: #ffffff;
 		font-size: 1.4rem;
 		padding: 20px;
+		position: absolute;
+		right: 0;
 
 	}
 
 	.DesktopNav li {
 		padding: 0;
+
 	}
 
 	.DeskNavBar {
 		background-color: transparent;
+	}
+
+	.MegaMenuCont {
+		top: 78px;
+		height: 300px;
+
 	}
 
 
@@ -38,6 +47,12 @@
 		height: 50px;
 	}
 
+	.NavBrandName {
+		position: absolute;
+		top: -4%;
+		padding-left: 5%;
+	}
+
 }
 
 .list-unstyled a {
@@ -47,8 +62,10 @@
 }
 
 .mega-menu {
-	background-color: rgba(0, 0, 0, .8);
+	display: none;
+	background-color: rgba(0, 0, 0, .5);
 	left: -350%;
+
 
 }
 
