@@ -1,4 +1,4 @@
-var slideTime = 1000
+var slideTime = 1000;
 
 function hideAll() {
     jQuery(".Layers").hide("slide", {direction: "left"}, slideTime);

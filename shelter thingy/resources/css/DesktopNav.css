@@ -16,7 +16,6 @@
 
 	.navbar__desktop-navbar li {
 		padding: 0;
-
 	}
 
 	.navbar__first-layer {
@@ -68,7 +67,6 @@
 	display: none;
 	background-color: rgba(0, 0, 0, .5);
 	left: -350%;
-
 
 }
 
