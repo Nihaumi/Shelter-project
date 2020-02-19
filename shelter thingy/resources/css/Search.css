@@ -1,0 +1,36 @@
+.SearchBar {
+	display: none;
+	height: 100%;
+	width: 100%;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background-color: rgb(0, 0, 0);
+	background-color: rgba(0, 0, 0, 0.9);
+
+}
+
+.SearchBtn {
+	float: left;
+}
+
+.SearchBar input[type=text] {
+	padding: 15px;
+	font-size: 17px;
+	float: left;
+	width: 80%;
+	background: white;
+	height: 50px;
+	margin: 0;
+}
+
+.SearchBar input[type=text]:hover {
+	background: #f1f1f1;
+}
+
+.SearchBar button {
+	float: left;
+	border-radius: 5%;
+	border:none;
+}

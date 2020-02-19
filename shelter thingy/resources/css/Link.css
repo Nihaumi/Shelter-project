@@ -1,0 +1,78 @@
+.MobileNav ul li a {
+	color: #f3f3f3;
+	font-size: 1.3rem;
+}
+
+.MobileNav ul li a:hover {
+	color: #ffffff;
+}
+
+.underline {
+	color: currentColor;
+	text-decoration: none;
+	position: relative;
+	display: inline-block;
+}
+
+.underline:hover {
+	color: currentColor;
+	text-decoration: none;
+}
+
+.underline:after {
+	content: '';
+	width: 0px;
+	height: 2px;
+	display: block;
+	background: #84bd00;
+	transition: 500ms;
+}
+
+
+.underline:hover:after {
+	width: 100%;
+
+}
+
+.underline1 {
+	color: white;
+
+}
+
+.underline1:after {
+	height: 2px;
+}
+
+.underline1:hover {
+	background-color: transparent;
+}
+
+.LinkUnderline {
+
+	text-decoration: none;
+	background-image: linear-gradient(currentColor, currentColor);
+	background-position: 0% 100%;
+	background-repeat: no-repeat;
+	background-size: 0% 2px;
+	transition: background-size 300ms;
+}
+
+.LinkUnderline:hover, .LinkUnderline:focus {
+	text-decoration: none;
+	color: currentColor;
+	background-size: 100% 2px;
+}
+
+.UnderlineBrightGreen:hover{
+	color: #84bd00;
+}
+
+
+.breadcrumb-item:hover, .breadcrumb-item:focus {
+	color: #000000;
+}
+
+.UnderlineGreen {
+	color: #024731
+}
+

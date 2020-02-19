@@ -1,0 +1,93 @@
+/*navbar*/
+
+
+.NavColor {
+	background-color: rgba(0, 0, 0, .5);
+
+}
+
+.navbar-toggler {
+	color: white;
+}
+
+.NavSpacing {
+	margin: 0 40px;
+
+}
+
+.navbar-brand {
+	margin-left: 30px;
+	color: white;
+}
+
+.navbar-brand:hover {
+	color: white;
+}
+
+.navbar-brand:active {
+	color: white;
+}
+
+.navbar li {
+	margin: 0 20px;
+	padding: 0 20px;
+
+}
+
+
+/*mobile navbar*/
+.MobileNav li a {
+	font-size: 1rem;
+}
+
+.MobileNav li .back {
+	font-size: 1.3rem;
+}
+
+.MenuBtn {
+	position: absolute;
+	top: 12px;
+}
+
+/*close menu button*/
+.closebtn {
+	color: #fff;
+	position: absolute;
+	top: -5px;
+	right: 20px;
+	font-size: 36px;
+	margin-left: 50px;
+}
+
+.closebtn:hover {
+	text-decoration: none;
+	color: #84bd00;
+}
+
+.SearchIcon {
+	color: #ffffff;
+}
+
+.NextNavSlide:hover {
+	color: #84bd00;
+}
+
+#navbarSupportedContent1 {
+	display: none;
+}
+
+.MobileNav {
+	position: absolute;
+	top: 70px;
+	left: 0;
+	width: 100%;
+	height: 400px;
+}
+
+.Layers {
+	display: none;
+}
+
+.border-bottom {
+	display: block;
+}
