@@ -74,7 +74,7 @@
 }
 
 
-/*BUTTONA*/
+/*BUTTONS*/
 .RedBtn {
 	padding: 10px 30px;
 	font-weight: bold;
@@ -82,12 +82,14 @@
 	color: #ffffff;
 	background-color: #d5291c;
 	border-radius: 5%;
+	border:none;
 }
 
-.RedBtn:hover {
+.RedBtn:hover, .RedBtn:focus {
 	background-color: #a92016;
 	border: 1px solid #000000;
 }
+
 
 .GreenBtn {
 	width: 100%;

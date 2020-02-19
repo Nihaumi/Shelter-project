@@ -1,4 +1,10 @@
 @media (min-width: 992px) {
+
+	.SearchBtnMobile{
+		display: none;
+	}
+
+
 	.MenuBtn {
 		display: none;
 	}
@@ -23,7 +29,7 @@
 	}
 
 	.MegaMenuCont {
-		top: 78px;
+		top: 70px;
 		height: 300px;
 
 	}
@@ -55,11 +61,17 @@
 
 }
 
+.list-unstyled li {
+	padding: 5px 0;
+}
+
 .list-unstyled a {
 	list-style: none;
 	color: #ffffff;
 	font-size: 1.4rem;
 }
+
+
 
 .mega-menu {
 	display: none;

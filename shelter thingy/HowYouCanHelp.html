@@ -27,29 +27,35 @@
 	<link rel="stylesheet" href="resources/css/Link.css">
 	<link rel="stylesheet" href="resources/css/Navbar.css">
 	<link rel="stylesheet" href="resources/css/DesktopNav.css">
+	<link rel="stylesheet" href="resources/css/Search.css">
 
 	<link href="https://fonts.googleapis.com/css?family=Kulim+Park:300,400,700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
-
+<body>
 <div class="container-fluid">
 	<!--navbar-->
 	<div class="row">
 		<div class="col-12 long">
 
-			<nav class="navbar fixed-top">
+			<nav class="navbar fixed-top NavHeight NavColor">
 				<!--navbar-brand and toggle button-->
 				<div class="col-2">
-					<a class="navbar-brand " href="index.html">
+					<a class="navbar-brand" href="index.html">
 						<img src="resources/images/Brand-min.jpg" width="30" height="30"
 							 class="BrandLogo d-inline-block align-top rounded-circle" alt="">
-						<span class="underline">Shelter</span>
+						<span class="underline NavBrandName">Shelter</span>
 					</a>
 				</div>
 
+				<button class="RedBtn SearchBtn SearchBtnMobile" onclick="openSearch()"><a><i
+						class="fa fa-search SearchIcon"></i></a></button>
+
+
+				<!--desktop Nav-->
 				<div class="DesktopNav col-10">
-					<nav class="navbar navbar-expand-lg DeskNavBar">
+					<nav class="navbar NavColor navbar-expand-lg DeskNavBar">
 
 						<div class="collapse navbar-collapse" id="navbarNavDropdown">
 
@@ -57,7 +63,7 @@
 
 
 								<li class="nav-item active">
-									<a class="nav-link underline" href="#">Home</a>
+									<a class="nav-link underline" href="index.html">Home</a>
 
 								</li>
 
@@ -67,81 +73,23 @@
 								</li>
 								<!--Mega Menu-->
 								<li class="nav-item dropdown mega-dropdown">
-									<a class="nav-link dropdown-toggle underline" id="navbarDropdownMenuLinkHelp"
-									   data-toggle="dropdown"
+									<a class="nav-link  underline" id="navbarDropdownMenuLinkHelp"
+									   onclick="colorChange()"
+
+
 									   aria-haspopup="true" aria-expanded="false" href="#">Our Work <i
 											class="fa fa-chevron-down"></i></a>
-									<div class="dropdown-menu mega-menu v-2 z-depth-1 special-color py-5 px-3"
-										 aria-labelledby="navbarDropdownMenuLink3">
-										<div class="row">
-											<div class="col-md-6 col-xl-4 sub-menu mb-xl-0 mb-4">
-												<h6 class="sub-title text-uppercase font-weight-bold white-text">
-													Featured</h6>
-												<ul class="list-unstyled">
-													<li>
-														<a class="menu-item pl-0" href="#!">
-															<i class="fa fa-caret-right pl-1 pr-3"></i>Quis nostrud
-															exercitation
-														</a>
-													</li>
 
-													<li>
-														<a class="menu-item pl-0" href="#!">
-															<i class="fa fa-caret-right pl-1 pr-3"></i>Esse cillum
-															dolore eu fugiat nulla pariatur
-														</a>
-													</li>
-												</ul>
-
-
-											</div>
-											<div class="col-md-6 col-xl-4 sub-menu mb-md-0 mb-4">
-												<h6 class="sub-title text-uppercase font-weight-bold white-text">
-													Related</h6>
-												<ul class="list-unstyled">
-													<li>
-														<a class="menu-item pl-0" href="#!">
-															<i class="fa fa-caret-right pl-1 pr-3"></i>Quis nostrud
-															exercitation
-														</a>
-													</li>
-
-													<li>
-														<a class="menu-item pl-0" href="#!">
-															<i class="fa fa-caret-right pl-1 pr-3"></i>Esse cillum
-															dolore eu fugiat nulla pariatur
-														</a>
-													</li>
-												</ul>
-											</div>
-											<div class="col-md-6 col-xl-4 sub-menu mb-0">
-												<h6 class="sub-title text-uppercase font-weight-bold white-text">
-													Design</h6>
-												<ul class="list-unstyled">
-
-													<a class="menu-item pl-0" href="#!">
-														<i class="fa fa-caret-right pl-1 pr-3"></i>Mollit anim id
-														est laborum
-													</a>
-													</li>
-													<li>
-														<a class="menu-item pl-0" href="#!">
-															<i class="fa fa-caret-right pl-1 pr-3"></i>Accusantium
-															doloremque laudantium
-														</a>
-													</li>
-												</ul>
-												</a>
-											</div>
-										</div>
-									</div>
 								</li>
 
 								<li class="nav-item">
 									<a class="nav-link underline" href="#">About Us</a>
 								</li>
 
-
+								<li>
+									<button class="RedBtn SearchBtn" onclick="openSearch()"><a><i
+											class="fa fa-search SearchIcon"></i></a></button>
+								</li>
 							</ul>
 
 						</div>
@@ -150,44 +98,53 @@
 				</div>
 
 
+				<!--Mobile Navbar-->
 				<span class="text-white MenuBtn" style="font-size:30px;cursor:pointer"
 					  onclick="openNav()">&#9776;</span>
-				<!--Third Layer-->
-				<!--Third Layer Farm Animals-->
-				<!--SECOND LAYER-->
-				<div class="FarmAnimalsThirdLayer MobileNav Layers">
-					<ul class="navbar-nav mr-auto">
-						<a href="javascript:void(0)" class="closebtn"
-						   onclick="hideAll()">&times;</a>
-						<li class="nav-item">
-							<a>
-							<span class="text-white NextNavSlide" onclick="closeFarmAnimalsThirdLayer()">
-								<i class="fa fa-chevron-left"></i>
-							</span>
-							</a>
-							<a class="underline text-white mt-5 mb-1 back" onclick="closeFarmAnimalsThirdLayer()">go
-								back</a>
-						</li>
+
+
+				<!--FIRST LAYER MOBILENAVBAR content-->
+
+				<div class="MobileNav NavColor" id="navbarSupportedContent1">
+
+					<a href="javascript:void(0)" class="closebtn" onclick="closeNav() ,hideAll()">&times;</a>
+					<ul class="navbar-nav mr-auto FirstLayer">
+
+						<h3 class="text-white NavSpacing mt-3">Menu</h3>
 						<span class="border-bottom"></span>
-						<li class="nav-item"><a class="underline nav-link" href="#">Factory Farming</a></li>
-						<span class="border-bottom NavSpacing"></span>
-						<li class="nav-item"><a class="underline nav-link" href="#">Plant-based Eating</a>
+						<li class="nav-item active">
+							<a class="nav-link underline" href="#">Home</a>
+							<span class="sr-only">(Current)</span>
 						</li>
 						<span class="border-bottom NavSpacing"></span>
+						<li class="nav-item">
+							<a class="nav-link underline" onclick="openOurWorkSecondLayer()" href="#">Our Work</a>
+							<a class="text-white">
+								<span class="NextNavSlide" onclick="openOurWorkSecondLayer()"><i
+										class="fa fa-chevron-right fa-1x"></i></span>
+							</a>
+						</li>
+						<span class="border-bottom NavSpacing"></span>
+						<li class="nav-item">
+							<a class="nav-link underline" href="HowYouCanHelp.html">How You Can Help</a>
+						</li>
+						<span class="border-bottom NavSpacing"></span>
+						<li class="nav-item">
+							<a class="nav-link underline" href="#">About Us</a>
+						</li>
+
 
 					</ul>
-				</div>
-				<!--Our Work second layer-->
-				<div class="OurWorkSecondLayer MobileNav Layers">
-					<ul class="navbar-nav mr-auto">
-						<a href="javascript:void(0)" class="closebtn" onclick="hideAll()">&times;</a>
+					<!--Our Work second layer-->
+					<ul class="navbar-nav mr-auto OurWorkSecondLayer Layers">
+
 						<li class="nav-item">
 							<a>
 							<span class="text-white NextNavSlide" onclick="closeOurWorkSecondLayer()">
 								<i class="fa fa-chevron-left"></i>
 							</span>
 							</a>
-							<a class="underline text-white mt-5 mb-1 back" href="#"
+							<a class="underline text-white mt-3 mb-1 back" href="#"
 							   onclick="closeOurWorkSecondLayer()">go
 								back</a>
 						</li>
@@ -210,44 +167,133 @@
 										class="fa fa-chevron-right fa-1x"></i></span>
 							</a>
 						</li>
-						<span class="border-bottom NavSpacing"></span>
+
 					</ul>
-				</div>
-				<!--FIRST LAYER MOBILENAVBAR content-->
 
-				<div class="MobileNav" id="navbarSupportedContent1">
+					<!--Third Layer-->
+					<!--Third Layer Farm Animals-->
 
-					<ul class="navbar-nav mr-auto">
-						<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-						<h3 class="text-white NavSpacing mt-5">Menu</h3>
-						<span class="border-bottom"></span>
-						<li class="nav-item active">
-							<a class="nav-link underline" href="#">Home</a>
-							<span class="sr-only">(Current)</span>
-						</li>
-						<span class="border-bottom NavSpacing"></span>
+
+					<ul class="navbar-nav mr-auto FarmAnimalsThirdLayer Layers">
+
 						<li class="nav-item">
-							<a class="nav-link underline" onclick="openOurWorkSecondLayer()" href="#">Our Work</a>
-							<a class="text-white">
-								<span class="NextNavSlide" onclick="openOurWorkSecondLayer()"><i
-										class="fa fa-chevron-right fa-1x"></i></span>
+							<a>
+							<span class="text-white NextNavSlide" onclick="closeFarmAnimalsThirdLayer()">
+								<i class="fa fa-chevron-left"></i>
+							</span>
 							</a>
+							<a class="underline text-white mt-3 mb-1 back" onclick="closeFarmAnimalsThirdLayer()">go
+								back</a>
 						</li>
+						<span class="border-bottom"></span>
+						<li class="nav-item"><a class="underline nav-link" href="#">Factory Farming</a></li>
 						<span class="border-bottom NavSpacing"></span>
-						<li class="nav-item">
-							<a class="nav-link underline" href="HowYouCanHelp.html">How You Can Help</a>
+						<li class="nav-item"><a class="underline nav-link" href="#">Plant-based Eating</a>
 						</li>
-						<span class="border-bottom NavSpacing"></span>
-						<li class="nav-item">
-							<a class="nav-link underline" href="#">About Us</a>
-						</li>
-						<span class="border-bottom NavSpacing"></span>
+
 
 					</ul>
+
 				</div>
 
-
+				<!--end of mobile nav-->
 			</nav>
+		</div>
+	</div>
+</div>
+
+<!--searchbar-->
+<div class="fixed-top container">
+	<div class="row">
+		<div class="col-12">
+			<div class="SearchBar">
+				<span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
+				<div class="overlay-content input-group flex-nowrap">
+
+
+						<input type="text" class="form-control" placeholder="Username" aria-label="Username"
+							   aria-describedby="addon-wrapping">
+
+						<div class="input-group-prepend">
+							<button class="btn RedBtn" type="submit"><i class="fa fa-search"></i></button>
+						</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<!--MEGAMENU-->
+<div class="fixed-top MegaMenuCont container">
+	<div class="row">
+		<div class="col-12">
+			<div class="mega-menu v-2 z-depth-1  py-5 px-3"
+				 aria-labelledby="navbarDropdownMenuLink3">
+				<div class="row">
+					<div class="col-md-6 col-xl-4 sub-menu mb-xl-0 mb-4">
+						<h6 class="sub-title text-uppercase font-weight-bold white-text underline">
+							Featured</h6>
+						<ul class="list-unstyled">
+							<li>
+								<a class="menu-item pl-0 LinkUnderline UnderlineBrightGreen" href="#!">
+									<i class="fa fa-caret-right pl-1 pr-3"></i>Quis nostrud
+									exercitation
+								</a>
+							</li>
+
+							<li>
+								<a class="menu-item pl-0 LinkUnderline UnderlineBrightGreen" href="#!">
+									<i class="fa fa-caret-right pl-1 pr-3"></i>Esse cillum
+									dolore eu fugiat nulla pariatur
+								</a>
+							</li>
+						</ul>
+
+
+					</div>
+					<div class="col-md-6 col-xl-4 sub-menu mb-md-0 mb-4">
+						<h6 class="sub-title text-uppercase font-weight-bold white-text underline">
+							Related</h6>
+						<ul class="list-unstyled">
+							<li>
+								<a class="menu-item pl-0 LinkUnderline UnderlineBrightGreen" href="#!">
+									<i class="fa fa-caret-right pl-1 pr-3"></i> Quis nostrud
+									exercitation
+								</a>
+							</li>
+
+							<li>
+								<a class="menu-item pl-0 LinkUnderline UnderlineBrightGreen" href="#!">
+									<i class="fa fa-caret-right pl-1 pr-3 LinkUnderline UnderlineBrightGreen"></i>Esse
+									cillum
+									dolore eu fugiat nulla pariatur
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-md-6 col-xl-4 sub-menu mb-0">
+						<h6 class="sub-title text-uppercase font-weight-bold white-text underline">
+							Design</h6>
+						<ul class="list-unstyled">
+
+							<a class="menu-item pl-0 LinkUnderline UnderlineBrightGreen" href="#!">
+								<i class="fa fa-caret-right pl-1 pr-3 "></i>Mollit anim id
+								est laborum
+							</a>
+							</li>
+							<li>
+								<a class="menu-item pl-0 LinkUnderline UnderlineBrightGreen" href="#!">
+									<i class="fa fa-caret-right pl-1 pr-3"></i>Accusantium
+									doloremque laudantium
+								</a>
+							</li>
+						</ul>
+						</a>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
 </div>
@@ -331,17 +377,10 @@
 <script type="text/javascript"
 		src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js">
 </script>
-<script src="resources/JS/SideMenu.js"></script>
-<script src="resources/JS/linkLength.js"></script>
-<script>
-    function openSearch() {
-        document.getElementById("SearchOverlay").style.display = "block";
-    }
-
-    function closeSearch() {
-        document.getElementById("SearchOverlay").style.display = "none";
-    }
-</script>
+<script src="resources/JS/SideMenu.js" defer></script>
+<script src="resources/JS/linkLength.js" defer></script>
+<script src="resources/JS/MegaMenu.js" defer></script>
+<script src="resources/JS/SearchBar.js"></script>
 
 </body>
 

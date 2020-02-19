@@ -29,7 +29,7 @@ label {
 }
 
 .NavHeight {
-	height: 8%;
+	height: 70px;
 }
 
 .fillViewPortPlease {
@@ -53,4 +53,8 @@ label {
 .breadcrumb {
 	background-color: transparent;
 
+}
+
+.sub-title{
+	cursor: pointer;
 }

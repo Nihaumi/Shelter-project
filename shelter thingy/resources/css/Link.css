@@ -54,13 +54,17 @@
 	background-position: 0% 100%;
 	background-repeat: no-repeat;
 	background-size: 0% 2px;
-	transition: background-size 500ms;
+	transition: background-size 300ms;
 }
 
 .LinkUnderline:hover, .LinkUnderline:focus {
 	text-decoration: none;
 	color: currentColor;
 	background-size: 100% 2px;
+}
+
+.UnderlineBrightGreen:hover{
+	color: #84bd00;
 }
 
 
