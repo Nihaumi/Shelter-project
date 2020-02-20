@@ -27,7 +27,9 @@
 	<link rel="stylesheet" href="resources/css/Link.css">
 	<link rel="stylesheet" href="resources/css/Navbar.css">
 	<link rel="stylesheet" href="resources/css/DesktopNav.css">
-	<link rel="stylesheet" href="resources/css/Search.css">
+	<link rel="preload" href="resources/css/Search.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+	<noscript><link rel="stylesheet" href="resources/css/Search.css"></noscript>
+
 
 	<link href="https://fonts.googleapis.com/css?family=Kulim+Park:300,400,700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -43,8 +45,8 @@
 				<!--navbar-brand and toggle button-->
 				<div class="col-2">
 					<a class="navbar-brand" href="index.html">
-						<img src="resources/images/Brand-min.jpg" width="30" height="30"
-							 class="BrandLogo d-inline-block align-top rounded-circle" alt="">
+						<img  data-src="resources/images/Brand-min.jpg" width="30" height="30"
+							 class="BrandLogo d-inline-block align-top rounded-circle lazyload" alt="">
 						<span class="underline NavBrandName">Shelter</span>
 					</a>
 				</div>
@@ -381,7 +383,7 @@
 		<div class="col-12 my-4">
 			<div class="card-deck greentext">
 				<div class="card text-center">
-					<img src="resources/images/food.jpg" class="card-img-top" alt="plant-based-food">
+					<img data-src="resources/images/food.jpg" class="lazyload card-img-top" alt="plant-based-food">
 
 					<div class="card-body">
 						<p class="card-text cardSize  LinkMargin">Seven plant-based ways to celebrate the holidays with
@@ -402,7 +404,7 @@
 
 
 				<div class="card rounded-0 text-center">
-					<img src="resources/images/giraffe.jpg" class="card-img-top" alt="plant-based-food">
+					<img data-src="resources/images/giraffe.jpg" class="lazyload card-img-top" alt="plant-based-food">
 					<div class="card-body">
 						<p class="card-text cardSize  LinkMargin">Seven plant-based ways to celebrate the holidays with
 							an
@@ -422,7 +424,7 @@
 
 
 				<div class="card rounded-0 text-center">
-					<img src="resources/images/armadillo.jpg" srcset="resources/images/armadillo-small.jpg 480w, resources/images/armadillo.jpg 1080w" sizes="50vw" class="card-img-top" alt="plant-based-food">
+					<img data-src="resources/images/armadillo.jpg" srcset="resources/images/armadillo-small.jpg 480w, resources/images/armadillo.jpg 1080w" sizes="50vw" class="lazyload card-img-top" alt="plant-based-food">
 					<div class="card-body">
 						<p class="card-text cardSize LinkMargin">Seven plant-based ways to celebrate the holidays with
 							an
@@ -477,7 +479,7 @@
 			<div class="card-deck">
 
 				<div class="card">
-					<img src="resources/images/food2.jpg" class="card-img-top" alt="plant-based food">
+					<img data-src="resources/images/food2.jpg" class="lazyload card-img-top" alt="plant-based food">
 					<div class="card-body">
 
 						<h3 class="card-title">Plant-based Eating</h3>
@@ -494,7 +496,7 @@
 
 
 				<div class="card">
-					<img src="resources/images/armadillo.jpg" class="card-img-top" alt="plant-based food">
+					<img data-src="resources/images/armadillo.jpg" class="lazyload card-img-top" alt="plant-based food">
 					<div class="card-body">
 						<h3 class="card-title">Wildlife Trade</h3>
 						<p class="card-text cardSize">The international wildlife trade jeopardizes the survival
@@ -507,7 +509,7 @@
 				</div>
 
 				<div class="card">
-					<img src="resources/images/cagedos.jpg" class="card-img-top" alt="plant-based food">
+					<img data-src="resources/images/cagedos.jpg" class="lazyload card-img-top" alt="plant-based food">
 					<div class="card-body">
 						<h3 class="card-title">Dog Meat Trade</h3>
 						<p class="card-text cardSize">Across Asia, millions of dogs and cats are brutally killed for
@@ -655,13 +657,13 @@
 			<h1 class="display-4">Animals in Our Care</h1>
 		</div>
 	</div>
-	<div class="row">
+	<div class="row AccordionRow">
 		<div class="col-12">
 			<div class="accordion" id="accordionExample">
 				<div class="card greentext">
 					<div class="card-header border-0 AccordionHeader mx-auto greentext" id="headingOne">
 
-						<h2 class="mb-0 collapsed underline" data-toggle="collapse" data-target="#collapseOne"
+						<h2 class="mb-0 collapsed underline Pointer" data-toggle="collapse" data-target="#collapseOne"
 							aria-expanded="true" aria-controls="collapseOne">
 							Dogs
 						</h2>
@@ -671,10 +673,10 @@
 					<div id="collapseOne" class="card-deck collapse" aria-labelledby="headingOne"
 						 data-parent="#accordionExample">
 						<div class="card border-0">
-							<img class="DogsInCare" src="resources/images/doggo.jpg" alt="Picture of a Dog">
+							<img class="DogsInCare lazyload" data-src="resources/images/doggo.jpg" alt="Picture of a Dog">
 							<div class="card-body">
 
-								<h3 class="card-title text-center LinkUnderline border-bottom"
+								<h3 class="card-title text-center LinkUnderline border-bottom Pointer"
 									data-toggle="collapse" href="#VeronaText"
 									aria-expanded="false" aria-controls="VeronaText">
 									Verona <span><i class="fa fa-chevron-down"></i></span>
@@ -702,11 +704,12 @@
 											class="fa fa-chevron-down"></i></span></a>
 									<div class="row collapse" id="VeronaPictures">
 										<div class="col-12">
-											<img class=" MorePictures" src="resources/images/puppy.jpg"
+											<img class="lazyload MorePictures" data-src="resources/images/puppy.jpg
+"
 												 alt="Picture of Verona">
 										</div>
 										<div class="col-12">
-											<img class=" MorePictures" src="resources/images/bordercollie.jpg"
+											<img class="lazyload MorePictures" data-src="resources/images/bordercollie.jpg"
 												 alt="Picture of Verona">
 										</div>
 									</div>
@@ -724,10 +727,10 @@
 						</div>
 
 						<div class="card border-0">
-							<img class="DogsInCare" src="resources/images/fox.jpg" alt="Picture of a Dog">
+							<img class="lazyload DogsInCare" data-src="resources/images/fox.jpg" alt="Picture of a Dog">
 							<div class="card-body">
 
-								<h3 class="card-title text-center LinkUnderline border-bottom "
+								<h3 class="card-title text-center LinkUnderline border-bottom Pointer"
 									data-toggle="collapse" href="#YukiText"
 									aria-expanded="false" aria-controls="VeronaText" onmouseover="mouseOver()">
 									Yuki <span><i class="fa fa-chevron-down"></i></span>
@@ -757,11 +760,11 @@
 											class="fa fa-chevron-down"></i></span></a>
 									<div class="row collapse" id="YukiPictures">
 										<div class="col-12">
-											<img class=" MorePictures" src="resources/images/puppy.jpg"
+											<img class="lazyload MorePictures" data-src="resources/images/puppy.jpg"
 												 alt="Picture of Yuki">
 										</div>
 										<div class="col-12">
-											<img class=" MorePictures" src="resources/images/bordercollie.jpg"
+											<img class="lazyload MorePictures" data-src="resources/images/bordercollie.jpg"
 												 alt="Picture of Verona">
 										</div>
 									</div>
@@ -781,7 +784,7 @@
 			<div class="card greentext">
 				<div class="card-header border-0 AccordionHeader mx-auto greentext" id="headingTwo">
 
-					<h2 class="mb-0 collapsed underline" data-toggle="collapse" data-target="#collapseTwo"
+					<h2 class="mb-0 collapsed underline Pointer" data-toggle="collapse" data-target="#collapseTwo"
 						aria-expanded="false"
 						aria-controls="collapseTwo">
 						Cats
@@ -791,10 +794,10 @@
 				<div id="collapseTwo" class="card-deck collapse" aria-labelledby="headingTwo"
 					 data-parent="#accordionExample">
 					<div class="card border-0">
-						<img class="DogsInCare" src="resources/images/cat.jpg" alt="Picture of a Dog">
+						<img class="lazyload DogsInCare" data-src="resources/images/cat.jpg" alt="Picture of a Dog">
 						<div class="card-body">
 
-							<h3 class="card-title text-center LinkUnderline border-bottom "
+							<h3 class="card-title text-center LinkUnderline border-bottom Pointer"
 								data-toggle="collapse" href="#HunterText"
 								aria-expanded="false" aria-controls="VeronaText" onmouseover="mouseOver()">
 								Hunter <span><i class="fa fa-chevron-down"></i></span>
@@ -810,10 +813,10 @@
 						</div>
 					</div>
 					<div class="card border-0">
-						<img class="DogsInCare" src="resources/images/bigcat.jpg" alt="Picture of a Dog">
+						<img class="lazyload DogsInCare" data-src="resources/images/bigcat.jpg" alt="Picture of a Dog">
 						<div class="card-body">
 
-							<h3 class="card-title text-center LinkUnderline border-bottom "
+							<h3 class="card-title text-center LinkUnderline border-bottom Pointer"
 								data-toggle="collapse" href="#MäuslText"
 								aria-expanded="false" aria-controls="VeronaText" onmouseover="mouseOver()">
 								Mäusl<span><i class="fa fa-chevron-down"></i></span>
@@ -833,7 +836,7 @@
 			<div class="card greentext">
 				<div class="card-header border-0 AccordionHeader mx-auto greentext" id="headingThree">
 
-					<h2 class="mb-0 collapsed underline" data-toggle="collapse"
+					<h2 class="mb-0 collapsed underline Pointer" data-toggle="collapse"
 						data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
 						Others
 					</h2>
@@ -842,10 +845,10 @@
 				<div id="collapseThree" class="card-deck collapse" aria-labelledby="headingThree"
 					 data-parent="#accordionExample">
 					<div class="card border-0">
-						<img class="DogsInCare" src="resources/images/seal.jpg" alt="Picture of a Dog">
+						<img class="lazyload DogsInCare" data-src="resources/images/seal.jpg" alt="Picture of a Dog">
 						<div class="card-body">
 
-							<h3 class="card-title text-center LinkUnderline border-bottom "
+							<h3 class="card-title text-center LinkUnderline border-bottom Pointer"
 								data-toggle="collapse" href="#SeadogText"
 								aria-expanded="false" aria-controls="VeronaText" onmouseover="mouseOver()">
 								Seadog<span><i class="fa fa-chevron-down"></i></span>
@@ -861,10 +864,10 @@
 						</div>
 					</div>
 					<div class="card border-0">
-						<img class="DogsInCare" src="resources/images/dumbo.jpg" alt="Picture of a Dog">
+						<img class="lazyload DogsInCare" data-src="resources/images/dumbo.jpg" alt="Picture of a Dog">
 						<div class="card-body">
 
-							<h3 class="card-title text-center LinkUnderline border-bottom "
+							<h3 class="card-title text-center LinkUnderline border-bottom Pointer"
 								data-toggle="collapse" href="#SariText"
 								aria-expanded="false" aria-controls="VeronaText" onmouseover="mouseOver()">
 								Sari<span><i class="fa fa-chevron-down"></i></span>
@@ -908,6 +911,9 @@
 <script src="resources/JS/linkLength.js" defer></script>
 <script src="resources/JS/MegaMenu.js" defer></script>
 <script src="resources/JS/SearchBar.js" defer></script>
+<script src="resources/JS/lazysizes.min.js" async></script>
+<!-- Images End -->
+
 </body>
 
 </html>
