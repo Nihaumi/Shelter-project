@@ -12,7 +12,7 @@
 }
 
 .cardSize {
-	font-size: 1.3em;
+	font-size: 1rem;
 }
 
 .card p {
@@ -20,7 +20,7 @@
 }
 
 .card span {
-	font-size: 16px;
+	font-size: 1rem;
 	color: #ffcd00;
 }
 
@@ -47,9 +47,118 @@
 	color: #024731;
 }
 
-.container-fluid {
+.green p {
+	font-size: 1.6rem;
+}
+
+
+.BottomLink {
+	position: absolute;
+	bottom: 5%;
+	left: 0;
 	width: 100%;
 }
+
+.LinkMargin {
+	padding-bottom: 50px;
+}
+
+.NoMargin {
+	margin-bottom: 0;
+}
+
+.BottomLink2 {
+	position: absolute;
+	left: 0;
+	width: 90%;
+	bottom: 2%;
+}
+
+
+.DogsInCare {
+	height: auto;
+	width: 100%;
+}
+
+.MorePictures {
+	height: auto;
+	max-width: 100%;
+	padding-top: 3%;
+}
+
+
+/*BUTTONS*/
+.RedBtn {
+	padding: 10px 30px;
+	font-weight: bold;
+	font-size: 1.2rem;
+	color: #ffffff;
+	background-color: #d5291c;
+	border-radius: 5%;
+	border: none;
+}
+
+.RedBtn:hover, .RedBtn:focus {
+	background-color: #a92016;
+	border: 1px solid #000000;
+}
+
+
+.GreenBtn {
+	width: 100%;
+	margin-top: 3%;
+	color: #ffffff;
+	background-color: #84bd00;
+}
+
+.GreenBtn:hover {
+	background-color: #3e5a00;
+}
+
+.GhostBtn {
+	color: #cccccc;
+	background-color: #cfcfcf;
+	border-radius: 5%;
+}
+
+/*
+.underline{
+	color: white;
+	text-decoration: none;
+	font-size: 1.3rem;
+	position: relative;
+}
+
+.underline:hover{
+	color: white;
+}
+
+.underline::before{
+
+	content: "do you work";
+	position: absolute;
+	width: 100%;
+	height:2px;
+	bottom: 0;
+	left: 0;
+	visibility: hidden;
+	-webkit-transform: scaleX(0);
+	transform: scaleX(0);
+	-webkit-transition: all 0.3s ease-in-out 0s;
+	transition: all0.3s ease-in-out 0s;
+}
+
+.underline:hover::before{
+	color: white;
+	visibility: visible;
+	-webkit-transform: scaleX(1);
+	transform:scaleX(1);
+
+
+}*/
+/*.container-fluid {
+	width: 100%;
+}*/
 /*
 .form-control-lg {
 	width: 100%;

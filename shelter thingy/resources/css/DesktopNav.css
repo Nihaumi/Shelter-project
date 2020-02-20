@@ -1,0 +1,98 @@
+@media (min-width: 992px) {
+
+	.cardSize {
+		font-size: 1.3rem;
+	}
+
+	label {
+		font-size: 1.3rem;
+	}
+
+	.green p {
+		font-size: 2rem;
+	}
+
+	.SearchBtnMobile {
+		display: none;
+	}
+
+
+	.MenuBtn {
+		display: none;
+	}
+
+	.DesktopNav {
+		display: inline-block;
+		color: #ffffff;
+		font-size: 1.4rem;
+		padding: 20px;
+		position: absolute;
+		right: 0;
+
+	}
+
+	.DesktopNav li {
+		padding: 0;
+
+	}
+
+	.DeskNavBar {
+		background-color: transparent;
+	}
+
+	.MegaMenuCont {
+		top: 70px;
+		height: 300px;
+
+	}
+
+
+}
+
+
+@media (min-width: 1200px) {
+	.DesktopNav {
+		font-size: 1.4rem;
+	}
+
+	.navbar-brand {
+		font-size: 1.4rem;
+		line-height: 2.8;
+	}
+
+	.BrandLogo {
+		width: 50px;
+		height: 50px;
+	}
+
+	.NavBrandName {
+		position: absolute;
+		top: -4%;
+		padding-left: 5%;
+	}
+
+}
+
+.list-unstyled li {
+	padding: 5px 0;
+}
+
+.list-unstyled a {
+	list-style: none;
+	color: #ffffff;
+	font-size: 1.4rem;
+}
+
+
+.mega-menu {
+	display: none;
+	background-color: rgba(0, 0, 0, .5);
+	left: -350%;
+
+
+}
+
+.mega-menu .sub-title {
+	font-size: 1.5rem;
+	color: #ffffff;
+}
