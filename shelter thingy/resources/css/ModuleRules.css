@@ -81,7 +81,8 @@
 }
 
 
-/*BUTTONA*/
+/*BUTTONS*/
+
 .RedBtn {
 	padding: 10px 30px;
 	font-weight: bold;
@@ -97,6 +98,7 @@
 }
 
 .GreenBtn {
+	
 	width: 100%;
 	margin-top: 3%;
 	color: #ffffff;
@@ -104,10 +106,20 @@
 	border-radius: 5%;
 }
 
-.GhostBtn{
-	color: #cccccc;
+.GreenBtn:hover {
+	background-color: #3e5a00;
+}
+
+.GhostBtn {
+	margin: 5px;
+	color: #7d7d7d;
 	background-color: #cfcfcf;
 	border-radius: 5%;
+}
+
+.GhostBtn:hover {
+	background-color: #696969;
+	color: #ededed;
 }
 
 /*
