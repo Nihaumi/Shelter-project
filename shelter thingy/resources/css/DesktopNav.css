@@ -1,6 +1,18 @@
 @media (min-width: 992px) {
 
-	.SearchBtnMobile{
+	.cardSize {
+		font-size: 1.3rem;
+	}
+
+	label {
+		font-size: 1.3rem;
+	}
+
+	.green p {
+		font-size: 2rem;
+	}
+
+	.SearchBtnMobile {
 		display: none;
 	}
 
@@ -70,7 +82,6 @@
 	color: #ffffff;
 	font-size: 1.4rem;
 }
-
 
 
 .mega-menu {

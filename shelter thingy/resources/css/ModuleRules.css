@@ -12,11 +12,11 @@
 }
 
 .cardSize {
-	font-size: 1.3em;
+	font-size: 1rem;
 }
 
 .card span {
-	font-size: 16px;
+	font-size: 1rem;
 	color: #ffcd00;
 }
 
@@ -36,6 +36,10 @@
 
 .greentext {
 	color: #024731;
+}
+
+.green p {
+	font-size: 1.6rem;
 }
 
 
@@ -82,7 +86,7 @@
 	color: #ffffff;
 	background-color: #d5291c;
 	border-radius: 5%;
-	border:none;
+	border: none;
 }
 
 .RedBtn:hover, .RedBtn:focus {
@@ -96,10 +100,13 @@
 	margin-top: 3%;
 	color: #ffffff;
 	background-color: #84bd00;
-	border-radius: 5%;
 }
 
-.GhostBtn{
+.GreenBtn:hover {
+	background-color: #3e5a00;
+}
+
+.GhostBtn {
 	color: #cccccc;
 	background-color: #cfcfcf;
 	border-radius: 5%;
