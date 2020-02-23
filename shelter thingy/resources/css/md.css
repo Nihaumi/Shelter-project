@@ -104,24 +104,6 @@
 
 }
 
-<<<<<<< HEAD
-@media screen and (max-width: 992px) and (min-width: 860px) {
-    #differenceform {
-        transform:translate(-40%, 140%);
-    }
-
-    .form-control-lg {
-        width: 300px;
-        margin-top: 10px;
-    }
-}
-
-
-@media screen and (max-width: 1000px) and (min-width: 992px) {
-    #differenceform {
-        transform:translate(-45%, 230%);
-    }
-=======
 @media screen and (min-width: 860px) {
 	#differenceform {
 		transform: translate(-40%, 140%);
@@ -138,24 +120,16 @@
 	#differenceform {
 		transform: translate(-45%, 230%);
 	}
->>>>>>> 560a403... form looks better now
 
     .form-control-lg {
         width: 200px;
     }
 }
 
-<<<<<<< HEAD
-@media screen and (max-width: 1159px) and (min-width: 1000px) {
-    #differenceform{
-        transform:translate(-43%, 230%);
-    }
-=======
 @media screen and (min-width: 1000px) {
 	#differenceform {
 		transform: translate(-43%, 230%);
 	}
->>>>>>> 560a403... form looks better now
 
     .form-control-lg {
         width: 200px;
@@ -163,34 +137,20 @@
 }
 
 
-<<<<<<< HEAD
-@media screen and (max-width: 1216px) and (min-width: 1160px) {
-    #differenceform {
-        transform:translate(-38%, 230%);
-    }
-=======
 @media screen and (min-width: 1160px) {
 	#differenceform {
 		transform: translate(-38%, 230%);
 	}
->>>>>>> 560a403... form looks better now
 
     .form-control-lg {
         width: 200px;
     }
 }
 
-<<<<<<< HEAD
-@media screen and (max-width: 1260px)and (min-width: 1217px){
-    #differenceform {
-        transform:translate(-48%, 230%);
-    }
-=======
 @media screen and (min-width: 1217px) {
 	#differenceform {
 		transform: translate(-48%, 230%);
 	}
->>>>>>> 560a403... form looks better now
 
 
 }
@@ -201,17 +161,10 @@
     }
 }
 
-<<<<<<< HEAD
-@media only screen and (max-width: 1600px) and (min-width: 1380px) {
-    #differenceform {
-        transform:translate(-40%, 230%);
-    }
-=======
 @media only screen and (min-width: 1380px) {
 	#differenceform {
 		transform: translate(-40%, 230%);
 	}
->>>>>>> 560a403... form looks better now
 }
 
 
