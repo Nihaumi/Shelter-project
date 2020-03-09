@@ -103,7 +103,7 @@
 	background-color: transparent;
 }
 
-.container__link--underline {
+.protect-animals__link--underline {
 	color: white;
 	text-decoration: none;
 	background-image: linear-gradient(currentColor, currentColor);
@@ -113,12 +113,12 @@
 	transition: background-size 500ms;
 }
 
-.container__link--underline{
+.protect-animals__link--underline{
 	text-decoration: none;
 	color: white;
 	background-size: 100% 2px;
 }
-.container__link--underline{
+.protect-animals__link--underline{
 	text-decoration: none;
 	color: white;
 	background-size: 100% 2px;
