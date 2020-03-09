@@ -1,5 +1,4 @@
 
-
 #searchbar, #donate1 {
 	display: inline-block;
 	font-size: 1.5em;
@@ -238,37 +237,10 @@
 	width: 100%;
 }
 
-
-#signUp {
-	margin-top: 10px;
-}
-
-/*
-.form-check {
-	margin-top: 30px;
-	padding-right: 5px;
-	font-size: 20px;
-}
-
-.form-check label {
-	font-size: 1rem;
-}
-
-.form-inline .form-check-input {
-	margin-right: 1rem;
-}
-*/
-
-
 .formColor {
 	color: white;
 }
 
-#gridCheck1 {
-	height: 40px;
-	width: 40px;
-	margin: 10px;
-}
 
 input {
 	background-color: white;

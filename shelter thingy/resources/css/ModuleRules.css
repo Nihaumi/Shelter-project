@@ -34,11 +34,9 @@
 	margin: 0;
 }*/
 
-.text__color
- {
+.text__color {
 	color: #024731;
 }
-
 
 
 .card__link--position {
@@ -113,12 +111,13 @@
 	transition: background-size 500ms;
 }
 
-.protect-animals__link--underline{
+.protect-animals__link--underline {
 	text-decoration: none;
 	color: white;
 	background-size: 0 2px;
 }
-.protect-animals__link--underline:hover{
+
+.protect-animals__link--underline:hover {
 	text-decoration: none;
 	color: white;
 	background-size: 100% 2px;
@@ -134,7 +133,7 @@
 	transition: background-size 500ms;
 }
 
-.card-body__link--underline:hover{
+.card-body__link--underline:hover {
 	text-decoration: none;
 	color: white;
 	background-size: 100% 2px;
@@ -149,53 +148,3 @@
 .card-body__link--color {
 	color: #024731
 }
-
-
-
-/*
-.underline{
-	color: white;
-	text-decoration: none;
-	font-size: 1.3rem;
-	position: relative;
-}
-
-.underline:hover{
-	color: white;
-}
-
-.underline::before{
-
-	content: "do you work";
-	position: absolute;
-	width: 100%;
-	height:2px;
-	bottom: 0;
-	left: 0;
-	visibility: hidden;
-	-webkit-transform: scaleX(0);
-	transform: scaleX(0);
-	-webkit-transition: all 0.3s ease-in-out 0s;
-	transition: all0.3s ease-in-out 0s;
-}
-
-.underline:hover::before{
-	color: white;
-	visibility: visible;
-	-webkit-transform: scaleX(1);
-	transform:scaleX(1);
-
-
-}*/
-/*.container-fluid {
-	width: 100%;
-}*/
-/*
-.form-control-lg {
-	width: 100%;
-	padding: 10px;
-}
-
-.form-row {
-	padding: 0 10px;
-}*/

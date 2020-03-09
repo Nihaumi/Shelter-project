@@ -33,13 +33,14 @@
 }
 
 /*mobile navbar*/
-.navbar__mobile-navbar li a{
+.navbar__mobile-navbar li a {
 	font-size: 1rem;
 }
 
-.navbar__mobile-navbar li .back{
+.navbar__mobile-navbar li .back {
 	font-size: 1.3rem;
 }
+
 /*close menu button*/
 .navbar__close-btn {
 	color: #fff;
