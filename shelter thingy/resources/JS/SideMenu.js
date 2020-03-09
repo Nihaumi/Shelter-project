@@ -22,7 +22,6 @@ function openNav() {
     slideNavIn();
     jQuery(".navbar").animate({backgroundColor: 'rgba(0, 0, 0, .8)'}, slideTime);
     jQuery(".MenuBtn").hide();
-    console.log('Hello');
 }
 
 function closeNav() {
