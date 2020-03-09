@@ -46,7 +46,7 @@
 	margin: auto;
 }
 
-.SearchOverlay .CloseBtn {
+.SearchOverlay .navbar__close-btn {
 	position: absolute;
 	top: 20px;
 	right: 45px;
@@ -55,7 +55,7 @@
 	color: white;
 }
 
-.SearchOverlay .CloseBtn:hover {
+.SearchOverlay .navbar__close-btn:hover {
 	color: #cccccc;
 }
 
@@ -123,19 +123,19 @@
 }
 
 
-.blackBox {
+.container__background {
 	background-color: rgba(0, 0, 0, 0.7);
 	color: white;
 	padding: 10px 30px 5px 10px;
 	right: 0;
 }
 
-.blackBox p {
+.container__background p {
 	font-size: 15px;
 	height: 20px;
 }
 
-.blackBox span {
+.container__background span {
 	color: #84bd00;
 	font-size: 1.2rem;
 	padding: 0 5px 0 10px;
@@ -162,7 +162,7 @@
 }
 
 /*defender*/
-.defender {
+.container__jumbotron {
 	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/doggo.jpg');
 	background-size: cover;
 	height: 500px;
@@ -172,7 +172,7 @@
 }
 
 
-.defender-text {
+.container__text {
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -180,19 +180,19 @@
 	color: white;
 }
 
-.defender-text p {
+.container__text p {
 	font-size: 20px;
 	margin-bottom: 60px;
 }
 
-.defender-text button {
+.container__text button {
 	padding: 10px 25px;
 	background-color: #d5291c;
 	color: white;
 	font-size: 1.2rem;
 }
 
-.defender-text button:hover {
+.container__text button:hover {
 	background-color: #a92016;
 	border: 1px solid #555559;
 }
@@ -217,7 +217,7 @@
 
 /*vertical alignment form*/
 
-.outer {
+.hero-image__outer {
 	display: table;
 	position: absolute;
 	top: 0;
@@ -226,13 +226,13 @@
 	width: 100%;
 }
 
-.middle {
+.hero-image__middle {
 	display: table-cell;
 	vertical-align: middle;
 
 }
 
-.inner {
+.hero-image__inner {
 	margin-left: auto;
 	margin-right: auto;
 	width: 100%;
@@ -279,7 +279,7 @@ input:focus {
 }
 
 /*green paragraphs*/
-.green {
+.container-fluid__text--color {
 	background-color: #024731;
 	padding: 60px;
 	color: white;
@@ -299,7 +299,7 @@ input:focus {
 		bottom: 0;
 	}
 
-	.parent {
+	.protect-animals__text {
 		height: 468px;
 	}
 
@@ -308,7 +308,7 @@ input:focus {
 		left: 67px;
 	}
 
-	.blackBox {
+	.container__background {
 		position: absolute;
 		left: 0;
 		right: 0;

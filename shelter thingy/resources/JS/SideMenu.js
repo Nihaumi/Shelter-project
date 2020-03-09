@@ -3,7 +3,7 @@ var slideTime = 1000
 function hideAll() {
     jQuery(".Layers").hide("slide", {direction: "left"}, slideTime);
     jQuery(".navbar").animate({backgroundColor: 'rgba(0, 0, 0, .5)'}, slideTime / 2);
-    jQuery(".MenuBtn").show();
+    jQuery(".navbar__menu-btn").show();
 
 }
 
@@ -21,7 +21,7 @@ function openNav() {
 
     slideNavIn();
     jQuery(".navbar").animate({backgroundColor: 'rgba(0, 0, 0, .8)'}, slideTime);
-    jQuery(".MenuBtn").hide();
+    jQuery(".navbar__menu-btn").hide();
     console.log('Hello');
 }
 
@@ -32,7 +32,7 @@ function closeNav() {
         jQuery(".navbar").animate({backgroundColor: 'rgba(0, 0, 0, .5)'}, slideTime / 2);
     }, slideTime / 2);
     setTimeout(function () {
-        jQuery(".MenuBtn").show();
+        jQuery(".navbar__menu-btn").show();
 
     }, slideTime);
 }

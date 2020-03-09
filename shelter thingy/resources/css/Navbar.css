@@ -8,13 +8,13 @@
 	color: white;
 }
 
-.NavSpacing {
+.navbar__border--space {
 	margin: 0 40px;
 
 }
 
 .navbar-brand {
-	margin-left: 10%;
+	margin-lefFt: 10%;
 	color: white;
 }
 
@@ -33,15 +33,15 @@
 }
 
 /*mobile navbar*/
-.MobileNav li a{
+.navbar__mobile-navbar li a{
 	font-size: 1rem;
 }
 
-.MobileNav li .back{
+.navbar__mobile-navbar li .back{
 	font-size: 1.3rem;
 }
 /*close menu button*/
-.closebtn {
+.navbar__close-btn {
 	color: #fff;
 	position: absolute;
 	top: 0;
@@ -50,12 +50,12 @@
 	margin-left: 50px;
 }
 
-.closebtn:hover {
+.navbar__close-btn:hover {
 	text-decoration: none;
 	color: #84bd00;
 }
 
-.NextNavSlide:hover {
+.navbar__next-slide:hover {
 	color: #84bd00;
 }
 
@@ -63,7 +63,7 @@
 	display: none;
 }
 
-.MobileNav {
+.navbar__mobile-navbar {
 
 	width: 100%;
 }

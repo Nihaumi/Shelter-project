@@ -11,7 +11,7 @@
 	margin: 30px auto;
 }
 
-.cardSize {
+.card-text__size {
 	font-size: 1.3em;
 }
 
@@ -34,34 +34,36 @@
 	margin: 0;
 }*/
 
-.greentext {
+.text__color
+ {
 	color: #024731;
 }
 
 
-.BottomLink {
+
+.card__link--position {
 	position: absolute;
 	bottom: 5%;
 	left: 0;
 	width: 100%;
 }
 
-.LinkMargin {
+.card__paragraph--margin {
 	padding-bottom: 50px;
 }
 
-.NoMargin {
+.card__text--margin {
 	margin-bottom: 0;
 }
 
-.BottomLink2 {
+.card__link--position2 {
 	position: absolute;
 	left: 0;
 	width: 90%;
 	bottom: 2%;
 }
 
-.underline {
+.nav-item__underline {
 	color: white;
 	text-decoration: none;
 	font-size: 1.3rem;
@@ -69,12 +71,12 @@
 	display: inline-block;
 }
 
-.underline:hover {
+.nav-item__underline:hover {
 	color: white;
 	text-decoration: none;
 }
 
-.underline:after {
+.nav-item__underline:after {
 	content: '';
 	width: 0px;
 	height: 1px;
@@ -83,25 +85,25 @@
 	transition: 500ms;
 }
 
-.underline:hover:after {
+.nav-item__underline:hover:after {
 	width: 100%;
 
 }
 
-.underline1 {
+.nav-item__underline1 {
 	color: white;
 
 }
 
-.underline1:after {
+.nav-item__underline1:after {
 	height: 2px;
 }
 
-.underline1:hover {
+.nav-item__underline1:hover {
 	background-color: transparent;
 }
 
-.LinkUnderline {
+.container__link--underline {
 	color: white;
 	text-decoration: none;
 	background-image: linear-gradient(currentColor, currentColor);
@@ -111,13 +113,40 @@
 	transition: background-size 500ms;
 }
 
-.LinkUnderline:hover, .LinkUnderline:focus {
+.container__link--underline{
+	text-decoration: none;
+	color: white;
+	background-size: 100% 2px;
+}
+.container__link--underline{
 	text-decoration: none;
 	color: white;
 	background-size: 100% 2px;
 }
 
-.UnderlineGreen {
+.card-body__link--underline {
+	color: white;
+	text-decoration: none;
+	background-image: linear-gradient(currentColor, currentColor);
+	background-position: 0% 100%;
+	background-repeat: no-repeat;
+	background-size: 0% 2px;
+	transition: background-size 500ms;
+}
+
+.card-body__link--underline:hover{
+	text-decoration: none;
+	color: white;
+	background-size: 100% 2px;
+}
+
+.card-body__link--underline:focus {
+	text-decoration: none;
+	color: white;
+	background-size: 100% 2px;
+}
+
+.card-body__link--color {
 	color: #024731
 }
 
