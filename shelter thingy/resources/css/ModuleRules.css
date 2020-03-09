@@ -104,17 +104,11 @@
 .protect-animals__link--underline {
 	color: white;
 	text-decoration: none;
-	background-image: linear-gradient(currentColor, currentColor);
+	background-image: linear-gradient(#cccccc, #cccccc);
 	background-position: 0% 100%;
 	background-repeat: no-repeat;
 	background-size: 0% 2px;
 	transition: background-size 500ms;
-}
-
-.protect-animals__link--underline {
-	text-decoration: none;
-	color: white;
-	background-size: 0 2px;
 }
 
 .protect-animals__link--underline:hover {
