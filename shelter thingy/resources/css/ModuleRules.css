@@ -34,7 +34,7 @@
 	margin: 0;
 }*/
 
-.greentext {
+.text__colorf {
 	color: #024731;
 }
 
@@ -74,7 +74,7 @@
 	width: 100%;
 }
 
-.MorePictures {
+.accordion__hidden-images {
 	height: auto;
 	max-width: 100%;
 	padding-top: 3%;
