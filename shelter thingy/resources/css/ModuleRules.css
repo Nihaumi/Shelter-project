@@ -116,9 +116,9 @@
 .protect-animals__link--underline{
 	text-decoration: none;
 	color: white;
-	background-size: 100% 2px;
+	background-size: 0 2px;
 }
-.protect-animals__link--underline{
+.protect-animals__link--underline:hover{
 	text-decoration: none;
 	color: white;
 	background-size: 100% 2px;
