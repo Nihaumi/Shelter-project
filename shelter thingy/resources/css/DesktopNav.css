@@ -3,7 +3,7 @@
 		display: none;
 	}
 
-	.DesktopNav {
+	.navbar__desktop-navbar {
 		display: inline-block;
 		color: #ffffff;
 		font-size: 1.4rem;
@@ -13,16 +13,16 @@
 
 	}
 
-	.DesktopNav li {
+	.navbar__desktop-navbar li {
 		padding: 0;
 
 	}
 
-	.DeskNavBar {
+	.navbar__first-layer {
 		background-color: transparent;
 	}
 
-	.MegaMenuCont {
+	.navbar__mega-menu {
 		top: 78px;
 		height: 300px;
 
@@ -33,7 +33,7 @@
 
 
 @media (min-width: 1200px) {
-	.DesktopNav {
+	.navbar__desktop-navbar {
 		font-size: 1.4rem;
 	}
 
@@ -42,12 +42,12 @@
 		line-height: 2.8;
 	}
 
-	.BrandLogo {
+	.navbar__brand-image {
 		width: 50px;
 		height: 50px;
 	}
 
-	.NavBrandName {
+	.navbar__brand-name {
 		position: absolute;
 		top: -4%;
 		padding-left: 5%;

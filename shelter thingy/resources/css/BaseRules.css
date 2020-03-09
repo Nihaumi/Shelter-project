@@ -24,11 +24,11 @@ label {
 	font-size: 1rem;
 }
 
-.DesktopNav {
+.navbar__desktop-navbar {
 	display: none;
 }
 
-.NavHeight {
+.navbar--height {
 	height: 8%;
 }
 

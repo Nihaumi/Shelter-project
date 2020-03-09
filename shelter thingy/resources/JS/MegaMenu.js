@@ -1,14 +1,14 @@
 /*DeskNav*/
 
 $(document).ready(function () {
-    if ($(".NavHeight").backgroundColor === 'rgba(0,0,0, 0.5)') {
-        $(".NavHeight").mouseover(function () {
-            $(".NavHeight").animate({backgroundColor: 'rgba(0, 0, 0,.8)'});
+    if ($(".navbar--height").backgroundColor === 'rgba(0,0,0, 0.5)') {
+        $(".navbar--height").mouseover(function () {
+            $(".navbar--height").animate({backgroundColor: 'rgba(0, 0, 0,.8)'});
         });
     }
 
-    $(".NavHeight").mouseout(function () {
-        $(".NavHeight").animate({backgroundColor: 'rgba(0, 0, 0,.5)'});
+    $(".navbar--height").mouseout(function () {
+        $(".navbar--height").animate({backgroundColor: 'rgba(0, 0, 0,.5)'});
     });
 });
 
