@@ -116,7 +116,11 @@
 	background-size: 100% 2px;
 }
 
-.breadcrumb-item:hover, .breadcrumb-item:focus{
+.breadcrumb-item:hover {
+	color: #000000;
+}
+
+.breadcrumb-item:focus {
 	color: #000000;
 }
 
@@ -136,7 +140,6 @@
 	transition: 0.5s;
 	padding-top: 60px;
 }
-
 
 
 .closebtn {
