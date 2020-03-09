@@ -107,7 +107,7 @@
 
 }
 
-.parent {
+.protect-animals__text {
 	position: relative;
 	height: 500px;
 }
@@ -123,19 +123,19 @@
 }
 
 
-.container__background {
+.protect-animals__background {
 	background-color: rgba(0, 0, 0, 0.7);
 	color: white;
 	padding: 10px 30px 5px 10px;
 	right: 0;
 }
 
-.container__background p {
+.protect-animals__background p {
 	font-size: 15px;
 	height: 20px;
 }
 
-.container__background span {
+.protect-animals__background span {
 	color: #84bd00;
 	font-size: 1.2rem;
 	padding: 0 5px 0 10px;
