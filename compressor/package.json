@@ -1,0 +1,72 @@
+{
+  "name": "Shelter",
+  "projectPath": "../web/typo3conf/ext/shelter/",
+  "extensionPath": "../web/typo3conf/ext/",
+  "version": "1.0.0",
+  "description": "IKK BB",
+  "author": "move:elevator GmbH",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Nihaumi/Shelter-project.git"
+  },
+  "scripts": {
+    "lint:js": "eslint ../web/typo3conf/ext/shelter/Resources/Private/JavaScript/**/*.js --config ./.eslintrc.json",
+    "fix:js": "standard --fix ../web/typo3conf/ext/shelter/Resources/Private/JavaScript/*.js &&standard --fix ../web/typo3conf/ext/shelter/Resources/Private/JavaScript/**/*.js && standard --fix ../web/online-styleguide/javascript/**/*.js && standard --fix ./*.js",
+    "compile:js": "npm run lint:js && webpack --config webpack.config.js",
+    "copyfonts:fontawesome": "cp -r -f ./node_modules/@fortawesome/fontawesome-free/webfonts/  ../web/typo3conf/ext/shelter/Resources/Public/Fonts/FontAwesome/",
+    "copyfonts:slick": "cp -r -f ./node_modules/slick-slider/slick/fonts/  ../web/typo3conf/ext/shelter/Resources/Public/Fonts/Slick/",
+    "copyfonts:all": "npm run copyfonts:fontawesome && npm run copyfonts:slick",
+    "copyLibs:maps": "cp -r -f ../web/typo3conf/ext/shelter/Resources/Private/JavaScript/components/map.js  ../web/typo3conf/ext/shelter/Resources/Public/JavaScript/",
+    "copyLibs:all": "npm run copyLibs:maps",
+    "compile:gulp": "gulp",
+    "compile:all": "npm run copyfonts:all && npm run copyLibs:all && npm run fix:js && npm run compile:js && npm run compile:gulp"
+  },
+  "dependencies": {
+    "@babel/core": "^7.8.4",
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "@babel/polyfill": "^7.8.3",
+    "@babel/preset-env": "^7.8.4",
+    "@fortawesome/fontawesome-free": "^5.12.1",
+    "babel-loader": "^8.0.6",
+    "babel-preset-es2015": "~6.24.1",
+    "bootstrap": "^4.4.1",
+    "es6-promise": "~4.2.6",
+    "es6-store": "^1.1.0",
+    "eslint": "^5.16.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7",
+    "gulp-babel": "~8.0.0",
+    "gulp-base64": "^0.1.3",
+    "gulp-clean-css": "^4.2.0",
+    "gulp-cli": "^2.2.0",
+    "gulp-rename": "^2",
+    "gulp-sass": "^4.0.2",
+    "gulp-scss-lint": "^1.0.0",
+    "gulp-standardjs": "~12.0.5",
+    "gulp-uglify-es": "^2",
+    "gulp-watch": "^5.0.1",
+    "jquery": "^3.4.1",
+    "jquery-inline-svg": "^1.0.2",
+    "npm": "^6.13.7",
+    "npx": "^10.2.2",
+    "popper.js": "^1.16.1",
+    "slick-slider": "~1.8.2",
+    "standard": "~12.0.1",
+    "uglifyjs-webpack-plugin": "^2.1.3",
+    "webpack": "^4.41.6",
+    "webpack-cli": "^3.3.11"
+  },
+  "standard": {
+    "globals": [
+      "$",
+      "hljs",
+      "window",
+      "document",
+      "history",
+      "google",
+      "MarkerClusterer"
+    ]
+  },
+  "devDependencies": {}
+}
