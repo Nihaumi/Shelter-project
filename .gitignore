@@ -6,7 +6,7 @@ web/vendor/
 !web/favicon.ico
 
 # extensions
-web/typo3conf/ext/shelter
+!web/typo3conf/ext/shelter/
 
 # Ignore serveral upload and file directories.
 web/fileadmin/user_upload/
