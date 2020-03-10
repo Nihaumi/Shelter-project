@@ -2,39 +2,16 @@
 <html>
 
 <head>
-	<!-- Required meta tags -->
-	<title>Shelter</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-	<!-- Bootstrap CSS for styling and layout-->
-	<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-	<link rel="manifest" href="site.webmanifest">
-	<link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
-	<meta name="apple-mobile-web-app-title" content="Shelter">
-	<meta name="application-name" content="Shelter">
-	<meta name="msapplication-TileColor" content="#da532c">
-	<meta name="msapplication-TileImage" content="/mstile-144x144.png">
-	<meta name="theme-color" content="#ffffff">
+    <!-- Bootstrap CSS for styling and layout-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-		  integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-	<link rel="stylesheet" href="resources/css/BaseRules.css">
-	<link rel="stylesheet" href="resources/css/ModuleRules.css">
-	<link rel="stylesheet" href="resources/css/LayoutRules.css">
-	<link rel="stylesheet" href="resources/css/Link.css">
-	<link rel="stylesheet" href="resources/css/Navbar.css">
-	<link rel="stylesheet" href="resources/css/DesktopNav.css">
-	<link rel="preload" href="resources/css/Search.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-	<noscript>
-		<link rel="stylesheet" href="resources/css/Search.css">
-	</noscript>
-
-
-	<link href="https://fonts.googleapis.com/css?family=Kulim+Park:300,400,700&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Kulim+Park:300,400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -43,270 +20,66 @@
 	<div class="row">
 		<div class="col-12 long">
 
-			<nav class="navbar fixed-top NavHeight NavColor">
+			<nav class="navbar fixed-top">
 				<!--navbar-brand and toggle button-->
-				<div class="col-2">
-					<a class="navbar-brand" href="index.html">
-						<img data-src="resources/images/Brand-min.jpg" width="30" height="30"
-							 class="BrandLogo d-inline-block align-top rounded-circle lazyload" alt="">
-						<span class="underline NavBrandName">Shelter</span>
-					</a>
-				</div>
+				<a class="navbar-brand " href="#">
+					<img src="resources/images/Brand-min.jpg" width="30" height="30"
+						 class="d-inline-block align-top rounded-circle" alt="">
+					<span class="underline">Shelter</span>
+				</a>
 
-				<button class="RedBtn SearchBtn SearchBtnMobile" onclick="openSearch()"><a><i
-						class="fa fa-search SearchIcon"></i></a></button>
+				<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;openmenu</span>
 
 
-				<!--desktop Nav-->
-				<div class="DesktopNav col-10">
-					<nav class="navbar NavColor navbar-expand-lg DeskNavBar">
+				<!--FIRST LAYER NAVBAR content-->
 
-						<div class="collapse navbar-collapse" id="navbarNavDropdown">
+				<div class="collapse navbar-collapse" id="navbarSupportedContent1">
 
-							<ul class="navbar-nav mr-auto">
-
-
-								<li class="nav-item active">
-									<a class="nav-link underline" href="index.html">Home</a>
-
-								</li>
-
-								<li class="nav-item">
-									<a class="nav-link underline drop" href="HowYouCanHelp.html">How You Can Help</a>
-
-								</li>
-								<!--Mega Menu-->
-								<li class="nav-item dropdown mega-dropdown">
-									<a class="nav-link  underline" id="navbarDropdownMenuLinkHelp"
-									   onclick="colorChange()"
-
-
-									   aria-haspopup="true" aria-expanded="false" href="#">Our Work <i
-											class="fa fa-chevron-down"></i></a>
-
-								</li>
-
-								<li class="nav-item">
-									<a class="nav-link underline" href="#">About Us</a>
-								</li>
-
-								<li>
-									<button class="RedBtn SearchBtn" onclick="openSearch()"><a><i
-											class="fa fa-search SearchIcon"></i></a></button>
-								</li>
-							</ul>
-
-						</div>
-					</nav>
-
-				</div>
-
-
-				<!--Mobile Navbar-->
-				<span class="text-white MenuBtn" style="font-size:30px;cursor:pointer"
-					  onclick="openNav()">&#9776;</span>
-
-
-				<!--FIRST LAYER MOBILENAVBAR content-->
-
-				<div class="MobileNav NavColor" id="navbarSupportedContent1">
-
-					<a href="javascript:void(0)" class="closebtn" onclick="closeNav() ,hideAll()">&times;</a>
-					<ul class="navbar-nav mr-auto FirstLayer">
-
-						<h3 class="text-white NavSpacing mt-3">Menu</h3>
+					<ul id="menu" class="navbar-nav mr-auto SideNav">
+						<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+						<h3 class="text-white NavSpacing">Menu</h3>
 						<span class="border-bottom"></span>
 						<li class="nav-item active">
 							<a class="nav-link underline" href="#">Home</a>
 							<span class="sr-only">(Current)</span>
 						</li>
 						<span class="border-bottom NavSpacing"></span>
-						<li class="nav-item">
-							<a class="nav-link underline" onclick="openOurWorkSecondLayer()" href="#">Our Work</a>
+						<li class="nav-item active">
+							<a class="nav-link underline" href="#">Our Work</a>
 							<a class="text-white">
-								<span class="NextNavSlide" onclick="openOurWorkSecondLayer()"><i
-										class="fa fa-chevron-right fa-1x"></i></span>
+								<span class="white-text"><i class="fa fa-chevron-right fa-1x"></i></span>
 							</a>
+
+							<!--second layer-->
+							<ul>
+								<li><a href="/Our Work/Animals inLaboratories">Animals in Laboratories</a></li>
+								<li><a href="/Our Work/Animals inLaboratories">Animals in Wildlife</a></li>
+								<li><a href="/Our Work/Animals inLaboratories">Farm Animals</a></li>
+							</ul>
 						</li>
 						<span class="border-bottom NavSpacing"></span>
-						<li class="nav-item">
-							<a class="nav-link underline" href="HowYouCanHelp.html">How You Can Help</a>
+						<li class="nav-item active">
+							<a class="nav-link underline" href="#">How You Can Help</a>
 						</li>
 						<span class="border-bottom NavSpacing"></span>
-						<li class="nav-item">
+						<li class="nav-item active">
 							<a class="nav-link underline" href="#">About Us</a>
 						</li>
-
+						<span class="border-bottom NavSpacing"></span>
 
 					</ul>
-					<!--Our Work second layer-->
-					<ul class="navbar-nav mr-auto OurWorkSecondLayer Layers">
-
-						<li class="nav-item">
-							<a>
-							<span class="text-white NextNavSlide" onclick="closeOurWorkSecondLayer()">
-								<i class="fa fa-chevron-left"></i>
-							</span>
-							</a>
-							<a class="underline text-white mt-3 mb-1 back" href="#"
-							   onclick="closeOurWorkSecondLayer()">go
-								back</a>
-						</li>
-						<span class="border-bottom"></span>
-						<li class="nav-item"><a class="underline nav-link" href="#">Animals
-							in
-							Laboratories</a></li>
-						<span class="border-bottom NavSpacing"></span>
-						<li class="nav-item"><a class="underline nav-link" href="#">Animals
-							in
-							Wildlife</a>
-
-						</li>
-						<span class="border-bottom NavSpacing"></span>
-						<li class="nav-item"><a class="underline nav-link" href="#"
-												onclick="openFarmAnimalsThirdLayer()">Farm
-							Animals</a>
-							<a class="text-white">
-								<span class="NextNavSlide" onclick="openFarmAnimalsThirdLayer()"><i
-										class="fa fa-chevron-right fa-1x"></i></span>
-							</a>
-						</li>
-
-					</ul>
-
-					<!--Third Layer-->
-					<!--Third Layer Farm Animals-->
-
-
-					<ul class="navbar-nav mr-auto FarmAnimalsThirdLayer Layers">
-
-						<li class="nav-item">
-							<a>
-							<span class="text-white NextNavSlide" onclick="closeFarmAnimalsThirdLayer()">
-								<i class="fa fa-chevron-left"></i>
-							</span>
-							</a>
-							<a class="underline text-white mt-3 mb-1 back" onclick="closeFarmAnimalsThirdLayer()">go
-								back</a>
-						</li>
-						<span class="border-bottom"></span>
-						<li class="nav-item"><a class="underline nav-link" href="#">Factory Farming</a></li>
-						<span class="border-bottom NavSpacing"></span>
-						<li class="nav-item"><a class="underline nav-link" href="#">Plant-based Eating</a>
-						</li>
-
-
-					</ul>
-
 				</div>
-
-				<!--end of mobile nav-->
 			</nav>
 		</div>
 	</div>
 </div>
 
-<!--searchbar-->
-<div class="fixed-top container">
-	<div class="row">
-		<div class="col-12">
-			<div class="SearchBar">
-				<span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
-				<div class="overlay-content input-group flex-nowrap">
-
-
-					<input type="text" class="form-control" placeholder="Username" aria-label="Username"
-						   aria-describedby="addon-wrapping">
-
-					<div class="input-group-prepend">
-						<button class="btn RedBtn" type="submit"><i class="fa fa-search"></i></button>
-					</div>
-
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-
-
-<!--MEGAMENU-->
-<div class="fixed-top MegaMenuCont container">
-	<div class="row">
-		<div class="col-12">
-			<div class="mega-menu v-2 z-depth-1  py-5 px-3"
-				 aria-labelledby="navbarDropdownMenuLink3">
-				<div class="row">
-					<div class="col-md-6 col-xl-4 sub-menu mb-xl-0 mb-4">
-						<h6 class="sub-title text-uppercase font-weight-bold white-text underline">
-							Featured</h6>
-						<ul class="list-unstyled">
-							<li>
-								<a class="menu-item pl-0 LinkUnderline UnderlineBrightGreen" href="#!">
-									<i class="fa fa-caret-right pl-1 pr-3"></i>Quis nostrud
-									exercitation
-								</a>
-							</li>
-
-							<li>
-								<a class="menu-item pl-0 LinkUnderline UnderlineBrightGreen" href="#!">
-									<i class="fa fa-caret-right pl-1 pr-3"></i>Esse cillum
-									dolore eu fugiat nulla pariatur
-								</a>
-							</li>
-						</ul>
-
-
-					</div>
-					<div class="col-md-6 col-xl-4 sub-menu mb-md-0 mb-4">
-						<h6 class="sub-title text-uppercase font-weight-bold white-text underline">
-							Related</h6>
-						<ul class="list-unstyled">
-							<li>
-								<a class="menu-item pl-0 LinkUnderline UnderlineBrightGreen" href="#!">
-									<i class="fa fa-caret-right pl-1 pr-3"></i> Quis nostrud
-									exercitation
-								</a>
-							</li>
-
-							<li>
-								<a class="menu-item pl-0 LinkUnderline UnderlineBrightGreen" href="#!">
-									<i class="fa fa-caret-right pl-1 pr-3 LinkUnderline UnderlineBrightGreen"></i>Esse
-									cillum
-									dolore eu fugiat nulla pariatur
-								</a>
-							</li>
-						</ul>
-					</div>
-					<div class="col-md-6 col-xl-4 sub-menu mb-0">
-						<h6 class="sub-title text-uppercase font-weight-bold white-text underline">
-							Design</h6>
-						<ul class="list-unstyled">
-
-							<a class="menu-item pl-0 LinkUnderline UnderlineBrightGreen" href="#!">
-								<i class="fa fa-caret-right pl-1 pr-3 "></i>Mollit anim id
-								est laborum
-							</a>
-							</li>
-							<li>
-								<a class="menu-item pl-0 LinkUnderline UnderlineBrightGreen" href="#!">
-									<i class="fa fa-caret-right pl-1 pr-3"></i>Accusantium
-									doloremque laudantium
-								</a>
-							</li>
-						</ul>
-						</a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
 
 <div class="container fillViewPortPlease">
 	<!--Header-->
 	<div class="row">
 		<div class="col-12">
-			<div class="hero1 hero jumbotron jumbotron-fluid">
+			<div class="hero jumbotron jumbotron-fluid">
 
 				<div class="row">
 					<div class="col-12 col-sm-5 col-md-6 col-lg-8 ml-5 parent">
@@ -315,8 +88,7 @@
 					<div class="col-12 col-sm-7 col-md-6 col-lg-3 parent right">
 						<div class=" mx-auto bottom container blackBox">
 							<p id="heading">HAPPY NEW YEAR</p>
-							<a href="#" class="font-weight-bold text-white LinkUnderline display-5">See what you helped
-								us
+							<a href="#" class="font-weight-bold LinkUnderline display-5">See what you helped us
 								accomplish
 								for animals in 2019</a>
 							<p class="font-weight-light">And stay with us for more victories in 2020.<span
@@ -356,13 +128,12 @@
 	</div>
 	<!--end of container fluid-->
 </div>
-<div class="container Breadcrumbs">
+<div class="container container-breadcrumbs">
 	<div class="row">
 		<div class="col-8 mx-auto">
 			<nav aria-label="breadcrumb">
 				<ul class="breadcrumb">
-					<li class="breadcrumb-item"><a href="index.html" class="breadcrumb-item active LinkUnderline"
-												   aria-current="page">Home</a></li>
+					<li> <a href="#" class="breadcrumb-item active LinkUnderline" aria-current="page">Home</a></li>
 				</ul>
 			</nav>
 		</div>
@@ -386,7 +157,7 @@
 		<div class="col-12 my-4">
 			<div class="card-deck greentext">
 				<div class="card text-center">
-					<img data-src="resources/images/food.jpg" class="lazyload card-img-top" alt="plant-based-food">
+					<img src="resources/images/food.jpg" class="card-img-top" alt="plant-based-food">
 
 					<div class="card-body">
 						<p class="card-text cardSize  LinkMargin">Seven plant-based ways to celebrate the holidays with
@@ -407,7 +178,7 @@
 
 
 				<div class="card rounded-0 text-center">
-					<img data-src="resources/images/giraffe.jpg" class="lazyload card-img-top" alt="plant-based-food">
+					<img src="resources/images/giraffe.jpg" class="card-img-top" alt="plant-based-food">
 					<div class="card-body">
 						<p class="card-text cardSize  LinkMargin">Seven plant-based ways to celebrate the holidays with
 							an
@@ -427,9 +198,7 @@
 
 
 				<div class="card rounded-0 text-center">
-					<img data-src="resources/images/armadillo.jpg"
-						 srcset="resources/images/armadillo-small.jpg 480w, resources/images/armadillo.jpg 1080w"
-						 sizes="50vw" class="lazyload card-img-top" alt="plant-based-food">
+					<img src="resources/images/armadillo.jpg" class="card-img-top" alt="plant-based-food">
 					<div class="card-body">
 						<p class="card-text cardSize LinkMargin">Seven plant-based ways to celebrate the holidays with
 							an
@@ -462,7 +231,7 @@
 				<div class="defender-text text-center">
 					<h1 class="display-4 font-weight-bold">Become an Animal Defender</h1>
 					<p>Help to keep animals everywere save.</p>
-					<button type="button" class="btn RedBtn">Donate</button>
+					<button type="button" class="btn font-weight-bold">Donate</button>
 				</div>
 
 			</div>
@@ -484,7 +253,7 @@
 			<div class="card-deck">
 
 				<div class="card">
-					<img data-src="resources/images/food2.jpg" class="lazyload card-img-top" alt="plant-based food">
+					<img src="resources/images/food2.jpg" class="card-img-top" alt="plant-based food">
 					<div class="card-body">
 
 						<h3 class="card-title">Plant-based Eating</h3>
@@ -501,7 +270,7 @@
 
 
 				<div class="card">
-					<img data-src="resources/images/armadillo.jpg" class="lazyload card-img-top" alt="plant-based food">
+					<img src="resources/images/armadillo.jpg" class="card-img-top" alt="plant-based food">
 					<div class="card-body">
 						<h3 class="card-title">Wildlife Trade</h3>
 						<p class="card-text cardSize">The international wildlife trade jeopardizes the survival
@@ -514,7 +283,7 @@
 				</div>
 
 				<div class="card">
-					<img data-src="resources/images/cagedos.jpg" class="lazyload card-img-top" alt="plant-based food">
+					<img src="resources/images/cagedos.jpg" class="card-img-top" alt="plant-based food">
 					<div class="card-body">
 						<h3 class="card-title">Dog Meat Trade</h3>
 						<p class="card-text cardSize">Across Asia, millions of dogs and cats are brutally killed for
@@ -590,7 +359,7 @@
 											</label>
 										</div>
 										<div class="">
-											<button type="submit" class="btn RedBtn">Sign Up</button>
+											<button type="submit" class="btn btn-danger mb-2">Sign Up</button>
 										</div>
 									</form>
 
@@ -655,250 +424,7 @@
 
 </div>
 
-<!--Accordion-->
-<div class="container">
-	<div class="row">
-		<div class="col-12 greentext text-center my-3">
-			<h1 class="display-4">Animals in Our Care</h1>
-		</div>
-	</div>
-	<div class="row AccordionRow">
-		<div class="col-12">
-			<div class="accordion" id="accordionExample">
-				<div class="card greentext">
-					<div class="card-header border-0 AccordionHeader mx-auto greentext" id="headingOne">
-
-						<h2 class="mb-0 collapsed underline Pointer" data-toggle="collapse" data-target="#collapseOne"
-							aria-expanded="true" aria-controls="collapseOne">
-							Dogs
-						</h2>
-
-					</div>
-
-					<div id="collapseOne" class="card-deck collapse" aria-labelledby="headingOne"
-						 data-parent="#accordionExample">
-						<div class="card border-0">
-							<img class="DogsInCare lazyload" data-src="resources/images/doggo.jpg"
-								 alt="Picture of a Dog">
-							<div class="card-body">
-
-								<h3 class="card-title text-center LinkUnderline border-bottom Pointer"
-									data-toggle="collapse" href="#VeronaText"
-									aria-expanded="false" aria-controls="VeronaText">
-									Verona <span><i class="fa fa-chevron-down"></i></span>
-								</h3>
-								<div class="card-text collapse" id="VeronaText">
-									<p>
-										Verona hasbeen found on the streets in Italy together with her 6 puppies. She´s
-										been
-										abondoned and wass ick and nearly starving when a rescue team found her. Today
-										she
-										enjoys Life with her grown puppies in the care of one of our Helpers. She´s
-										grown to
-										be very lovable and quite attached to humans.
-									</p>
-									<ul>
-										<li><strong>Name: </strong>Verona</li>
-										<li><strong>Age: </strong>5</li>
-										<li><strong>Sex: </strong>Female</li>
-										<li><strong>Animal: </strong>Dog</li>
-									</ul>
-
-									<a class="LinkUnderline UnderlineGreen" data-toggle="collapse"
-									   href="#VeronaPictures"
-									   aria-expanded="false" aria-controls="VeronaPictures">more Pictures<span><i
-											class="fa fa-chevron-down"></i></span></a>
-									<div class="row collapse" id="VeronaPictures">
-										<div class="col-12">
-											<img class="lazyload MorePictures" data-src="resources/images/puppy.jpg
-"
-												 alt="Picture of Verona">
-										</div>
-										<div class="col-12">
-											<img class="lazyload MorePictures"
-												 data-src="resources/images/bordercollie.jpg"
-												 alt="Picture of Verona">
-										</div>
-									</div>
-									<div class="row">
-										<div class="col-12">
-											<button type="button" class="btn GreenBtn">Become
-												Godparent
-											</button>
-										</div>
-									</div>
-
-								</div>
-							</div>
-
-						</div>
-
-						<div class="card border-0">
-							<img class="lazyload DogsInCare" data-src="resources/images/fox.jpg" alt="Picture of a Dog">
-							<div class="card-body">
-
-								<h3 class="card-title text-center LinkUnderline border-bottom Pointer"
-									data-toggle="collapse" href="#YukiText"
-									aria-expanded="false" aria-controls="VeronaText" onmouseover="mouseOver()">
-									Yuki <span><i class="fa fa-chevron-down"></i></span>
-								</h3>
-								<div class="card-text collapse" id="YukiText">
-									<p>
-										Verona hasbeen found on the streets in Italy together with her 6 puppies. She´s
-										been
-										abondoned and wass ick and nearly starving when a rescue team found her. Today
-										she
-										enjoys Life with her grown puppies in the care of one of our Helpers. She´s
-										grown to
-										be very lovable and quite attached to humans.
-
-
-									</p>
-									<ul>
-										<li><strong>Name: </strong>Verona</li>
-										<li><strong>Age: </strong>5</li>
-										<li><strong>Sex: </strong>Female</li>
-										<li><strong>Animal: </strong>Dog</li>
-									</ul>
-
-									<a class="LinkUnderline UnderlineGreen" data-toggle="collapse"
-									   href="#YukiPictures"
-									   aria-expanded="false" aria-controls="YukiPictures">more Pictures<span><i
-											class="fa fa-chevron-down"></i></span></a>
-									<div class="row collapse" id="YukiPictures">
-										<div class="col-12">
-											<img class="lazyload MorePictures" data-src="resources/images/puppy.jpg"
-												 alt="Picture of Yuki">
-										</div>
-										<div class="col-12">
-											<img class="lazyload MorePictures"
-												 data-src="resources/images/bordercollie.jpg"
-												 alt="Picture of Verona">
-										</div>
-									</div>
-									<div class="row">
-										<div class="col-12">
-											<button type="button" class="btn GreenBtn">Become
-												Godparent
-											</button>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="card greentext">
-				<div class="card-header border-0 AccordionHeader mx-auto greentext" id="headingTwo">
-
-					<h2 class="mb-0 collapsed underline Pointer" data-toggle="collapse" data-target="#collapseTwo"
-						aria-expanded="false"
-						aria-controls="collapseTwo">
-						Cats
-					</h2>
-
-				</div>
-				<div id="collapseTwo" class="card-deck collapse" aria-labelledby="headingTwo"
-					 data-parent="#accordionExample">
-					<div class="card border-0">
-						<img class="lazyload DogsInCare" data-src="resources/images/cat.jpg" alt="Picture of a Dog">
-						<div class="card-body">
-
-							<h3 class="card-title text-center LinkUnderline border-bottom Pointer"
-								data-toggle="collapse" href="#HunterText"
-								aria-expanded="false" aria-controls="VeronaText" onmouseover="mouseOver()">
-								Hunter <span><i class="fa fa-chevron-down"></i></span>
-							</h3>
-							<p class="card-text collapse" id="HunterText">
-								Verona hasbeen found on the streets in Italy together with her 6 puppies. She´s been
-								abondoned and wass ick and nearly starving when a rescue team found her. Today she
-								enjoys Life with her grown puppies in the care of one of our Helpers. She´s grown to
-								be very lovable and quite attached to humans.
-
-
-							</p>
-						</div>
-					</div>
-					<div class="card border-0">
-						<img class="lazyload DogsInCare" data-src="resources/images/bigcat.jpg" alt="Picture of a Dog">
-						<div class="card-body">
-
-							<h3 class="card-title text-center LinkUnderline border-bottom Pointer"
-								data-toggle="collapse" href="#MäuslText"
-								aria-expanded="false" aria-controls="VeronaText" onmouseover="mouseOver()">
-								Mäusl<span><i class="fa fa-chevron-down"></i></span>
-							</h3>
-							<p class="card-text collapse" id="MäuslText">
-								Verona hasbeen found on the streets in Italy together with her 6 puppies. She´s been
-								abondoned and wass ick and nearly starving when a rescue team found her. Today she
-								enjoys Life with her grown puppies in the care of one of our Helpers. She´s grown to
-								be very lovable and quite attached to humans.
-
-
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="card greentext">
-				<div class="card-header border-0 AccordionHeader mx-auto greentext" id="headingThree">
-
-					<h2 class="mb-0 collapsed underline Pointer" data-toggle="collapse"
-						data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-						Others
-					</h2>
-
-				</div>
-				<div id="collapseThree" class="card-deck collapse" aria-labelledby="headingThree"
-					 data-parent="#accordionExample">
-					<div class="card border-0">
-						<img class="lazyload DogsInCare" data-src="resources/images/seal.jpg" alt="Picture of a Dog">
-						<div class="card-body">
-
-							<h3 class="card-title text-center LinkUnderline border-bottom Pointer"
-								data-toggle="collapse" href="#SeadogText"
-								aria-expanded="false" aria-controls="VeronaText" onmouseover="mouseOver()">
-								Seadog<span><i class="fa fa-chevron-down"></i></span>
-							</h3>
-							<p class="card-text collapse" id="SeadogText">
-								Verona hasbeen found on the streets in Italy together with her 6 puppies. She´s been
-								abondoned and wass ick and nearly starving when a rescue team found her. Today she
-								enjoys Life with her grown puppies in the care of one of our Helpers. She´s grown to
-								be very lovable and quite attached to humans.
-
-
-							</p>
-						</div>
-					</div>
-					<div class="card border-0">
-						<img class="lazyload DogsInCare" data-src="resources/images/dumbo.jpg" alt="Picture of a Dog">
-						<div class="card-body">
-
-							<h3 class="card-title text-center LinkUnderline border-bottom Pointer"
-								data-toggle="collapse" href="#SariText"
-								aria-expanded="false" aria-controls="VeronaText" onmouseover="mouseOver()">
-								Sari<span><i class="fa fa-chevron-down"></i></span>
-							</h3>
-							<p class="card-text collapse" id="SariText">
-								Verona hasbeen found on the streets in Italy together with her 6 puppies. She´s been
-								abondoned and wass ick and nearly starving when a rescue team found her. Today she
-								enjoys Life with her grown puppies in the care of one of our Helpers. She´s grown to
-								be very lovable and quite attached to humans.
-
-
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-
-</div>
-
-
+<script src="resources/JS/SideMenu.js"></script>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
 		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
 		crossorigin="anonymous"></script>
@@ -908,20 +434,15 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
 		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
 		crossorigin="anonymous"></script>
-<script type="text/javascript"
-		src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js">
-</script>
+<script>
+    function openSearch() {
+        document.getElementById("SearchOverlay").style.display = "block";
+    }
 
-<script type="text/javascript"
-		src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js">
+    function closeSearch() {
+        document.getElementById("SearchOverlay").style.display = "none";
+    }
 </script>
-<script src="resources/JS/SideMenu.js" defer></script>
-<script src="resources/JS/linkLength.js" defer></script>
-<script src="resources/JS/MegaMenu.js" defer></script>
-<script src="resources/JS/SearchBar.js" defer></script>
-<script src="resources/JS/lazysizes.min.js" async></script>
-<!-- Images End -->
-
 </body>
 
 </html>
