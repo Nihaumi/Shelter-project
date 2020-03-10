@@ -1,0 +1,103 @@
+$slick-font-path: "/typo3conf/ext/ikkbb/Resources/Public/Fonts/Slick";
+
+@import "../../../../../../../../../compressor/node_modules/slick-slider/slick/slick.scss";
+
+.slick-slider {
+	&.slick-initialized {
+		position: relative;
+		padding-bottom: rem(60px);
+
+		button {
+			&:focus {
+				outline: none;
+			}
+		}
+
+		&.slick-dotted {
+			padding-bottom: 0;
+
+			.slick-dots {
+				padding: rem(0 60px);
+				margin: 0;
+				width: 100%;
+				display: flex;
+				flex-flow: row nowrap;
+				justify-content: center;
+
+				li {
+					position: relative;
+
+					&::before {
+						content: "";
+						margin: 0;
+						padding: 0;
+						position: absolute;
+						top: 50%;
+						left: 50%;
+						display: block;
+						width: rem(12px);
+						height: rem(12px);
+						background-color: $color-divider;
+						border: 1px solid rgba($color-ikkbb-red, 0.5);
+						border-radius: 50%;
+						transform: translate(-50%, -50%);
+						pointer-events: none;
+						transition: background-color 0.3s;
+					}
+
+					&.slick-active,
+					&:focus {
+						&::before {
+							background-color: $color-ikkbb-red;
+						}
+					}
+
+					button {
+						padding: 0;
+						margin: 0;
+						width: rem(20px);
+						height: rem(40px);
+						color: transparent;
+						text-indent: -999px;
+						border: none;
+						background: none;
+						cursor: pointer;
+						overflow: hidden;
+					}
+				}
+			}
+		}
+
+		.slick-arrow {
+			position: absolute;
+			bottom: 0;
+			width: rem(40px);
+			height: rem(40px);
+			color: transparent;
+			text-indent: -999px;
+			overflow: hidden;
+			background-color: $black;
+			background-image: url("/typo3conf/ext/ikkbb/Resources/Public/Images/ButtonArrowRightBlack.svg");
+			background-repeat: no-repeat;
+			background-position: center;
+			border: none;
+			cursor: pointer;
+			transition: background 0.3s ease-out;
+
+			&:hover,
+			&:focus {
+				background-color: $black;
+				background-image: url("/typo3conf/ext/ikkbb/Resources/Public/Images/ButtonArrowRightWhite.svg");
+			}
+		}
+
+		.slick-prev {
+			left: rem(15px);
+			transform: rotate(180deg);
+		}
+
+		.slick-next {
+			right: rem(15px);
+		}
+	}
+}

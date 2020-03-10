@@ -1,0 +1,22 @@
+.text--center {
+	text-align: center;
+}
+
+.phone--link {
+	color: $color-ikkbb-red;
+	font-size: rem(26px);
+	line-height: 1.25;
+	letter-spacing: rem(1.12px);
+
+
+	@media (min-width: map_get($grid-breakpoints, "md")) {
+		font-size: rem(45px);
+		letter-spacing: rem(3px);
+	}
+
+	&:hover,
+	&:focus {
+		color: $color-ikkbb-red;
+		text-decoration: none;
+	}
+}
