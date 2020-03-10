@@ -184,7 +184,7 @@
 	width: 100%;
 }
 
-.MorePictures {
+.accordion__hidden-images {
 	height: auto;
 	max-width: 100%;
 	padding-top: 3%;
@@ -208,7 +208,7 @@
 }
 
 .GreenBtn {
-
+	
 	width: 100%;
 	margin-top: 3%;
 	color: #ffffff;
@@ -231,7 +231,6 @@
 	background-color: #696969;
 	color: #ededed;
 }
-
 
 /*
 .underline{
