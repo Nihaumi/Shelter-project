@@ -38,75 +38,134 @@
 		<div class="col-12 long">
 
 			<nav class="navbar fixed-top">
-				<!--navbar-brand and toggle button-->
+				<!--navbar-barnd and tofggle button-->
 				<a class="navbar-brand " href="#">
 					<img src="resources/images/Brand-min.jpg" width="30" height="30"
 						 class="d-inline-block align-top rounded-circle" alt="">
-					<span class="underline">Shelter</span>
+					<span class="nav-item__underline">Shelter</span>
 				</a>
 
-				<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;openmenu</span>
-
-
-				<!--FIRST LAYER NAVBAR content-->
-
-				<div class="collapse navbar-collapse" id="navbarSupportedContent1">
-
-					<ul id="menu" class="navbar-nav mr-auto SideNav">
-						<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-						<h3 class="text-white NavSpacing">Menu</h3>
-						<span class="border-bottom"></span>
-						<li class="nav-item active">
-							<a class="nav-link underline" href="#">Home</a>
-							<span class="sr-only">(Current)</span>
-						</li>
-						<span class="border-bottom NavSpacing"></span>
-						<li class="nav-item active">
-							<a class="nav-link underline" href="#">Our Work</a>
-							<a class="text-white">
-								<span class="white-text"><i class="fa fa-chevron-right fa-1x"></i></span>
-							</a>
-
-							<!--second layer-->
-							<ul>
-								<li><a href="/Our Work/Animals inLaboratories">Animals in Laboratories</a></li>
-								<li><a href="/Our Work/Animals inLaboratories">Animals in Wildlife</a></li>
-								<li><a href="/Our Work/Animals inLaboratories">Farm Animals</a></li>
-							</ul>
-						</li>
-						<span class="border-bottom NavSpacing"></span>
+				<span class="text-white navbar__menu-btn" style="font-size:30px;cursor:pointer"
+					  onclick="openNav()">&#9776;</span>
+				<!--Third Layer-->
+				<!--Third Layer Farm Animals-->
+				<!--SECOND LAYER-->
+				<div class="FarmAnimalsThirdLayer navbar__mobile-navbar Layers">
+					<ul class="navbar-nav mr-auto">
+						<a href="javascript:void(0)" class="navbar__close-btn"
+						   onclick="hideAll()">&times;</a>
 						<li class="nav-item">
-							<a class="nav-link underline" href="HowYouCanHelp.html">How You Can Help</a>
+							<a>
+							<span class="text-white navbar__next-slide" onclick="closeFarmAnimalsThirdLayer()">
+								<i class="fa fa-chevron-left"></i>
+							</span>
+							</a>
+							<a class="nav-item__underline text-white mt-5 mb-1 back"
+							   onclick="closeFarmAnimalsThirdLayer()">go
+								back</a>
 						</li>
-						<span class="border-bottom NavSpacing"></span>
-						<li class="nav-item active">
-							<a class="nav-link underline" href="#">About Us</a>
+						<span class="border-bottom"></span>
+						<li class="nav-item"><a class="nav-item__underline nav-link" href="#">Factory Farming</a></li>
+						<span class="border-bottom navbar__border navbar__border--space"></span>
+						<li class="nav-item"><a class="nav-item__underline nav-link" href="#">Plant-based Eating</a>
 						</li>
-						<span class="border-bottom NavSpacing"></span>
+						<span class="border-bottom navbar__border navbar__border--space"></span>
 
 					</ul>
 				</div>
+				<!--Our Work second layer-->
+				<div class="OurWorkSecondLayer navbar__mobile-navbar Layers">
+					<ul class="navbar-nav mr-auto">
+						<a href="javascript:void(0)" class="navbar__close-btn" onclick="hideAll()">&times;</a>
+						<li class="nav-item">
+							<a>
+							<span class="text-white navbar__next-slide" onclick="closeOurWorkSecondLayer()">
+								<i class="fa fa-chevron-left"></i>
+							</span>
+							</a>
+							<a class="nav-item__underline text-white mt-5 mb-1 back" href="#"
+							   onclick="closeOurWorkSecondLayer()">go
+								back</a>
+						</li>
+						<span class="border-bottom"></span>
+						<li class="nav-item"><a class="nav-item__underline nav-link" href="#">Animals
+							in
+							Laboratories</a></li>
+						<span class="border-bottom navbar__border navbar__border--space"></span>
+						<li class="nav-item"><a class="nav-item__underline nav-link" href="#">Animals
+							in
+							Wildlife</a>
+
+						</li>
+						<span class="border-bottom navbar__border navbar__border--space"></span>
+						<li class="nav-item"><a class="nav-item__underline nav-link" href="#"
+												onclick="openFarmAnimalsThirdLayer()">Farm
+							Animals</a>
+							<a class="text-white">
+								<span class="navbar__next-slide" onclick="openFarmAnimalsThirdLayer()"><i
+										class="fa fa-chevron-right fa-1x"></i></span>
+							</a>
+						</li>
+						<span class="border-bottom navbar__border navbar__border--space"></span>
+					</ul>
+				</div>
+				<!--FIRST LAYER NAVBAR content-->
+
+				<div class="navbar__mobile-navbar" id="navbarSupportedContent1">
+
+					<ul class="navbar-nav mr-auto">
+						<a href="javascript:void(0)" class="navbar__close-btn" onclick="closeNav()">&times;</a>
+						<h3 class="text-white navbar__border navbar__border--space mt-5">Menu</h3>
+						<span class="border-bottom"></span>
+						<li class="nav-item active">
+							<a class="nav-link nav-item__underline" href="#">Home</a>
+							<span class="sr-only">(Current)</span>
+						</li>
+						<span class="border-bottom navbar__border navbar__border--space"></span>
+						<li class="nav-item">
+							<a class="nav-link nav-item__underline" onclick="openOurWorkSecondLayer()" href="#">Our
+								Work</a>
+							<a class="text-white">
+								<span class="navbar__next-slide" onclick="openOurWorkSecondLayer()"><i
+										class="fa fa-chevron-right fa-1x"></i></span>
+							</a>
+						</li>
+						<span class="border-bottom navbar__border navbar__border--space"></span>
+						<li class="nav-item">
+							<a class="nav-link nav-item__underline" href="#">How You Can Help</a>
+						</li>
+						<span class="border-bottom  navbar__border navbar__border--space"></span>
+						<li class="nav-item">
+							<a class="nav-link nav-item__underline" href="#">About Us</a>
+						</li>
+						<span class="border-bottom navbar__border navbar__border--space"></span>
+
+					</ul>
+				</div>
+
+
 			</nav>
 		</div>
 	</div>
 </div>
 
 
-<div class="container fillViewPortPlease">
+<div class="container protect-animals fillViewPortPlease">
 	<!--Header-->
 	<div class="row">
 		<div class="col-12">
-			<div class="hero1 hero jumbotron jumbotron-fluid">
+			<div class="hero jumbotron jumbotron-fluid">
 
 				<div class="row">
-					<div class="col-12 col-sm-5 col-md-6 col-lg-8 ml-5 parent">
+					<div class="col-12 col-sm-5 col-md-6 col-lg-8 ml-5 protect-animals__text">
 						<h1 class="mx-auto bottom top hero-content font-weight-bold">Protect all animals</h1>
 					</div>
-					<div class="col-12 col-sm-7 col-md-6 col-lg-3 parent right">
-						<div class=" mx-auto bottom container blackBox">
+					<div class="col-12 col-sm-7 col-md-6 col-lg-3 protect-animals__text right">
+						<div class=" mx-auto bottom container protect-animals__background">
 							<p id="heading">HAPPY NEW YEAR</p>
-							<a href="#" class="font-weight-bold text-white LinkUnderline display-5">See what you helped
-								us
+							<a href="#"
+							   class="font-weight-bold link protect-animals__link protect-animals__link--underline display-5">See
+								what you helped us
 								accomplish
 								for animals in 2019</a>
 							<p class="font-weight-light">And stay with us for more victories in 2020.<span
@@ -123,7 +182,7 @@
 <!--fisrt green paragraph-->
 <div class="container-fluid">
 	<div class="row">
-		<div class="col-12 text-center green">
+		<div class="col-12 text-center container-fluid__text--color">
 			<div class="row">
 				<div class="col-9 mx-auto font-weight-light">
 					<p>
@@ -146,49 +205,42 @@
 	</div>
 	<!--end of container fluid-->
 </div>
-<div class="container Breadcrumbs">
-	<div class="row">
-		<div class="col-8 mx-auto">
-			<nav aria-label="breadcrumb">
-				<ul class="breadcrumb">
-					<li class="breadcrumb-item"><a href="index.html" class="breadcrumb-item active LinkUnderline"
-												   aria-current="page">Home</a></li>
-				</ul>
-			</nav>
-		</div>
-	</div>
-</div>
-
 <div class="container">
 	<!--cards-->
 	<div class="row">
-		<div class="greentext col-12 text-center my-3">
+		<div class="text__color col-12 text-center my-3">
 			<h1>Animals in care</h1>
 		</div>
 	</div>
-
 	<div class="row">
-		<div class="greentext col-12 text-center my-3">
+		<div class="col-6">
+			<a href="#">dog</a>
+		</div>
+	</div>
+	<div class="row">
+		<div class="text__color col-12 text-center my-3">
 			<h1>Latest Updates from Europe nd around the world</h1>
 		</div>
 	</div>
 	<div class="row">
 		<div class="col-12 my-4">
-			<div class="card-deck greentext">
+			<div class="card-deck text__color">
 				<div class="card text-center">
 					<img src="resources/images/food.jpg" class="card-img-top" alt="plant-based-food">
 
 					<div class="card-body">
-						<p class="card-text cardSize  LinkMargin">Seven plant-based ways to celebrate the holidays with
+						<p class="card-text card-text__size  card__paragraph--margin">Seven plant-based ways to
+							celebrate the holidays with
 							an
 							international
 							flavor</p>
-						<div class="BottomLink">
-							<p class="card-text NoMargin">
+						<div class="card__link--position">
+							<p class="card-text card__text--margin">
 								<small class="text-muted ">December 20, 2019</small>
 							</p>
 							<a href="#"
-							   class="greentext cardSize card-text font-weight-bold LinkUnderline UnderlineGreen"> Read
+							   class="text__color card-text__size card-text font-weight-bold card-body__link--underline card-body__link--color">
+								Read
 								More
 								<span class="fa fa-arrow-right"></span></a>
 						</div>
@@ -199,18 +251,20 @@
 				<div class="card rounded-0 text-center">
 					<img src="resources/images/giraffe.jpg" class="card-img-top" alt="plant-based-food">
 					<div class="card-body">
-						<p class="card-text cardSize  LinkMargin">Seven plant-based ways to celebrate the holidays with
+						<p class="card-text card-text__size  card__paragraph--margin">Seven plant-based ways to
+							celebrate the holidays with
 							an
 							international
 							flavor</p>
-						<div class="BottomLink">
-							<p class="card-text NoMargin">
+						<div class="card__link--position">
+							<p class="card-text card__text--margin">
 								<small class="text-muted">December 20, 2019</small>
 							</p>
 							<a href="#"
-							   class="greentext cardSize card-text font-weight-bold LinkUnderline UnderlineGreen"> Read
+							   class="text__color card-text__size card-text font-weight-bold card-body__link--underline card-body__link--color">
+								Read
 								More <span
-										class="fa fa-arrow-right"></span></a>
+									class="fa fa-arrow-right"></span></a>
 						</div>
 					</div>
 				</div>
@@ -219,26 +273,28 @@
 				<div class="card rounded-0 text-center">
 					<img src="resources/images/armadillo.jpg" class="card-img-top" alt="plant-based-food">
 					<div class="card-body">
-						<p class="card-text cardSize LinkMargin">Seven plant-based ways to celebrate the holidays with
+						<p class="card-text card-text__size card__paragraph--margin">Seven plant-based ways to celebrate
+							the holidays with
 							an
 							international
 							flavor</p>
-						<div class="BottomLink">
-							<p class="card-text NoMargin">
+						<div class="card__link--position">
+							<p class="card-text card__text--margin">
 								<small class="text-muted">December 20, 2019</small>
 							</p>
 							<a href="#"
-							   class="greentext cardSize card-text font-weight-bold LinkUnderline UnderlineGreen"> Read
+							   class="text__color card-text__size card-text font-weight-bold card-body__link--underline card-body__link--color">
+								Read
 								More <span
-										class="fa fa-arrow-right"></span></a>
+									class="fa fa-arrow-right"></span></a>
 						</div>
 					</div>
 				</div>
 			</div>
 
-		</div>
+        </div>
 
-	</div>
+    </div>
 
 </div>
 
@@ -246,23 +302,22 @@
 <div class="container fillViewPortPlease">
 	<div class="row">
 		<div class="col-12">
-			<div class="jumbotron jumbotron-fluid defender">
-				<div class="defender-text text-center">
+			<div class="jumbotron jumbotron-fluid container__jumbotron">
+				<div class="container__text text-center">
 					<h1 class="display-4 font-weight-bold">Become an Animal Defender</h1>
 					<p>Help to keep animals everywere save.</p>
-					<button type="button" class="btn RedBtn">Donate</button>
+					<button type="button" class="btn font-weight-bold">Donate</button>
 				</div>
 
-			</div>
-		</div>
-	</div>
-</div>
-<!--discover more-->
+            </div>
+        </div>
+    </div>
+    <!--discover more-->
 
-<div class="container">
-	<div class="row">
-		<div class="col-12 mx-auto text-center">
-			<h2 class="display-4">Discover More</h2>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 mx-auto text-center">
+                <h2 class="display-4">Discover More</h2>
 
 		</div>
 	</div>
@@ -276,11 +331,11 @@
 					<div class="card-body">
 
 						<h3 class="card-title">Plant-based Eating</h3>
-						<p class="card-text cardSize">Current egg, meat and dairy production and consumption
+						<p class="card-text card-text__size">Current egg, meat and dairy production and consumption
 							practices are unsustainable and cause tremendous suffering.
 							Choosing more plant-based options helps animals and the environment,
 							and supports your health.</p>
-						<div class="BottomLink2">
+						<div class="card__link--position2">
 							<span class="fa fa-arrow-right float-right"></span>
 						</div>
 
@@ -292,24 +347,25 @@
 					<img src="resources/images/armadillo.jpg" class="card-img-top" alt="plant-based food">
 					<div class="card-body">
 						<h3 class="card-title">Wildlife Trade</h3>
-						<p class="card-text cardSize">The international wildlife trade jeopardizes the survival
+						<p class="card-text card-text__size">The international wildlife trade jeopardizes the survival
 							and welfare of billions of animals every year,
 							including threatened and endangered species. </p>
-						<div class="BottomLink2">
+						<div class="card__link--position2">
 							<span class="fa fa-arrow-right float-right"></span>
 						</div>
 					</div>
 				</div>
 
 				<div class="card">
-					<img src="resources/images/cagedos.jpg" class="card-img-top" alt="plant-based food">
+					<img src="resources/images/cagedog.jpg" class="card-img-top" alt="plant-based food">
 					<div class="card-body">
 						<h3 class="card-title">Dog Meat Trade</h3>
-						<p class="card-text cardSize">Across Asia, millions of dogs and cats are brutally killed for
+						<p class="card-text card-text__size">Across Asia, millions of dogs and cats are brutally killed
+							for
 							meat.
 							In South Korea, dogs are farmed in appalling conditions.
 							HSI works in China, South Korea, Indonesia and Viet Nam to end the cruelty.</p>
-						<div class="BottomLink2">
+						<div class="card__link--position2">
 							<span class="fa fa-arrow-right float-right"></span>
 						</div>
 					</div>
@@ -317,12 +373,33 @@
 
 			</div>
 
-		</div>
-	</div>
-</div>
-<!--end of container end of cards-->
+            </div>
+        </div>
+    </div>
+    <!--end of containe, end of cards-->
 
 
+<!--Make a diffenrence-->
+<div class="container fillViewPortPlease">
+
+	<div class="col">
+		<div class="hero-image jumbotron jumbotron-fluid">
+
+
+			<!--form-->
+			<div class="hero-image__outer">
+				<div class="hero-image__middle">
+					<div class="hero-image__inner">
+						<div class="container">
+							<div class="row ">
+								<div class=" col-10 text-center hero-text mx-auto">
+									<h2 class="display-4 font-weight-bold">Make a Difference</h2>
+									<p>Get the latest news and most urgent calls to action by signing up
+										to receive emai alerts from HSI</p>
+								</div>
+							</div>
+							<div class="row mx-auto">
+								<div class="col col-lg-8 mx-auto">
 <!--Make a diffenrence-->
 <div class="container fillViewPortPlease">
 
@@ -392,21 +469,55 @@
 													   placeholder="First Name"
 													   aria-label="First Name">
 
-											</div>
-											<div class="col-12 col-md-6 col-lg-3">
-												<input type="text" class="form-control-lg"
-													   placeholder="Last Name"
-													   aria-label="Last name">
-											</div>
-											<div class="col-12 col-md-6 col-lg-3">
-												<input type="text" class="form-control-lg" placeholder="Email"
-													   aria-label="Email">
-											</div>
-											<div class="col-12 col-md-6 col-lg-3">
-												<input type="text" class="form-control-lg" placeholder="Country"
-													   aria-label="Country">
-											</div>
+									<form class="form-inline justify-content-center">
+										<label class="sr-only" for="inlineFormInputName2">First Name</label>
+										<input type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2"
+											   placeholder="First Name">
+										<label class="sr-only" for="inlineFormInputName3">Last Name</label>
+										<input type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputName3"
+											   placeholder="Last Name">
+										<label class="sr-only" for="inlineFormInputName4">Email</label>
+										<input type="email" class="form-control mb-2 mr-sm-2" id="inlineFormInputName4"
+											   placeholder="Email">
 
+										<label class="sr-only"
+											   for="inlineFormCustomSelectPref">Country</label>
+										<select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+											<option selected>Country</option>
+											<option value="1">US</option>
+											<option value="2">Germany</option>
+											<option value="3">Greece</option>
+										</select>
+									</form>
+									<form class="form-inline ">
+										<div class="form-check mb-2 mr-sm-2">
+											<input class="form-check-input" type="checkbox" id="inlineFormCheck">
+											<label class="form-check-label formColor" for="inlineFormCheck">
+												Check this box if
+												you
+												would
+												like to receive
+												periodic updates and action alerts from HSI.
+												You may unsubscribe at any time.
+											</label>
+										</div>
+										<div class="">
+											<button type="submit" class="btn btn-danger mb-2">Sign Up</button>
+										</div>
+									</form>
+
+
+
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
 										</div>
 										<div class="row">
 											<div class="col-11 col-md-7">
@@ -692,8 +803,7 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
 		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
 		crossorigin="anonymous"></script>
-<<<<<<< HEAD
-=======
+
 <script type="text/javascript"
 		src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js">
 </script>
@@ -703,7 +813,7 @@
 </script>
 <script src="resources/JS/SideMenu.js"></script>
 <script src="resources/JS/linkLength.js"></script>
->>>>>>> 39867e7... added accordion, new html page
+
 <script>
     function openSearch() {
         document.getElementById("SearchOverlay").style.display = "block";
