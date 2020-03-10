@@ -2,16 +2,33 @@
 <html>
 
 <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Required meta tags -->
+	<title>Shelter</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS for styling and layout-->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<!-- Bootstrap CSS for styling and layout-->
+	<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+	<link rel="manifest" href="site.webmanifest">
+	<link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="apple-mobile-web-app-title" content="Shelter">
+	<meta name="application-name" content="Shelter">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="msapplication-TileImage" content="/mstile-144x144.png">
+	<meta name="theme-color" content="#ffffff">
 
-    <link href="https://fonts.googleapis.com/css?family=Kulim+Park:300,400,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+		  integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link rel="stylesheet" href="resources/css/BaseRules.css">
+	<link rel="stylesheet" href="resources/css/ModuleRules.css">
+	<link rel="stylesheet" href="resources/css/LayoutRules.css">
+	<link rel="stylesheet" href="resources/css/Link.css">
+	<link rel="stylesheet" href="resources/css/Navbar.css">
+
+	<link href="https://fonts.googleapis.com/css?family=Kulim+Park:300,400,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -58,8 +75,8 @@
 							</ul>
 						</li>
 						<span class="border-bottom NavSpacing"></span>
-						<li class="nav-item active">
-							<a class="nav-link underline" href="#">How You Can Help</a>
+						<li class="nav-item">
+							<a class="nav-link underline" href="HowYouCanHelp.html">How You Can Help</a>
 						</li>
 						<span class="border-bottom NavSpacing"></span>
 						<li class="nav-item active">
@@ -79,7 +96,7 @@
 	<!--Header-->
 	<div class="row">
 		<div class="col-12">
-			<div class="hero jumbotron jumbotron-fluid">
+			<div class="hero1 hero jumbotron jumbotron-fluid">
 
 				<div class="row">
 					<div class="col-12 col-sm-5 col-md-6 col-lg-8 ml-5 parent">
@@ -88,7 +105,8 @@
 					<div class="col-12 col-sm-7 col-md-6 col-lg-3 parent right">
 						<div class=" mx-auto bottom container blackBox">
 							<p id="heading">HAPPY NEW YEAR</p>
-							<a href="#" class="font-weight-bold LinkUnderline display-5">See what you helped us
+							<a href="#" class="font-weight-bold text-white LinkUnderline display-5">See what you helped
+								us
 								accomplish
 								for animals in 2019</a>
 							<p class="font-weight-light">And stay with us for more victories in 2020.<span
@@ -128,12 +146,13 @@
 	</div>
 	<!--end of container fluid-->
 </div>
-<div class="container container-breadcrumbs">
+<div class="container Breadcrumbs">
 	<div class="row">
 		<div class="col-8 mx-auto">
 			<nav aria-label="breadcrumb">
 				<ul class="breadcrumb">
-					<li> <a href="#" class="breadcrumb-item active LinkUnderline" aria-current="page">Home</a></li>
+					<li class="breadcrumb-item"><a href="index.html" class="breadcrumb-item active LinkUnderline"
+												   aria-current="page">Home</a></li>
 				</ul>
 			</nav>
 		</div>
@@ -231,7 +250,7 @@
 				<div class="defender-text text-center">
 					<h1 class="display-4 font-weight-bold">Become an Animal Defender</h1>
 					<p>Help to keep animals everywere save.</p>
-					<button type="button" class="btn font-weight-bold">Donate</button>
+					<button type="button" class="btn RedBtn">Donate</button>
 				</div>
 
 			</div>
@@ -359,7 +378,7 @@
 											</label>
 										</div>
 										<div class="">
-											<button type="submit" class="btn btn-danger mb-2">Sign Up</button>
+											<button type="submit" class="btn RedBtn">Sign Up</button>
 										</div>
 									</form>
 
@@ -424,6 +443,245 @@
 
 </div>
 
+<!--Accordion-->
+<div class="container">
+	<div class="row">
+		<div class="col-12 greentext text-center my-3">
+			<h1 class="display-4">Animals in Our Care</h1>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-12">
+			<div class="accordion" id="accordionExample">
+				<div class="card greentext">
+					<div class="card-header border-0 AccordionHeader mx-auto greentext" id="headingOne">
+
+						<h2 class="mb-0 collapsed underline" data-toggle="collapse" data-target="#collapseOne"
+							aria-expanded="true" aria-controls="collapseOne">
+							Dogs
+						</h2>
+
+					</div>
+
+					<div id="collapseOne" class="card-deck collapse" aria-labelledby="headingOne"
+						 data-parent="#accordionExample">
+						<div class="card border-0">
+							<img class="DogsInCare" src="resources/images/doggo.jpg" alt="Picture of a Dog">
+							<div class="card-body">
+
+								<h3 class="card-title text-center LinkUnderline border-bottom"
+									data-toggle="collapse" href="#VeronaText"
+									aria-expanded="false" aria-controls="VeronaText">
+									Verona <span><i class="fa fa-chevron-down"></i></span>
+								</h3>
+								<div class="card-text collapse" id="VeronaText">
+									<p>
+										Verona hasbeen found on the streets in Italy together with her 6 puppies. She´s
+										been
+										abondoned and wass ick and nearly starving when a rescue team found her. Today
+										she
+										enjoys Life with her grown puppies in the care of one of our Helpers. She´s
+										grown to
+										be very lovable and quite attached to humans.
+									</p>
+									<ul>
+										<li><strong>Name: </strong>Verona</li>
+										<li><strong>Age: </strong>5</li>
+										<li><strong>Sex: </strong>Female</li>
+										<li><strong>Animal: </strong>Dog</li>
+									</ul>
+
+									<a class="LinkUnderline UnderlineGreen" data-toggle="collapse"
+									   href="#VeronaPictures"
+									   aria-expanded="false" aria-controls="VeronaPictures">more Pictures<span><i
+											class="fa fa-chevron-down"></i></span></a>
+									<div class="row collapse" id="VeronaPictures">
+										<div class="col-12">
+											<img class=" MorePictures" src="resources/images/puppy.jpg"
+												 alt="Picture of Verona">
+										</div>
+										<div class="col-12">
+											<img class=" MorePictures" src="resources/images/bordercollie.jpg"
+												 alt="Picture of Verona">
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-12">
+											<button type="button" class="btn GreenBtn">Become
+												Godparent
+											</button>
+										</div>
+									</div>
+
+								</div>
+							</div>
+
+						</div>
+
+						<div class="card border-0">
+							<img class="DogsInCare" src="resources/images/fox.jpg" alt="Picture of a Dog">
+							<div class="card-body">
+
+								<h3 class="card-title text-center LinkUnderline border-bottom "
+									data-toggle="collapse" href="#YukiText"
+									aria-expanded="false" aria-controls="VeronaText" onmouseover="mouseOver()">
+									Yuki <span><i class="fa fa-chevron-down"></i></span>
+								</h3>
+								<div class="card-text collapse" id="YukiText">
+									<p>
+										Verona hasbeen found on the streets in Italy together with her 6 puppies. She´s
+										been
+										abondoned and wass ick and nearly starving when a rescue team found her. Today
+										she
+										enjoys Life with her grown puppies in the care of one of our Helpers. She´s
+										grown to
+										be very lovable and quite attached to humans.
+
+
+									</p>
+									<ul>
+										<li><strong>Name: </strong>Verona</li>
+										<li><strong>Age: </strong>5</li>
+										<li><strong>Sex: </strong>Female</li>
+										<li><strong>Animal: </strong>Dog</li>
+									</ul>
+
+									<a class="LinkUnderline UnderlineGreen" data-toggle="collapse"
+									   href="#YukiPictures"
+									   aria-expanded="false" aria-controls="YukiPictures">more Pictures<span><i
+											class="fa fa-chevron-down"></i></span></a>
+									<div class="row collapse" id="YukiPictures">
+										<div class="col-12">
+											<img class=" MorePictures" src="resources/images/puppy.jpg"
+												 alt="Picture of Yuki">
+										</div>
+										<div class="col-12">
+											<img class=" MorePictures" src="resources/images/bordercollie.jpg"
+												 alt="Picture of Verona">
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-12">
+											<button type="button" class="btn GreenBtn">Become
+												Godparent
+											</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="card greentext">
+				<div class="card-header border-0 AccordionHeader mx-auto greentext" id="headingTwo">
+
+					<h2 class="mb-0 collapsed underline" data-toggle="collapse" data-target="#collapseTwo"
+						aria-expanded="false"
+						aria-controls="collapseTwo">
+						Cats
+					</h2>
+
+				</div>
+				<div id="collapseTwo" class="card-deck collapse" aria-labelledby="headingTwo"
+					 data-parent="#accordionExample">
+					<div class="card border-0">
+						<img class="DogsInCare" src="resources/images/cat.jpg" alt="Picture of a Dog">
+						<div class="card-body">
+
+							<h3 class="card-title text-center LinkUnderline border-bottom "
+								data-toggle="collapse" href="#HunterText"
+								aria-expanded="false" aria-controls="VeronaText" onmouseover="mouseOver()">
+								Hunter <span><i class="fa fa-chevron-down"></i></span>
+							</h3>
+							<p class="card-text collapse" id="HunterText">
+								Verona hasbeen found on the streets in Italy together with her 6 puppies. She´s been
+								abondoned and wass ick and nearly starving when a rescue team found her. Today she
+								enjoys Life with her grown puppies in the care of one of our Helpers. She´s grown to
+								be very lovable and quite attached to humans.
+
+
+							</p>
+						</div>
+					</div>
+					<div class="card border-0">
+						<img class="DogsInCare" src="resources/images/bigcat.jpg" alt="Picture of a Dog">
+						<div class="card-body">
+
+							<h3 class="card-title text-center LinkUnderline border-bottom "
+								data-toggle="collapse" href="#MäuslText"
+								aria-expanded="false" aria-controls="VeronaText" onmouseover="mouseOver()">
+								Mäusl<span><i class="fa fa-chevron-down"></i></span>
+							</h3>
+							<p class="card-text collapse" id="MäuslText">
+								Verona hasbeen found on the streets in Italy together with her 6 puppies. She´s been
+								abondoned and wass ick and nearly starving when a rescue team found her. Today she
+								enjoys Life with her grown puppies in the care of one of our Helpers. She´s grown to
+								be very lovable and quite attached to humans.
+
+
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="card greentext">
+				<div class="card-header border-0 AccordionHeader mx-auto greentext" id="headingThree">
+
+					<h2 class="mb-0 collapsed underline" data-toggle="collapse"
+						data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+						Others
+					</h2>
+
+				</div>
+				<div id="collapseThree" class="card-deck collapse" aria-labelledby="headingThree"
+					 data-parent="#accordionExample">
+					<div class="card border-0">
+						<img class="DogsInCare" src="resources/images/seal.jpg" alt="Picture of a Dog">
+						<div class="card-body">
+
+							<h3 class="card-title text-center LinkUnderline border-bottom "
+								data-toggle="collapse" href="#SeadogText"
+								aria-expanded="false" aria-controls="VeronaText" onmouseover="mouseOver()">
+								Seadog<span><i class="fa fa-chevron-down"></i></span>
+							</h3>
+							<p class="card-text collapse" id="SeadogText">
+								Verona hasbeen found on the streets in Italy together with her 6 puppies. She´s been
+								abondoned and wass ick and nearly starving when a rescue team found her. Today she
+								enjoys Life with her grown puppies in the care of one of our Helpers. She´s grown to
+								be very lovable and quite attached to humans.
+
+
+							</p>
+						</div>
+					</div>
+					<div class="card border-0">
+						<img class="DogsInCare" src="resources/images/dumbo.jpg" alt="Picture of a Dog">
+						<div class="card-body">
+
+							<h3 class="card-title text-center LinkUnderline border-bottom "
+								data-toggle="collapse" href="#SariText"
+								aria-expanded="false" aria-controls="VeronaText" onmouseover="mouseOver()">
+								Sari<span><i class="fa fa-chevron-down"></i></span>
+							</h3>
+							<p class="card-text collapse" id="SariText">
+								Verona hasbeen found on the streets in Italy together with her 6 puppies. She´s been
+								abondoned and wass ick and nearly starving when a rescue team found her. Today she
+								enjoys Life with her grown puppies in the care of one of our Helpers. She´s grown to
+								be very lovable and quite attached to humans.
+
+
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+</div>
+
 <script src="resources/JS/SideMenu.js"></script>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
 		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -434,6 +692,18 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
 		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
 		crossorigin="anonymous"></script>
+<<<<<<< HEAD
+=======
+<script type="text/javascript"
+		src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js">
+</script>
+
+<script type="text/javascript"
+		src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js">
+</script>
+<script src="resources/JS/SideMenu.js"></script>
+<script src="resources/JS/linkLength.js"></script>
+>>>>>>> 39867e7... added accordion, new html page
 <script>
     function openSearch() {
         document.getElementById("SearchOverlay").style.display = "block";

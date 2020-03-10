@@ -69,6 +69,7 @@
 	display: inline-block;
 }
 
+
 .underline:hover {
 	color: white;
 }
@@ -148,6 +149,61 @@
 	right: 25px;
 	font-size: 36px;
 	margin-left: 50px;
+}
+
+
+
+.DogsInCare {
+	height: auto;
+	width: 100%;
+}
+
+.MorePictures {
+	height: auto;
+	max-width: 100%;
+	padding-top: 3%;
+}
+
+
+/*BUTTONS*/
+
+.RedBtn {
+	padding: 10px 30px;
+	font-weight: bold;
+	font-size: 1.2rem;
+	color: #ffffff;
+	background-color: #d5291c;
+	border-radius: 5%;
+}
+
+.RedBtn:hover {
+	background-color: #a92016;
+	border: 1px solid #000000;
+}
+
+.GreenBtn {
+
+	width: 100%;
+	margin-top: 3%;
+	color: #ffffff;
+	background-color: #84bd00;
+	border-radius: 5%;
+}
+
+.GreenBtn:hover {
+	background-color: #3e5a00;
+}
+
+.GhostBtn {
+	margin: 5px;
+	color: #7d7d7d;
+	background-color: #cfcfcf;
+	border-radius: 5%;
+}
+
+.GhostBtn:hover {
+	background-color: #696969;
+	color: #ededed;
 }
 
 
