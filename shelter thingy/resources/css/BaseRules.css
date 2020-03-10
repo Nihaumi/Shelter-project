@@ -8,13 +8,14 @@
 	margin-right: -15px;
 }*/
 
-p, h {
+p {
 	font-family: 'Kulim Park', sans-serif;
 }
 
-a {
-	cursor: pointer;
+h {
+	font-family: 'Kulim Park', sans-serif;
 }
+
 
 input {
 	margin-top: 10px;

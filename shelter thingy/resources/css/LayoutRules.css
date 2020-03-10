@@ -29,6 +29,36 @@
 	linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0)),
 	url('../images/armadillo.jpg');
 
+/*navbar*/
+.navbar {
+	background-color: rgba(0, 0, 0, .5);
+
+}
+
+.navbar-toggler {
+	color: white;
+}
+
+
+.dropdown-menu {
+	background-color: rgba(0, 0, 0, .5);
+
+}
+
+.navbar-brand {
+	margin-left: 10%;
+	color: white;
+}
+
+.navbar-brand:active {
+	color: white;
+}
+
+.navbar li {
+	margin: 0 20px;
+	padding: 0 20px;
+
+}
 
 #searchbar, #donate1 {
 	display: inline-block;
@@ -269,10 +299,37 @@
 	width: 100%;
 }
 
+
+#signUp {
+	margin-top: 10px;
+}
+
+/*
+.form-check {
+	margin-top: 30px;
+	padding-right: 5px;
+	font-size: 20px;
+}
+
+.form-check label {
+	font-size: 1rem;
+}
+
+.form-inline .form-check-input {
+	margin-right: 1rem;
+}
+*/
+
+
 .formColor {
 	color: white;
 }
 
+#gridCheck1 {
+	height: 40px;
+	width: 40px;
+	margin: 10px;
+}
 
 input {
 	background-color: white;
