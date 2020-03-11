@@ -58,11 +58,11 @@ label {
 	padding: 0 10px;
 }
 
-.AccordionHeader {
+.accordion__header {
 	background-color: transparent;
 }
 
-.AccordionHeader:hover {
+.accordion__header:hover {
 	color: #000000;
 
 }
