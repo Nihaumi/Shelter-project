@@ -16,6 +16,7 @@
 
 	.navbar__desktop-navbar li {
 		padding: 0;
+
 	}
 
 	.navbar__first-layer {
@@ -33,7 +34,6 @@
 
 
 @media (min-width: 1200px) {
-
 	.navbar__desktop-navbar {
 		font-size: 1.4rem;
 	}
