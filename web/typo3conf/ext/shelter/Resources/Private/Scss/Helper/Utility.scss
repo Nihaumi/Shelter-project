@@ -3,7 +3,7 @@
 }
 
 .phone--link {
-	color: $color-ikkbb-red;
+	color: $color-shelter-green-dark;
 	font-size: rem(26px);
 	line-height: 1.25;
 	letter-spacing: rem(1.12px);
@@ -16,7 +16,7 @@
 
 	&:hover,
 	&:focus {
-		color: $color-ikkbb-red;
+		color: $color-shelter-green-dark;
 		text-decoration: none;
 	}
 }

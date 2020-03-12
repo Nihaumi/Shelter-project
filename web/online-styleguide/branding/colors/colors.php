@@ -9,20 +9,20 @@
 	<p class="prototype__text">Die primären Farben, die in diesem Projekt verwendet werden.</p>
 	<div class="prototype__branding__view prototype__branding__view--no-border">
 		<div class="prototype__color-block">
-			<div class="prototype__color-block__item" style="background-color: #d20a11;">
-				<p>#d20a11</p>
-				<p> IKKBB Rot, für Buttons </p>
+			<div class="prototype__color-block__item" style="background-color: #d5291c;">
+				<p>#d5291c</p>
+				<p> Shelter Rot, für Buttons </p>
 			</div>
 
-			<div class="prototype__color-block__item" style="background-color: #009ee0;">
-				<p>#009ee0</p>
-				<p>IKKBB Blau</p>
+			<div class="prototype__color-block__item" style="background-color: #84bd00;">
+				<p>#84bd00</p>
+				<p>Shelter Grün</p>
 			</div>
 
-			<div class="prototype__color-block__item" style="background-color: #006eb7;">
-				<p>#006eb7</p>
-				<p>IKKBB Blau dunkel<br>
-					Kreis Logo + Illustrationen
+			<div class="prototype__color-block__item" style="background-color: #024731;">
+				<p>#024731</p>
+				<p>Shelter Grün Dunkel <br>
+					Für Text und Hintergründe
 				</p>
 			</div>
 		</div>
@@ -38,33 +38,28 @@
 			</div>
 
 			<div class="prototype__color-block__item"
-				 style="background-color: #5F5F5F;">
-				<p>#5F5F5F</p>
-				<p>Menüpunkte Hauptnavigation <br>+ Footer + Social-Icons</p>
+				 style="background-color: #cfcfcf;">
+				<p>#cfcfcf</p>
+				<p>ausgegrauter Text</p>
 			</div>
 
 			<div class="prototype__color-block__item prototype__color-block__item--invert"
-				 style="background-color: #E8E8E8;">
-				<p>#E8E8E8</p>
-				<p>Illustration 'Der Weg' <br>+ Trennlinien</p>
+				 style="background-color: #cccccc;">
+				<p>#cccccc</p>
+				<p>augegraute Buttons</p>
 			</div>
 
-			<div class="prototype__color-block__item prototype__color-block__item--invert"
-				 style="background-color: #F6F6F6;">
-				<p>#F6F6F6</p>
-				<p>40% Opacity von #E8E8E8<br>
-				CTA-Element + Teaser
+			<div class="prototype__color-block__item"
+				 style="background-color: rgba(0,0,0, .5);">
+				<p>rgba(0,0,0, .5);</p>
+				<p>50% Opacity von #000000<br>
+					Navigation
 				</p>
 			</div>
 
-			<div class="prototype__color-block__item" style="background-color: #2C2E3F;">
-				<p>#2C2E3F</p>
-				<p>Texte außer Headlines</p>
-			</div>
-
-			<div class="prototype__color-block__item" style="background-color: #1D1D1B;">
-				<p>#1D1D1B</p>
-				<p>Headlines</p>
+			<div class="prototype__color-block__item" style="background-color: #ffcd00;">
+				<p>#ffcd00</p>
+				<p>Links als Pfeil-icon</p>
 			</div>
 
 			<div class="prototype__color-block__item" style="background-color: #000000;">

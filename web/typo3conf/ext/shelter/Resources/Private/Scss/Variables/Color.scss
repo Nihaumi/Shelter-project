@@ -2,18 +2,19 @@ $white: #ffffff;
 $black: #000000;
 
 /* Primary */
-$color-ikkbb-red: #947a03;
-$color-ikkbb-blue: #009ee0;
-$color-ikkbb-blue-dark: #006eb7;
+$color-shelter-green-light: #84bd00;
+$color-shelter-green-dark: #024731;
+$color-shelter-button-red: #d5291c;
 
 /* Secondary */
-$color-headline: #1D1D1B;
-$color-text: #1D1D1B;
-$color-teaser-background: #F6F6F6;
-$color-divider: #E8E8E8;
-$color-navigation: #5F5F5F;
-$color-youtube-embed-shadow: #EFFAFF;
-$color-close-icon: #ACACAC;
+$color-shelter-Navigation: rgba(0,0,0, 0.5);
+$color-shelter-ghost-text: #cfcfcf;
+$color-shelter-ghost-button: #cccccc;
+$color-shelter-ghost-button-hover: #696969;
+$color-shelter-ghost-text-hover: #ededed;
+$color-shelter-button-red-hover: #a92016;
+$color-text: #024731;
+$color-shelter-link-yellow: #ffcd00;
 
 /* helper variables */
-$color-footer-content: $color-navigation;
+
