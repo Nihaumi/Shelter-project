@@ -71,3 +71,7 @@ label {
 	background-color: transparent;
 
 }
+
+.sub-title{
+	cursor: pointer;
+}

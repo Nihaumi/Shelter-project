@@ -63,6 +63,10 @@
 	background-size: 100% 2px;
 }
 
+.UnderlineBrightGreen:hover{
+	color: #84bd00;
+}
+
 
 .breadcrumb-item:hover, .breadcrumb-item:focus {
 	color: #000000;

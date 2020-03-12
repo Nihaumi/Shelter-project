@@ -23,7 +23,6 @@ function openNav() {
     jQuery(".navbar").animate({backgroundColor: 'rgba(0, 0, 0, .8)'}, 1);
     jQuery("#navbarSupportedContent1").animate({backgroundColor: 'rgba(0, 0, 0, .8)'}, slideTime);
     jQuery(".navbar__menu-btn").hide();
-    console.log('Hello');
 }
 
 function closeNav() {
@@ -62,6 +61,6 @@ function openFarmAnimalsThirdLayer() {
 function closeFarmAnimalsThirdLayer() {
     jQuery(".FarmAnimalsThirdLayer").hide();
     jQuery(".OurWorkSecondLayer").show("slide", {direction: "right"}, slideTime);
-    ;
+
 }
 

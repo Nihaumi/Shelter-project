@@ -178,7 +178,6 @@
 }
 
 
-
 .DogsInCare {
 	height: auto;
 	width: 100%;
@@ -192,7 +191,6 @@
 
 
 /*BUTTONS*/
-
 .RedBtn {
 	padding: 10px 30px;
 	font-weight: bold;
@@ -200,15 +198,17 @@
 	color: #ffffff;
 	background-color: #d5291c;
 	border-radius: 5%;
+	border: none;
 }
 
-.RedBtn:hover {
+.RedBtn:hover,
+.RedBtn:focus {
 	background-color: #a92016;
 	border: 1px solid #000000;
 }
 
 .GreenBtn {
-	
+
 	width: 100%;
 	margin-top: 3%;
 	color: #ffffff;
@@ -221,8 +221,7 @@
 }
 
 .GhostBtn {
-	margin: 5px;
-	color: #7d7d7d;
+	color: #cccccc;
 	background-color: #cfcfcf;
 	border-radius: 5%;
 }

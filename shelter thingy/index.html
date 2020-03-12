@@ -27,6 +27,7 @@
 	<link rel="stylesheet" href="resources/css/Link.css">
 	<link rel="stylesheet" href="resources/css/Navbar.css">
 	<link rel="stylesheet" href="resources/css/DesktopNav.css">
+	<link rel="stylesheet" href="resources/css/Search.css">
 
 	<link href="https://fonts.googleapis.com/css?family=Kulim+Park:300,400,700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -38,7 +39,7 @@
 	<div class="row">
 		<div class="col-12 long">
 
-			<nav class="navbar fixed-top navbar--height">
+			<nav class="navbar fixed-top NavColor navbar--height">
 				<!--navbar-brand and toggle button-->
 				<div class="col-2">
 					<a class="navbar-brand " href="index.html">
@@ -47,9 +48,11 @@
 						<span class="underline navbar__brand-name">Shelter</span>
 					</a>
 				</div>
+				<button class="RedBtn SearchBtn SearchBtnMobile" onclick="openSearch()"><a><i
+						class="fa fa-search SearchIcon"></i></a></button>
 
 				<div class="navbar__desktop-navbar col-10">
-					<nav class="navbar navbar-expand-lg navbar__first-layer">
+					<nav class="navbar NavColor navbar-expand-lg navbar__first-layer">
 
 						<div class="collapse navbar-collapse" id="navbarNavDropdown">
 
@@ -79,7 +82,10 @@
 								<li class="nav-item">
 									<a class="nav-link underline" href="#">About Us</a>
 								</li>
-
+								<li>
+									<button class="RedBtn SearchBtn" onclick="openSearch()"><a><i
+											class="fa fa-search SearchIcon"></i></a></button>
+								</li>
 
 							</ul>
 
@@ -415,6 +421,8 @@
 
 </div>
 
+</div>
+
 <!--defender jumbotron-->
 <div class="container fillViewPortPlease">
 	<div class="row">
@@ -711,12 +719,12 @@
 							Cats
 						</h2>
 
-				</div>
-				<div id="collapseTwo" class="card-deck collapse" aria-labelledby="headingTwo"
-					 data-parent="#accordionExample">
-					<div class="card border-0">
-						<img class="DogsInCare" src="resources/images/cat.jpg" alt="Picture of a Dog">
-						<div class="card-body">
+					</div>
+					<div id="collapseTwo" class="card-deck collapse" aria-labelledby="headingTwo"
+						 data-parent="#accordionExample">
+						<div class="card border-0">
+							<img class="DogsInCare" src="resources/images/cat.jpg" alt="Picture of a Dog">
+							<div class="card-body">
 
 								<h3 class="card-title text-center LinkUnderline border-bottom Pointer"
 									data-toggle="collapse" href="#HunterText"
@@ -730,12 +738,12 @@
 									be very lovable and quite attached to humans.
 
 
-							</p>
+								</p>
+							</div>
 						</div>
-					</div>
-					<div class="card border-0">
-						<img class="DogsInCare" src="resources/images/bigcat.jpg" alt="Picture of a Dog">
-						<div class="card-body">
+						<div class="card border-0">
+							<img class="DogsInCare" src="resources/images/bigcat.jpg" alt="Picture of a Dog">
+							<div class="card-body">
 
 								<h3 class="card-title text-center LinkUnderline border-bottom Pointer"
 									data-toggle="collapse" href="#MäuslText"
@@ -762,12 +770,12 @@
 							Others
 						</h2>
 
-				</div>
-				<div id="collapseThree" class="card-deck collapse" aria-labelledby="headingThree"
-					 data-parent="#accordionExample">
-					<div class="card border-0">
-						<img class="DogsInCare" src="resources/images/seal.jpg" alt="Picture of a Dog">
-						<div class="card-body">
+					</div>
+					<div id="collapseThree" class="card-deck collapse" aria-labelledby="headingThree"
+						 data-parent="#accordionExample">
+						<div class="card border-0">
+							<img class="DogsInCare" src="resources/images/seal.jpg" alt="Picture of a Dog">
+							<div class="card-body">
 
 								<h3 class="card-title text-center LinkUnderline border-bottom Pointer"
 									data-toggle="collapse" href="#SeadogText"
@@ -781,12 +789,12 @@
 									be very lovable and quite attached to humans.
 
 
-							</p>
+								</p>
+							</div>
 						</div>
-					</div>
-					<div class="card border-0">
-						<img class="DogsInCare" src="resources/images/dumbo.jpg" alt="Picture of a Dog">
-						<div class="card-body">
+						<div class="card border-0">
+							<img class="DogsInCare" src="resources/images/dumbo.jpg" alt="Picture of a Dog">
+							<div class="card-body">
 
 								<h3 class="card-title text-center LinkUnderline border-bottom Pointer"
 									data-toggle="collapse" href="#SariText"
@@ -799,16 +807,14 @@
 									enjoys Life with her grown puppies in the care of one of our Helpers. She´s grown to
 									be very lovable and quite attached to humans.
 
-
-							</p>
+								</p>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-</div>
-
 </div>
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -827,10 +833,10 @@
 <script type="text/javascript"
 		src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js">
 </script>
-<script src="resources/JS/SideMenu.js"></script>
-<script src="resources/JS/linkLength.js"></script>
-<script src="resources/JS/MegaMenu.js"></script>
-
+<script src="resources/JS/SideMenu.js" defer></script>
+<script src="resources/JS/linkLength.js" defer></script>
+<script src="resources/JS/MegaMenu.js" defer></script>
+<script src="resources/JS/SearchBar.js" defer></script>
 </body>
 
 </html>
