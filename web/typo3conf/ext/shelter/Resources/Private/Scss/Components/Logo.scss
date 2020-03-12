@@ -1,0 +1,23 @@
+.logo {
+	display: inline-block;
+	width: rem(300px);
+	height: rem(50px);
+	background-repeat: no-repeat;
+	background-color: red;
+	background-image: url("/shelter-thingy/resources/images/doggo.jpg");
+	background-size: 100% auto;
+	color: transparent;
+	overflow: hidden;
+
+	&:link,
+	&:active,
+	&:visited {
+		color: transparent;
+	}
+
+	&:hover {
+		color: transparent !important;
+	}
+
+
+}
