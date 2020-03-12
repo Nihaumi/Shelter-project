@@ -1,0 +1,85 @@
+.btn {
+	cursor: pointer;
+	display: block;
+	width: 100%;
+	margin: rem(10px);
+	padding: rem(16px);
+	text-align: center;
+	vertical-align: middle;
+	font-size: rem(16px);
+	line-height: 1;
+	border-radius: rem(8px);
+
+
+	&--primary {
+		background-color: red; /*color*/
+		border: 1px solid red; /*color*/
+		color: white;
+		width: auto;
+
+
+		&:hover {
+			background-color: #8fd19e; /*color*/
+			border: 1px solid #8fd19e; /*color*/
+		}
+
+		&--large {
+			font-size: rem(20px);
+			min-width: rem(96px);
+		}
+	}
+
+	&--secondary {
+		background-color: #8fd19e; /*color*/
+		width: 50%;
+
+		&:hover {
+			background-color: green; /*color*/
+		}
+
+		&--large {
+			width: 100%;
+		}
+	}
+
+
+}
+
+
+/*
+.RedBtn:hover,
+.RedBtn:focus {
+	cursor: pointer;
+	background-color: #a92016;
+	border: 1px solid #000000;
+}
+
+.GreenBtn {
+	width: 100%;
+	margin-top: 3%;
+	color: #ffffff;
+	background-color: #84bd00;
+	border-radius: 5%;
+}
+
+.GreenBtn:hover {
+	cursor: pointer;
+	background-color: #3e5a00;
+}
+
+.GhostBtn {
+	color: #cccccc;
+	background-color: #cfcfcf;
+	border-radius: 5%;
+}
+
+.GhostBtn:hover {
+	cursor: pointer;
+	background-color: #696969;
+	color: #ededed;
+}
+
+*/
+
+
+

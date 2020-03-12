@@ -22,7 +22,7 @@
 	<h2 class="prototype__subline">Primär (größer)</h2>
 	<div class="prototype__component__view">
 		<div class="container">
-			<?php include "includes/primary-large.php"; ?>
+			<?php include "includes/primary.php"; ?>
 		</div>
 	</div>
 	<p class="prototype__block-headline">Sourcecode</p>
@@ -46,7 +46,7 @@
 	<p class="prototype__block-headline">Sourcecode</p>
 	<div class="prototype__component__sourcecode"><?php include "includes/secondary.php"; ?></div>
 
-	<h2 class="prototype__subline">Pfeil-Links</h2>
+	<h2 class="prototype__subline">Ausgegraute Buttons</h2>
 	<div class="prototype__component__view">
 		<div class="container">
 			<?php include "includes/arrows.php"; ?>
