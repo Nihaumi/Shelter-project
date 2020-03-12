@@ -51,6 +51,11 @@
 	font-size: 1.3rem;
 }
 
+.navbar__menu-btn {
+	position: absolute;
+	top: 12px;
+}
+
 /*close menu button*/
 .navbar__close-btn {
 	color: #fff;

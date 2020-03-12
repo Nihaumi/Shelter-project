@@ -171,10 +171,15 @@
 
 .closebtn {
 	position: absolute;
+	color: #cccccc;
 	top: 0;
 	right: 25px;
 	font-size: 36px;
 	margin-left: 50px;
+}
+
+.closebtn:hover {
+	color: #84bd00;
 }
 
 
@@ -203,12 +208,12 @@
 
 .RedBtn:hover,
 .RedBtn:focus {
+	cursor: pointer;
 	background-color: #a92016;
 	border: 1px solid #000000;
 }
 
 .GreenBtn {
-
 	width: 100%;
 	margin-top: 3%;
 	color: #ffffff;
@@ -217,6 +222,7 @@
 }
 
 .GreenBtn:hover {
+	cursor: pointer;
 	background-color: #3e5a00;
 }
 
@@ -227,6 +233,7 @@
 }
 
 .GhostBtn:hover {
+	cursor: pointer;
 	background-color: #696969;
 	color: #ededed;
 }

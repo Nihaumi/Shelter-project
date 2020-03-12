@@ -1,4 +1,9 @@
 @media (min-width: 992px) {
+
+	.SearchBtnMobile{
+		display: none;
+	}
+
 	.navbar__menu-btn {
 
 		display: none;
