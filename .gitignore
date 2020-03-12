@@ -1,0 +1,50 @@
+# composer
+web/vendor/
+!web/.htaccess
+!environments/*/.htaccess
+!web/robots.txt
+!web/favicon.ico
+
+# extensions
+!web/typo3conf/ext/shelter/
+
+# Ignore serveral upload and file directories.
+web/fileadmin/user_upload/
+web/fileadmin/_temp_/
+web/fileadmin/_processed_/
+web/uploads/
+
+# Ignore cache
+web/typo3conf/deprecation_*.log
+web/typo3conf/l10n/
+web/typo3
+var
+web/typo3temp
+.env
+!/web/var
+!/web/var/log
+
+ENABLE_INSTALL_TOOL
+
+# Ignore merge-orig-files
+*.orig
+
+# Generated CSS
+web/typo3conf/ext/shelter/Resources/Public/Css/
+web/typo3conf/ext/shelter/Resources/Public/JavaScript/*.js*
+
+# Copied external libraries
+web/typo3conf/ext/shelter/Resources/Public/Fonts/FontAwesome
+web/typo3conf/ext/shelter/Resources/Public/Fonts/Bootstrap
+web/typo3conf/ext/shelter/Resources/Public/Fonts/Slick
+
+# build und logfiles
+/phpdox.xml
+/phpmd.xml
+build/logs/*
+vendor
+web/typo3
+build/protocol.txt
+
+# gulp
+compressor/node_modules*
