@@ -1,6 +1,7 @@
 .btn {
 	cursor: pointer;
 	display: block;
+	color: white;
 	width: 100%;
 	margin: rem(10px);
 	padding: rem(16px);
@@ -14,31 +15,59 @@
 	&--primary {
 		background-color: red; /*color*/
 		border: 1px solid red; /*color*/
-		color: white;
+		width: auto;
+
+		&:focus,
+		&:hover {
+			color: white; /*color*/
+			text-decoration: none;
+			background-color: #8fd19e; /*color*/
+			border: 1px solid #8fd19f; /*color*/
+		}
+
+
+	}
+
+
+	&--secondary {
+		background-color: #8fd19e; /*color*/
 		width: auto;
 
 
 		&:hover {
-			background-color: #8fd19e; /*color*/
-			border: 1px solid #8fd19e; /*color*/
-		}
-
-		&--large {
-			font-size: rem(20px);
-			min-width: rem(96px);
-		}
-	}
-
-	&--secondary {
-		background-color: #8fd19e; /*color*/
-		width: 50%;
-
-		&:hover {
+			text-decoration: none;
+			color: white; /*color*/
 			background-color: green; /*color*/
 		}
 
-		&--large {
-			width: 100%;
+	}
+
+	&--ghost {
+		width: auto;
+		background-color: grey; /*color*/
+		color: darkgrey; /*color*/
+
+		&:hover {
+			text-decoration: none;
+			background-color: #2C2E3F; /*color*/
+			color: white; /*color*/
+		}
+	}
+
+	&--large {
+		font-size: rem(20px);
+		min-width: rem(96px);
+	}
+/*font awesome icons???*/
+	&--arrow {
+	/*	@extend %fa-icon;
+		@extend .fas;*/
+		color: #cccccc; /*color*/
+		background-color: #2C2E3F;
+
+
+		&:before {
+			/*content: $fa-var-arrow-right;*/
 		}
 	}
 

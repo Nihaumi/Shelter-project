@@ -1,2 +1,2 @@
 <button class="btn btn--primary">Mehr anzeigen</button>
-<a href="#" class="btn btn--primary btn--primary--large">Mehr</a>
+<a href="#" class="btn btn--primary">Mehr</a>
