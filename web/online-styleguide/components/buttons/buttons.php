@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="de" dir="ltr" class="no-js prototype">
-
+<?php include "../../includes/head-component.php"; ?>
 <body>
 <div class="prototype__component">
 	<h1 class="prototype__headline">Buttons</h1>
