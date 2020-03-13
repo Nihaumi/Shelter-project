@@ -40,6 +40,17 @@
 	<p class="prototype__block-headline">Sourcecode</p>
 	<div class="prototype__component__sourcecode"><?php include "includes/paragraphs.php"; ?></div>
 
+	<h2 class="prototype__subline">Einführungstext</h2>
+	<div class="prototype__component__view">
+		<div class="page__content">
+			<div class="container">
+                <?php include "includes/intro_paragraphs.php"; ?>
+			</div>
+		</div>
+	</div>
+	<p class="prototype__block-headline">Sourcecode</p>
+	<div class="prototype__component__sourcecode"><?php include "includes/intro_paragraphs.php"; ?></div>
+
 	<h2 class="prototype__subline">Listen/ Aufzählungen</h2>
 	<div class="prototype__component__view">
 		<div class="page__content">
