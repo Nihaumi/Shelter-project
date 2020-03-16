@@ -5,14 +5,14 @@ body {
 }
 
 .shelter__heading {
-	color: #34ce57;
+	color: #34ce57; //@todo change color
 }
 
 
 .header-link {
-	color: white;
+	color: white; //@todo change color
 	text-decoration: none;
-	background-image: linear-gradient(#cccccc, #cccccc);
+	background-image: linear-gradient(#cccccc, #cccccc); //@todo change color
 	background-position: 0% 100%;
 	background-repeat: no-repeat;
 	background-size: 0% 2px;
@@ -20,7 +20,7 @@ body {
 
 	&:hover {
 		text-decoration: none;
-		color: white;
+		color: white; //@todo change color
 		background-size: 100% 2px;
 	}
 
@@ -30,7 +30,7 @@ body {
 	color: goldenrod;
 	font-weight: bold;
 	text-decoration: none;
-	background-image: linear-gradient(green, green);
+	background-image: linear-gradient(green, green); //@todo change color
 	background-position: 0% 100%;
 	background-repeat: no-repeat;
 	background-size: 0% 2px;
@@ -46,19 +46,20 @@ body {
 p,
 li {
 	font-family: $font-family-base;
-	font-size: rem(16px);
-	color: green;
+	font-size: rem(17px);
+	font-weight: 500;
+	color: green; //@todo change color
 	@media (min-width: map_get($grid-breakpoints, "md")) {
-		font-size: rem(17px);
+		font-size: rem(20px);
 		margin-bottom: rem(15px);
 	}
 }
 
 .paragraph_introtext {
-	color: #000000;
+	color: #000000; //@todo change color
 	font-size: rem(19px);
 	@media (min-width: map_get($grid-breakpoints, "md")) {
-		font-size: rem(22px);
+		font-size: rem(25px);
 		margin-bottom: rem(15px);
 	}
 }
