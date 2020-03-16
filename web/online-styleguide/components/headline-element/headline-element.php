@@ -7,7 +7,7 @@
 
 	<p class="prototype__description">Das Überschriften-Content-Element mit den pflegbaren Optionen.</p>
 
-	<h2 class="prototype__subline">Headline H1</h2>
+	<h2 class="prototype__subline">Headline H1 Text</h2>
 	<div class="prototype__component__view">
 		<div class="page__content">
 			<div class="container">
@@ -17,6 +17,18 @@
 	</div>
 	<p class="prototype__block-headline">Sourcecode</p>
 	<div class="prototype__component__sourcecode"><?php include "includes/h1-only.php"; ?></div>
+
+
+	<h2 class="prototype__subline">Headline H1 In Bildern</h2>
+	<div class="prototype__component__view">
+		<div class="page__content">
+			<div class="container">
+                <?php include "includes/h1-img.php"; ?>
+			</div>
+		</div>
+	</div>
+	<p class="prototype__block-headline">Sourcecode</p>
+	<div class="prototype__component__sourcecode"><?php include "includes/h1-img.php"; ?></div>
 
 
 	<h2 class="prototype__subline">Headline H2</h2>
@@ -29,6 +41,18 @@
 	</div>
 	<p class="prototype__block-headline">Sourcecode</p>
 	<div class="prototype__component__sourcecode"><?php include "includes/h2-only.php"; ?></div>
+
+
+	<h2 class="prototype__subline">Headline H3</h2>
+	<div class="prototype__component__view">
+		<div class="page__content">
+			<div class="container">
+                <?php include "includes/h3-only.php"; ?>
+			</div>
+		</div>
+	</div>
+	<p class="prototype__block-headline">Sourcecode</p>
+	<div class="prototype__component__sourcecode"><?php include "includes/h3-only.php"; ?></div>
 
 
 </div>
