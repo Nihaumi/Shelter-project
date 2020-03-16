@@ -11,7 +11,7 @@
 				<div class="picture-container">
 
 					<picture>
-						<img src="...../shelter-thingy/resources/images/cat.jpg" alt="Lorem ipsum dolor sit amet"
+						<img class="small" src="../../../../shelter-thingy/resources/images/cat.jpg" alt="Lorem ipsum dolor sit amet"
 							 title="Lorem ipsum dolor sit amet">
 					</picture>
 
