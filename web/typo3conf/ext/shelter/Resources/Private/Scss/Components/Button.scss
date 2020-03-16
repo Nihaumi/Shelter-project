@@ -1,7 +1,7 @@
 .btn {
 	cursor: pointer;
 	display: block;
-	color: white;
+	color: white;//@todo change color
 	width: 100%;
 	margin: rem(10px);
 	padding: rem(16px);
@@ -13,16 +13,16 @@
 
 
 	&--primary {
-		background-color: red; /*color*/
-		border: 1px solid red; /*color*/
+		background-color: red; //@ToDO change color
+		border: 1px solid red; //@todo change color
 		width: auto;
 
 		&:focus,
 		&:hover {
-			color: white; /*color*/
+			color: white; //@todo change color
 			text-decoration: none;
-			background-color: #8fd19e; /*color*/
-			border: 1px solid #8fd19f; /*color*/
+			background-color: #8fd19e; //@todo change color
+			border: 1px solid #8fd19f; //@todo change color
 		}
 
 
@@ -30,27 +30,27 @@
 
 
 	&--secondary {
-		background-color: #8fd19e; /*color*/
+		background-color: #8fd19e; //@todo change color
 		width: auto;
 
 
 		&:hover {
 			text-decoration: none;
-			color: white; /*color*/
-			background-color: green; /*color*/
+			color: white; //@todo change color
+			background-color: green; //@todo change color
 		}
 
 	}
 
 	&--ghost {
 		width: auto;
-		background-color: grey; /*color*/
-		color: darkgrey; /*color*/
+		background-color: grey; //@todo change color
+		color: darkgrey; //@todo change color
 
 		&:hover {
 			text-decoration: none;
-			background-color: #2C2E3F; /*color*/
-			color: white; /*color*/
+			background-color: #2C2E3F; //@todo change color
+			color: white; //@todo change color
 		}
 	}
 
@@ -62,7 +62,7 @@
 	&--arrow {
 	/*	@extend %fa-icon;
 		@extend .fas;*/
-		color: #cccccc; /*color*/
+		color: #cccccc; //@todo change color
 		background-color: #2C2E3F;
 
 
