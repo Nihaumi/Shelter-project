@@ -1,13 +1,13 @@
 .btn {
 	cursor: pointer;
 	display: block;
-	color: white;//@todo change color
+	color: white; //@todo change color
+	font-size: rem(20px);
 	width: 100%;
 	margin: rem(10px);
 	padding: rem(16px);
 	text-align: center;
 	vertical-align: middle;
-	font-size: rem(16px);
 	line-height: 1;
 	border-radius: rem(8px);
 
@@ -15,7 +15,7 @@
 	&--primary {
 		background-color: red; //@ToDO change color
 		border: 1px solid red; //@todo change color
-		width: auto;
+		width: fit-content;
 
 		&:focus,
 		&:hover {
@@ -31,7 +31,7 @@
 
 	&--secondary {
 		background-color: #8fd19e; //@todo change color
-		width: auto;
+		width: fit-content;
 
 
 		&:hover {
@@ -43,7 +43,7 @@
 	}
 
 	&--ghost {
-		width: auto;
+		width: fit-content;
 		background-color: grey; //@todo change color
 		color: darkgrey; //@todo change color
 
@@ -55,60 +55,28 @@
 	}
 
 	&--large {
-		font-size: rem(20px);
-		min-width: rem(96px);
+		width: 100%;
 	}
-/*font awesome icons???*/
+
+	//@todo how to embed font awesome icons???*/
 	&--arrow {
-	/*	@extend %fa-icon;
-		@extend .fas;*/
-		color: #cccccc; //@todo change color
-		background-color: #2C2E3F;
+		/*	@extend %fa-icon;
+			@extend .fas;*/
+		color: darkgreen; //@todo change color
+		background-color: transparent;
+		font-weight: 700;
+		font-size: rem(21px);
 
 
 		&:before {
 			/*content: $fa-var-arrow-right;*/
 		}
+
+		&:hover {
+			color: darkgreen; //@todo change color
+			text-decoration: underline darkgreen; //@todo change color
+		}
 	}
 
 
 }
-
-
-/*
-.RedBtn:hover,
-.RedBtn:focus {
-	cursor: pointer;
-	background-color: #a92016;
-	border: 1px solid #000000;
-}
-
-.GreenBtn {
-	width: 100%;
-	margin-top: 3%;
-	color: #ffffff;
-	background-color: #84bd00;
-	border-radius: 5%;
-}
-
-.GreenBtn:hover {
-	cursor: pointer;
-	background-color: #3e5a00;
-}
-
-.GhostBtn {
-	color: #cccccc;
-	background-color: #cfcfcf;
-	border-radius: 5%;
-}
-
-.GhostBtn:hover {
-	cursor: pointer;
-	background-color: #696969;
-	color: #ededed;
-}
-
-*/
-
-
-
