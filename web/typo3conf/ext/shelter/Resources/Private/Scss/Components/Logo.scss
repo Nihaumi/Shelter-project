@@ -3,10 +3,10 @@
 	width: rem(300px);
 	height: rem(50px);
 	background-repeat: no-repeat;
-	background-color: red;
-	background-image: url("/web/shelter-thingy/resources/images/doggo.jpg");
+	background-color: blue; //@todo change it to transparent
+	background-image: url("/web/shelter-thingy/resources/images/doggo.jpg"); //@todo Logo wird nicht angezeigt.
 	background-size: 100% auto;
-	color: red;
+	color: red; //@todo change it to transparent
 	overflow: hidden;
 
 	&:link,
