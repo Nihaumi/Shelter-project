@@ -18,7 +18,7 @@
 	<p class="prototype__block-headline">Sourcecode</p>
 	<div class="prototype__component__sourcecode"><?php include "includes/h1-only.php"; ?></div>
 
-
+<!--//@todo Variation der h1 Headline
 	<h2 class="prototype__subline">Headline H1 In Bildern</h2>
 	<div class="prototype__component__view">
 		<div class="page__content">
@@ -28,7 +28,7 @@
 		</div>
 	</div>
 	<p class="prototype__block-headline">Sourcecode</p>
-	<div class="prototype__component__sourcecode"><?php include "includes/h1-img.php"; ?></div>
+	<div class="prototype__component__sourcecode"><?php include "includes/h1-img.php"; ?></div>-->
 
 
 	<h2 class="prototype__subline">Headline H2</h2>

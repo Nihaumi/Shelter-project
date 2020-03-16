@@ -1,6 +1,7 @@
 h1 {
-	color: green; /*color*/
-	font-family: 'Kulim Park', sans-serif; /*fonts*/
+	@extend .display-h1;
+	color: green; //@todo change color
+	font-family: 'Kulim Park', sans-serif; //@todo: change fonts
 	font-size: rem(26px);
 	font-weight: inherit;
 	line-height: 1.2;
@@ -9,8 +10,8 @@ h1 {
 }
 
 h2 {
-	color: #3e5a00; /*color*/
-	font-family: 'Kulim Park', sans-serif; /*fonts*/
+	color: #3e5a00; //@todo change color
+	font-family: 'Kulim Park', sans-serif; //@todo: change fonts
 	font-size: rem(32px);
 	font-weight: 600;
 	line-height: 1.2;
@@ -19,8 +20,8 @@ h2 {
 }
 
 h3 {
-	color: green; /*color*/
-	font-family: 'Kulim Park', sans-serif; /*fonts*/
+	color: green; //@todo change color
+	font-family: 'Kulim Park', sans-serif; //@todo: change fonts
 	font-size: rem(28px);
 	font-weight: 600;
 	line-height: 1.2;
@@ -33,8 +34,9 @@ h3 {
 	line-height: 1.2;
 }
 
+/* //Variation der h1 Headline
 .display-h2 {
 	font-size: rem(40px);
 	font-weight: 700;
-}
+}*/
 
