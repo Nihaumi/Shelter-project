@@ -4,4 +4,4 @@
 
 <h3>Headline 3 (h3)</h3>
 
-<h4>Headline 4 (h4, Subline)</h4>
+<h4>Headline 4</h4>
