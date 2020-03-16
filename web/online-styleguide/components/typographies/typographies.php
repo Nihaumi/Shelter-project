@@ -16,7 +16,8 @@
 		</div>
 	</div>
 	<p class="prototype__block-headline">Sourcecode</p>
-	<div class="prototype__component__sourcecode"><?php include "includes/headlines-display-classes.php"; ?></div>
+	<div class="prototype__component__sourcecode"><?php include "includes/headlines.php"; ?></div>
+
 
 	<h2 class="prototype__subline">Überschriften mit abweichender Formatierung</h2>
 	<div class="prototype__component__view">
@@ -27,7 +28,7 @@
 		</div>
 	</div>
 	<p class="prototype__block-headline">Sourcecode</p>
-	<div class="prototype__component__sourcecode"><?php include "includes/headlines.php"; ?></div>
+	<div class="prototype__component__sourcecode"><?php include "includes/headlines-display-classes.php"; ?></div>
 
 	<h2 class="prototype__subline">Fließtext</h2>
 	<div class="prototype__component__view">
