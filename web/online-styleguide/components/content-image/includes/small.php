@@ -11,7 +11,14 @@
 				<div class="picture-container">
 
 					<picture>
-						<img class="small" src="../../../../shelter-thingy/resources/images/cat.jpg" alt="Lorem ipsum dolor sit amet"
+						<source srcset="../../../../shelter-thingy/resources/images/cat.jpg" media="(max-width:575px)"/>
+						<source srcset="../../../../shelter-thingy/resources/images/fox.jpg" media="(max-width:767px)"/>
+						<source srcset="../../../../shelter-thingy/resources/images/giraffe.jpg"
+								media="(max-width:991px)"/>
+						<source srcset="../../../../shelter-thingy/resources/images/happypuppy.jpg"
+								media="(max-width:1199px)"/>
+						<img src="../../../../shelter-thingy/resources/images/armadillo.jpg"
+							 alt="Lorem ipsum dolor sit amet"
 							 title="Lorem ipsum dolor sit amet">
 					</picture>
 
