@@ -29,6 +29,7 @@ body {
 p,
 li {
 	font-family: inherit;
+	font-size: inherit;
 	font-weight: 500;
 	color: green; //@todo change color
 	@media (min-width: map_get($grid-breakpoints, "md")) {
