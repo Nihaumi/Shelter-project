@@ -7,7 +7,7 @@
 		aliquam vel, ullamcorper sit amet ligula. Pellentesque in ipsum id orci porta dapibus. Curabitur arcu erat,
 		accumsan id imperdiet et, porttitor at sem. Nulla porttitor accumsan tincidunt.
 	</li>
-	<li>Another <a class="text__link" href="#" target="_self">Interner Link</a> here</li>
+	<li>Another <a href="#" target="_self">Interner Link</a> here</li>
 	<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit</li>
 </ul>
 

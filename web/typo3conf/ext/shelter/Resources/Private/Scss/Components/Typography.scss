@@ -26,32 +26,30 @@ body {
 
 }
 
-.text__link {
-	color: goldenrod;
-	font-weight: bold;
-	text-decoration: none;
-	background-image: linear-gradient(green, green); //@todo change color
-	background-position: 0% 100%;
-	background-repeat: no-repeat;
-	background-size: 0% 2px;
-	transition: background-size 500ms;
-
-	&:hover {
-		text-decoration: none;
-		color: green;
-		background-size: 100% 2px;
-	}
-}
-
 p,
 li {
-	font-family: $font-family-base;
-	font-size: rem(17px);
+	font-family: inherit;
 	font-weight: 500;
 	color: green; //@todo change color
 	@media (min-width: map_get($grid-breakpoints, "md")) {
-		font-size: rem(20px);
 		margin-bottom: rem(15px);
+	}
+
+	a {
+		color: goldenrod;
+		font-weight: bold;
+		text-decoration: none;
+		background-image: linear-gradient(green, green); //@todo change color
+		background-position: 0% 100%;
+		background-repeat: no-repeat;
+		background-size: 0% 2px;
+		transition: background-size 500ms;
+
+		&:hover {
+			text-decoration: none;
+			color: green;
+			background-size: 100% 2px;
+		}
 	}
 }
 
