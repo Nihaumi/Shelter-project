@@ -1,0 +1,17 @@
+.content-element__image {
+	picture,
+	img {
+		height: auto;
+		max-width: 100%;
+	}
+
+
+	.picture-container {
+		text-align: center;
+
+	}
+
+	&--headline {
+		margin-bottom: rem(40px);
+	}
+}

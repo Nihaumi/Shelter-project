@@ -39,6 +39,7 @@
 						<span>Komponenten</span>
 						<ul>
 							<li><a href="components/buttons/buttons.php" target="contentiframe">Buttons</a></li>
+							<li><a href="components/content-image/content-image.php" target="contentiframe">Bilder</a></li>
 							<li><a href="components/footer/footer.php" target="contentiframe">Footer</a></li>
 							<li><a href="components/header/header.php" target="contentiframe">Header</a></li>
 							<li><a href="components/headline-element/headline-element.php" target="contentiframe">Headline-Element</a></li>
