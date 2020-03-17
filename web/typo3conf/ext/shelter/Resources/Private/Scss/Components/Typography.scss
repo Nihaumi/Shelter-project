@@ -1,0 +1,65 @@
+html,
+body {
+	font-family: $font-family-base;
+	font-size: 16px;
+}
+
+.shelter__heading {
+	color: #34ce57; //@todo change color
+}
+
+
+.header-link {
+	color: white; //@todo change color
+	text-decoration: none;
+	background-image: linear-gradient(#cccccc, #cccccc); //@todo change color
+	background-position: 0% 100%;
+	background-repeat: no-repeat;
+	background-size: 0% 2px;
+	transition: background-size 500ms;
+
+	&:hover {
+		text-decoration: none;
+		color: white; //@todo change color
+		background-size: 100% 2px;
+	}
+
+}
+
+p,
+li {
+	font-family: inherit;
+	font-size: inherit;
+	font-weight: 500;
+	color: green; //@todo change color
+	@media (min-width: map_get($grid-breakpoints, "md")) {
+		margin-bottom: rem(15px);
+	}
+
+	a {
+		color: goldenrod;
+		font-weight: bold;
+		text-decoration: none;
+		background-image: linear-gradient(green, green); //@todo change color
+		background-position: 0% 100%;
+		background-repeat: no-repeat;
+		background-size: 0% 2px;
+		transition: background-size 500ms;
+
+		&:hover {
+			text-decoration: none;
+			color: green;
+			background-size: 100% 2px;
+		}
+	}
+}
+
+.paragraph_introtext {
+	color: #000000; //@todo change color
+	font-size: rem(19px);
+	@media (min-width: map_get($grid-breakpoints, "md")) {
+		font-size: rem(25px);
+		margin-bottom: rem(15px);
+	}
+}
+
