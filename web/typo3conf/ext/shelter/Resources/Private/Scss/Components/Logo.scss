@@ -1,12 +1,13 @@
 .logo {
 	display: inline-block;
 	width: rem(300px);
-	height: rem(50px);
+	height: rem(200px);
+	border-radius: 50%;
 	background-repeat: no-repeat;
-	background-color: blue; //@todo change it to transparent
-	background-image: url("/web/shelter-thingy/resources/images/doggo.jpg"); //@todo Logo wird nicht angezeigt.
+	background-color: transparent;
+	background-image: url("../../../../../../../shelter-thingy/resources/images/Brand-min.jpg");
 	background-size: 100% auto;
-	color: red; //@todo change it to transparent
+	color: transparent;
 	overflow: hidden;
 
 	&:link,
