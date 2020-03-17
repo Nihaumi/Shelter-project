@@ -1,0 +1,24 @@
+.logo {
+	display: inline-block;
+	width: rem(300px);
+	height: rem(200px);
+	border-radius: 50%;
+	background-repeat: no-repeat;
+	background-color: transparent;
+	background-image: url("../../../../../../../shelter-thingy/resources/images/Brand-min.jpg");
+	background-size: 100% auto;
+	color: transparent;
+	overflow: hidden;
+
+	&:link,
+	&:active,
+	&:visited {
+		color: transparent;
+	}
+
+	&:hover {
+		color: transparent !important;
+	}
+
+
+}
