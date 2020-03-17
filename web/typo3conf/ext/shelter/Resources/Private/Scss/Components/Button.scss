@@ -1,4 +1,6 @@
-@import "../Libs/FontAwesome/FontAwesome.scss";
+@import "../Libs/FontAwesome/FA-scss/fontawesome";
+@import "../Libs/FontAwesome/FA-scss/solid";
+
 
 .btn {
 	cursor: pointer;
@@ -62,17 +64,17 @@
 
 	//@todo how to embed font awesome icons???*/
 	&--arrow {
-		/*	@extend %fa-icon;
-			@extend .fas;*/
-		@include fa-icon;
+		@extend %fa-icon;
+		@extend .fas;
 		color: darkgreen; //@todo change color
 		background-color: transparent;
 		font-weight: 700;
 		font-size: rem(21px);
 
 
-		&:before {
-			/*content: $fa-var-arrow-right;*/
+		&::after {
+			margin: rem(10px);
+			content: fa-content($fa-var-arrow-right);
 		}
 
 		&:hover {
