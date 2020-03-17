@@ -1,3 +1,5 @@
+@import "../Libs/FontAwesome/FontAwesome.scss";
+
 .btn {
 	cursor: pointer;
 	display: block;
@@ -62,6 +64,7 @@
 	&--arrow {
 		/*	@extend %fa-icon;
 			@extend .fas;*/
+		@include fa-icon;
 		color: darkgreen; //@todo change color
 		background-color: transparent;
 		font-weight: 700;
