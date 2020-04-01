@@ -66,10 +66,17 @@
 	&--arrow {
 		@extend %fa-icon;
 		@extend .fas;
+		width: fit-content;
 		color: darkgreen; //@todo change color
 		background-color: transparent;
 		font-weight: 700;
 		font-size: rem(21px);
+		text-decoration: none;
+		background-image: linear-gradient(currentColor, currentColor);
+		background-position: 0% 100%;
+		background-repeat: no-repeat;
+		background-size: 0% 2px;
+		transition: background-size 500ms;
 
 
 		&::after {
@@ -79,7 +86,12 @@
 
 		&:hover {
 			color: darkgreen; //@todo change color
-			text-decoration: underline darkgreen; //@todo change color
+			text-decoration: none;
+			background-image: linear-gradient(currentColor, currentColor);
+			background-position: 0% 100%;
+			background-repeat: no-repeat;
+			background-size: 100% 2px;
+			transition: background-size 500ms;
 		}
 	}
 
