@@ -55,7 +55,7 @@
 	<p class="prototype__block-headline">Sourcecode</p>
 	<div class="prototype__component__sourcecode"><?php include "includes/ghost.php"; ?></div>
 
-	<h2 class="prototype__subline">Pfeil-Links (größer)</h2>
+	<h2 class="prototype__subline">Pfeil-Links</h2>
 	<div class="prototype__component__view">
 		<div class="container">
             <?php include "includes/arrows.php"; ?>
