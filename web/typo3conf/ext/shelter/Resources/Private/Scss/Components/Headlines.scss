@@ -1,6 +1,8 @@
+@import "../Variables/Color";
+
 h1 {
 	@extend .display-h1;
-	color: green; //@todo change color
+	color: $color-shelter-green-dark;
 	font-family: $font-family-base;
 	font-size: rem(26px);
 	font-weight: inherit;
@@ -10,7 +12,7 @@ h1 {
 }
 
 h2 {
-	color: #3e5a00; //@todo change color
+	color: $color-shelter-green-dark;
 	font-family: $font-family-base;
 	font-size: rem(32px);
 	font-weight: 600;
@@ -20,7 +22,7 @@ h2 {
 }
 
 h3 {
-	color: green; //@todo change color
+	color: $color-shelter-green-dark;
 	font-family: $font-family-base;
 	font-size: rem(28px);
 	font-weight: 600;

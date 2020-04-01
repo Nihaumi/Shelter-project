@@ -1,11 +1,12 @@
 @import "../Libs/FontAwesome/FA-scss/fontawesome";
 @import "../Libs/FontAwesome/FA-scss/solid";
+@import "../Variables/Color";
 
 
 .btn {
 	cursor: pointer;
 	display: block;
-	color: white; //@todo change color
+	color: $white;
 	font-size: rem(20px);
 	width: 100%;
 	margin: rem(10px);
@@ -17,16 +18,16 @@
 
 
 	&--primary {
-		background-color: red; //@ToDO change color
-		border: 1px solid red; //@todo change color
+		background-color: $color-shelter-button-red;
+		border: 1px solid $color-shelter-button-red;
 		width: fit-content;
 
 		&:focus,
 		&:hover {
-			color: white; //@todo change color
+			color: $white;
 			text-decoration: none;
-			background-color: #8fd19e; //@todo change color
-			border: 1px solid #8fd19f; //@todo change color
+			background-color: $color-shelter-button-red-hover;
+			border: 1px solid $color-shelter-button-red-hover;
 		}
 
 
@@ -34,27 +35,27 @@
 
 
 	&--secondary {
-		background-color: #8fd19e; //@todo change color
+		background-color: $color-shelter-green-light;
 		width: fit-content;
 
 
 		&:hover {
 			text-decoration: none;
-			color: white; //@todo change color
-			background-color: green; //@todo change color
+			color: $white;
+			background-color: $color-shelter-green-dark;
 		}
 
 	}
 
 	&--ghost {
 		width: fit-content;
-		background-color: grey; //@todo change color
-		color: darkgrey; //@todo change color
+		background-color: $color-shelter-ghost-button;
+		color: $color-shelter-ghost-text;
 
 		&:hover {
 			text-decoration: none;
-			background-color: #2C2E3F; //@todo change color
-			color: white; //@todo change color
+			background-color: $color-shelter-ghost-button-hover;
+			color: $color-shelter-ghost-text-hover;
 		}
 	}
 
@@ -67,7 +68,7 @@
 		@extend %fa-icon;
 		@extend .fas;
 		width: fit-content;
-		color: darkgreen; //@todo change color
+		color: $color-shelter-green-dark;
 		background-color: transparent;
 		font-weight: 700;
 		font-size: rem(21px);
@@ -85,7 +86,7 @@
 		}
 
 		&:hover {
-			color: darkgreen; //@todo change color
+			color: $color-shelter-green-dark;
 			text-decoration: none;
 			background-image: linear-gradient(currentColor, currentColor);
 			background-position: 8% 75%;
